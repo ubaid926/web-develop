@@ -1,0 +1,20 @@
+.heading {
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-align: center;
+    text-shadow: 5px 5px 5px grey;
+}
+
+body {
+    background-color: bisque;
+}
+
+.para
+{
+    line-height: 30px;
+    word-spacing: 5px;
+  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 5px 5px 5px grey;
+}
+
