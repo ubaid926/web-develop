@@ -1,20 +1,56 @@
 .header {
     background-color: black;
+    margin-top: 0px;
+    position: relative;
 }
 li {
-   
+   font-size: large;
+   text-transform: capitalize;
     display: inline-block;
-    margin-left: 100px;
-    
+    margin-left: 40px;
+    margin-top: 100px;
     color: white;
 }
 
 .logo {
-    margin-left: 50px;
+   
+    margin-left: 90px;
     display: inline-block;
-margin-top: 40px;
+margin-top: 5px;
+
 }
 
 .list {
     display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 400px;
+  z-index: 1;
 }
+ .btn {
+   text-transform: capitalize;
+    background-color: black;
+    border: 1px solid  white;
+color: white;
+border-radius: 30px;
+padding: 20px;
+ }
+
+ .btn2 {
+    text-transform: capitalize;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 30px;
+    padding: 20px;
+ }
+ .btn2>img {
+    width: 10px;
+    height: 10px;
+   
+    margin-left: 5px;
+
+ }
+ body {
+    /* margin-top: 0px;
+ } */
