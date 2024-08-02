@@ -1,0 +1,23 @@
+.box1 {
+   background-color: violet;
+    
+    width: 300px;
+    border-style: solid ;
+    border-color: darkslateblue;
+    border-bottom-width: 5px;
+    border-top-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 10px 10px 5px orchid;
+    
+
+    
+
+
+}

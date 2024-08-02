@@ -1,0 +1,22 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-BlackItalic.ttf)
+    
+}
+
+body {
+    font-family: poppins; 
+    background-color: orange;
+    word-spacing: 10px;
+   text-align: center;
+line-height: 4em;    
+    
+}
+h1 {
+    text-transform: uppercase;
+text-shadow: 3px 3px 4px gray;
+}
+
+input:focus {
+background-color: yellowgreen;
+}

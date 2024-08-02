@@ -1,0 +1,20 @@
+.header {
+    background-color: black;
+}
+li {
+   
+    display: inline-block;
+    margin-left: 100px;
+    
+    color: white;
+}
+
+.logo {
+    margin-left: 50px;
+    display: inline-block;
+margin-top: 40px;
+}
+
+.list {
+    display: inline-block;
+}
