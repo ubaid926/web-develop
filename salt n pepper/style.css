@@ -68,7 +68,31 @@ padding: 20px;
 }
 
 .img3 {
+    color:black;
+}
+ 
+.btn3 {
+    text-transform: capitalize;
+    color: white;
     background-color: black;
-margin-left: 250px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    padding: 15px 35px;
+    padding-top: 20px;
+}
 
+
+ 
+.grey {
+    background-color: hsla(0, 0%, 0%, 0.863);
+    color: gainsboro;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.logotxt {
+    font-weight: bolder;
+    font-size:60px;
+    color: white;
 }
