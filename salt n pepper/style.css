@@ -36,6 +36,7 @@ border-radius: 30px;
 padding: 20px;
  }
 
+
  .btn2 {
     text-transform: capitalize;
     color: white;
@@ -47,10 +48,27 @@ padding: 20px;
  .btn2>img {
     width: 10px;
     height: 10px;
-   
+   background-color: white;
     margin-left: 5px;
 
  }
- body {
-    /* margin-top: 0px;
- } */
+  
+.text {
+    background-color: black;
+    color: white;
+    text-align: center;
+   font-size:60px;
+}
+
+.minitext {
+    background-color: black;
+    color: white;
+    text-align: center;
+   font-size:20px;
+}
+
+.img3 {
+    background-color: black;
+margin-left: 250px;
+
+}
