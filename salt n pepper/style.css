@@ -120,6 +120,7 @@ display:flex;
 #adress {
     color: grey;
     font-size: large;
+   
     /* margin-top: 100px; */
 }
 
@@ -183,15 +184,22 @@ margin-top: 130px;
     font-weight: bolder;
     font-size:30px;
     color: white;
+    
 }
 
 
 #Express {
+    
     color: white;
     font-size: 30px;
 }
 .img4 {
+    margin-left: 40px;
+}
+
+.img4a {
     margin-left: 65px;
+
 }
 
 #drtbtn2 {
@@ -210,3 +218,15 @@ margin-top: 130px;
    display: flex;
     margin-top: 50px;
 }
+
+.images4 {
+    display: flex;
+     margin-top: 50px;
+     margin-left: 200px;
+ }
+ 
+.images3 {
+    display: flex;
+    margin-top: 50px;
+}
+
