@@ -356,20 +356,92 @@ margin-top: 130px;
     border-radius: 5px;
     margin-top: 50px;
     margin-left: 490px;
+    padding-bottom: 100px;
 }
 
 @media only screen and (max-width: 900px) {
+    
+    
     .list {
-        display: block;
-        
+       margin-left: 0px;
+      
+      
+      
     }
+   li {
+    
+    font-size: small;
+
+    margin-left: 0px;
+   }
+
+    
     .logo {
-        width: 100%;
-    }
-    #isl {
-        width:100% ;
+        margin-left: 0px;
+        width: 70px;
+    } 
+    .img3 {
+        display: block;
     }
     .franchise {
+margin-left: 0px;
+        display:block ;
+    }
+    .franchise2 {
         display: block;
+        margin-left: 0px;
+    }
+    #isl {
+        margin-left: 0px;
+    }
+    .images {
+        display: block;
+
+    }
+    .img4 {
+        margin-left: 0px;
+    }
+    .images2 {
+        display: block;
+    }
+    .images3 {
+        display: block;
+    }
+    .images4 {
+        display: block;
+    }
+    .vlg {
+        margin-left: 400px;
+        display: block;
+    }
+    .vlgm img {
+      width:   400px;
+      margin-top: 100px;
+    }
+    .lct {
+        width: 200px;
+    }
+    .lct00 {
+        width: 200px;
+        margin-left: 340px;
+    }
+    .lct1 {
+        width: 200px;
+
+    }
+    .lct2 {
+        width: 200px;
+    }
+    .opn {
+        margin-left: 30px;
+    }
+    .img10 {
+        margin-left: 60px;
+    }
+    .img10a {
+        margin-left: 60px;
+    }
+    .opna {
+        margin-left: 30px;
     }
 }
