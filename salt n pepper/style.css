@@ -112,9 +112,12 @@ padding: 20px;
     font-size: 30px;
 
  margin-top: 100px;
- margin-left: 100px;
+ margin-left: 80px;
 
 display:flex;
+}
+.adrs {
+    margin-left: 50px;
 }
 
 #adress {
@@ -124,15 +127,21 @@ display:flex;
     /* margin-top: 100px; */
 }
 
-
+#isl0 {
+    margin-left: 30px;
+}
 
 #islt {
     color: red;
     font-weight: 2px;
 }
 
-#isl {
-    margin-left: 100px;
+#isl00 {
+    margin-left: 210px;
+}
+
+#isl000 {
+    margin-left: 170px;
 }
 
 #drtbtn {
@@ -162,7 +171,17 @@ display:flex;
     font-size: 30px;
 
  margin-top: 100px;
- margin-left: 100px;
+ margin-left: 50px;
+
+display:flex;
+}
+
+.franchise2a {
+    color: white;
+    font-size: 30px;
+
+ margin-top: 100px;
+ margin-left: 80px;
 
 display:flex;
 }
@@ -433,20 +452,21 @@ margin-top: 130px;
     
     margin-top: 10px;
 }
-#btnn {
+#btnn1 {
     
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: red;
-    margin-left: 5px;
-    padding: 10px;
-   width: 50px;
+   width: 20px;
+   position: relative;
+
 }
 
+
 .icnn {
-    width: 100px;
+    width: 100%;
     color: white;
-    position: absolute;
-   bottom: 20px;
+  position: absolute; 
+
 }
 
 
