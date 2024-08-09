@@ -386,9 +386,13 @@ margin-top: 130px;
     color: grey;
     width: 300px;
     margin-left: 70px;
-    display: inline-block;
+     margin-top: 100px;
+    display: inline-table;
 }
 
+#logo2{
+    display: block;
+}
 .list2 li {
     font-size: large;
     text-transform: capitalize;
@@ -398,8 +402,10 @@ margin-top: 130px;
 }
 
 .list2 {
-    display: inline-block;
+    display: inline-table;
     margin-left: 100px;
+    
+    
 }
 .h4 {
     color: white;
@@ -414,7 +420,7 @@ margin-top: 130px;
 
 .ftr {
     color: white;
-    display: inline-block;
+    display: inline-table;
     margin-left: 150px;
     width: 200px;
 
@@ -425,9 +431,10 @@ margin-top: 130px;
 }
  
 .ftra {
-    display: inline-block;
+    display:inline-table ;
     width: 200px;
     color: white;
+margin-left: 100px;
 }
 
 
@@ -457,16 +464,16 @@ margin-top: 130px;
     border-radius: 25px;
     background-color: red;
    width: 20px;
-   position: relative;
+  
 
 }
 
 
 .icnn {
     width: 100%;
-    color: white;
-  position: absolute; 
-
+    
+  
+;
 }
 
 
