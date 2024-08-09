@@ -3,7 +3,7 @@
     margin-top: 0px;
     position: relative;
 }
-li {
+.list li {
    font-size: large;
    text-transform: capitalize;
     display: inline-block;
@@ -367,7 +367,50 @@ margin-top: 130px;
     color: grey;
     width: 300px;
     margin-left: 70px;
+    display: inline-block;
 }
+
+.list2 li {
+    font-size: large;
+    text-transform: capitalize;
+     margin-bottom: 10px;
+     color: grey;
+     list-style: none;
+}
+
+.list2 {
+    display: inline-block;
+    margin-left: 100px;
+}
+.h4 {
+    color: white;
+    text-transform: capitalize;
+    margin-left: 40px;
+}
+
+.h4a {
+    color: white;
+    text-transform: capitalize;
+}
+
+.ftr {
+    color: white;
+    display: inline-block;
+    margin-left: 150px;
+    width: 200px;
+
+}
+#bld {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ 
+.ftra {
+    display: inline-block;
+    width: 200px;
+}
+
+
 @media only screen and (max-width: 900px) {
     
     
