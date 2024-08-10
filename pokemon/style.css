@@ -1,10 +1,17 @@
+.container {
+    border-bottom: solid 2px hsl(0, 0%, 87%);
+    background-color: #f5f5f5;
+    height: 80px;
+    color: white;
+}
 li {
     /* width: 150px; */
     display: inline-block;
     list-style: none;
-   background-color:#f5f5f5 ;
-   border: 1px solid #dedede;
-   
+    border-bottom: 0px;
+   border-top: 0px;
+    border-left: 1px solid #dedede; 
+   border-right: 1px solid #dedede;
    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 5px;
    
@@ -13,8 +20,7 @@ li {
 ul {
     margin-left: 0px;
     margin-top: 0px;
-    border: 1px solid #dedede;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+    
    padding-left: 250px;
    padding-top: 10px;
 }
@@ -27,15 +33,23 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
+  
 }
-@media only screen and (max-width: 430px) {
+
+
+
+
+@media only screen and (max-width: 535px) {
     ul { padding-left: 0px;
         
     }
     li{
         width: 200px;
     }
-
+.container {
+    border-bottom: none;
+    background-color: white;
+}
 }
 
     
