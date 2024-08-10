@@ -36,8 +36,66 @@ body {
   
 }
 
+.icons {
+    
+    display: flex;
+    justify-content: center;
+ align-content: center;
+}
+
+.one {
+    border-bottom: 5px solid  #919191;
+    width: 100px;
+    color:#898989 ;
+    text-transform: capitalize;
+   
+    
+}
+
+.two {
+    border-bottom: 5px solid #e3350d   ;
+    width: 100px;
+    color: #898989;
+    text-transform: capitalize;
+}
+
+.three {
+    border-bottom: 5px solid #ee6b2f  ;
+    width: 100px;
+    color: #898989;
+    text-transform: capitalize;
+}
+
+.four {
+    border-bottom: 5px solid  #e6bc2f ;
+    width: 100px;
+    color: #898989;
+    text-transform: capitalize;
+}
+
+.five {
+    border-bottom: 5px solid  #4dad5b ;
+    width: 100px;
+    color: #898989;
+    text-transform: capitalize;
+}
 
 
+.six{
+    border-bottom: 5px solid  #30a7d7 ;
+    width: 100px;
+    color: #898989;
+    text-transform: capitalize;
+}
+
+
+
+.sevn {
+    border-bottom: 5px solid #1b53ba ;
+    width: 100px;
+    color: #898989;
+    text-transform: capitalize;
+}
 
 @media only screen and (max-width: 535px) {
     ul { padding-left: 0px;
