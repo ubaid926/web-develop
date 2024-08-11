@@ -40,62 +40,118 @@ body {
     
     display: flex;
     justify-content: center;
- align-content: center;
+    height: 100px;
+    
+ 
 }
 
 .one {
     border-bottom: 5px solid  #919191;
-    width: 100px;
+    width: 120px;
     color:#898989 ;
     text-transform: capitalize;
-   
-    
+    text-align: center;
+    padding-top: 20px;
+
 }
+
+.one:hover {
+   background-color:  #919191;
+
+color: white;}
+
+.two:hover {
+    background-color:  #e3350d  ;
+ 
+ color: white;}
 
 .two {
     border-bottom: 5px solid #e3350d   ;
-    width: 100px;
+    width: 120px;
     color: #898989;
     text-transform: capitalize;
+    text-align: center;
+    padding-top: 20px;
+
 }
 
 .three {
     border-bottom: 5px solid #ee6b2f  ;
-    width: 100px;
+    width: 120px;
     color: #898989;
     text-transform: capitalize;
+    text-align: center;
+    padding-top: 20px;
+
 }
+
+.three:hover {
+    background-color: #ee6b2f   ;
+ 
+ color: white;}
 
 .four {
     border-bottom: 5px solid  #e6bc2f ;
-    width: 100px;
+    width: 120px;
     color: #898989;
     text-transform: capitalize;
+    text-align: center;
+    padding-top: 20px;
+
 }
+
+.four:hover {
+    background-color: #e6bc2f   ;
+ 
+ color: white;}
 
 .five {
     border-bottom: 5px solid  #4dad5b ;
-    width: 100px;
+    width: 120px;
     color: #898989;
     text-transform: capitalize;
+    text-align: center;
+    padding-top: 20px;
+
 }
+
+.five:hover {
+    background-color:   #4dad5b  ;
+ 
+ color: white;}
 
 
 .six{
     border-bottom: 5px solid  #30a7d7 ;
-    width: 100px;
+    width: 120px;
     color: #898989;
     text-transform: capitalize;
+    text-align: center;
+    padding-top: 20px;
+
 }
+
+.six:hover {
+    background-color: #30a7d7  ;
+ 
+ color: white;}
 
 
 
 .sevn {
     border-bottom: 5px solid #1b53ba ;
-    width: 100px;
+    width: 120px;
     color: #898989;
     text-transform: capitalize;
+    text-align: center;
+    padding-top: 20px;
+    
 }
+
+.sevn:hover {
+    background-color:  #1b53ba ;
+ 
+ color: white;}
 
 @media only screen and (max-width: 535px) {
     ul { padding-left: 0px;
