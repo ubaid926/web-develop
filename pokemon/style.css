@@ -557,8 +557,9 @@ text-transform: capitalize;
 }
 
 .footer {
-   background-color: black;
-   display: flex;
+   background-color:#1f1f1f ;
+   display: flex; 
+   flex-direction: row;
 
 }
 
@@ -599,12 +600,14 @@ margin-top: 20px;
 .ftra {
    margin-top: 100px;
 margin-left: 300px;
+width: 450px;
 }
 .ftrb {
    color: white;
    font-size: larger;
    margin-top: 150px;
    margin-left: 50px;
+   width: 450px;
 }
 
 .ftrc li {
@@ -618,12 +621,35 @@ margin-top: 5px;
    margin-left: 40px;
 }
 
+
 .ftrc{
    display: block;
-   color: white;
+   color: white;width: 300px;
+
 }
 .footer2 {
-   background-color: black;
+   background-color: #1f1f1f;
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   padding-top: 100px;
+}
+
+.icons2  {
+   color: white;
+   width: 300px;
+
+}
+.security li  {
+   color: white;
+   list-style: none;
+   
+
+}
+
+.security {
+   width: 300px;
+   margin-top: 50px;
 }
 
 @media only screen and (max-width: 535px) {
