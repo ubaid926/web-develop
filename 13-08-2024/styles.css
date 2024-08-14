@@ -1,4 +1,23 @@
-* {
-  background-color:  rgba(61, 90, 128, 1);
+
+
+.container {
+  background-color:  rgba(61, 90, 128, 1); !important
   color: white;
+}
+ li>button {
+  background-color:  rgba(238, 108, 77, 1) ; !important
+  color: white;
+ }
+
+ .one {
+   display: flex;
+   justify-content: flex-start; 
+  width: 400px;
+  }
+
+
+.two {
+  display: flex;
+  justify-content: flex-end;
+  width: 400px;
 }
