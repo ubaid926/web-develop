@@ -1,23 +1,52 @@
 
-
-.container {
-  background-color:  rgba(61, 90, 128, 1); !important
-  color: white;
+body {
+  background-color:  rgba(61, 90, 128, 1); 
 }
- li>button {
-  background-color:  rgba(238, 108, 77, 1) ; !important
+.main {
+  background-color:  rgba(61, 90, 128, 1); 
+  color: white;
+  border: 1px solid hsl(0, 0%, 0%);
+ 
+}
+
+button {
+  background-color:  rgba(238, 108, 77, 1) ; 
   color: white;
  }
 
  .one {
-   display: flex;
-   justify-content: flex-start; 
-  width: 400px;
+  
+  background-color:  rgba(61, 90, 128, 1); 
+  color: white;
+justify-content: center; 
+}
+
+  .one h2 {
+    width: 300px;
   }
 
+  .one p {
+    width: 450px;
+  }
+
+.main2 {
+  display: flex;
+  justify-content: center;
+  
+}
+
+h2 span {
+  color: rgba(238, 108, 77, 1) ; 
+}
 
 .two {
-  display: flex;
-  justify-content: flex-end;
   width: 400px;
+  background-color:  rgba(61, 90, 128, 1); 
+  color : white;
+
+  
+}
+.two>img {
+  width: 200px;
+  
 }
