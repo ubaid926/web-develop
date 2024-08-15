@@ -1,52 +1,29 @@
 
-body {
-  background-color:  rgba(61, 90, 128, 1); 
-}
 .main {
-  background-color:  rgba(61, 90, 128, 1); 
-  color: white;
-  border: 1px solid hsl(0, 0%, 0%);
- 
-}
-
-button {
-  background-color:  rgba(238, 108, 77, 1) ; 
-  color: white;
- }
-
- .one {
   
-  background-color:  rgba(61, 90, 128, 1); 
   color: white;
-justify-content: center; 
+  border:1px solid hsl(0, 0%, 0%);
+ 
+ background-color:rgba(61, 90, 128, 1)  ;
 }
 
-  .one h2 {
-    width: 300px;
-  }
-
-  .one p {
-    width: 450px;
-  }
 
 .main2 {
   display: flex;
   justify-content: center;
-  
+  background-color:rgba(61, 90, 128, 1)  ;
+ 
 }
 
-h2 span {
+.h2>span {
   color: rgba(238, 108, 77, 1) ; 
 }
 
-.two {
-  width: 400px;
-  background-color:  rgba(61, 90, 128, 1); 
-  color : white;
 
-  
-}
-.two>img {
-  width: 200px;
-  
-}
+
+ .main3 {
+  background-color: rgba(41, 50, 65, 1);
+  color: white;
+
+ }
+
