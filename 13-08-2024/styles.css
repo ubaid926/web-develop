@@ -42,10 +42,16 @@
 background-color:rgba(41, 50, 65, 1) ;
  }
 
+ .main7 {
+  display: flex;
+  justify-content: center;
+ }
+
  .main6 { 
 display: flex;
 justify-content: space-evenly;
 background-color:rgba(41, 50, 65, 1) ;
+margin-bottom: 50px;
 }
 
  .main5 {
@@ -72,6 +78,54 @@ background-color:rgba(41, 50, 65, 1) ;
   text-decoration: underline coral;
   text-align: center;
  }
+
+ .main8>p {
+  text-decoration: underline coral;
+  text-align: center;
+ }
+
+ .main8 {
+  background-color: rgba(47, 55, 70, 1) ;
+  color: white;
+  display: flex;
+  justify-content: center;
+ }
+
+ .main9 {
+  background-color: rgba(61, 90, 128, 1);
+ }
+
+ .main9 p {
+  text-align: center;
+  text-decoration: underline coral;
+ }
+
+ .main9 input {
+  background-color: rgba(38, 56, 79, 1);
+  color: white;
+  border-radius: 2px;
+  border: 2px solid rgba(38, 56, 79, 1);
+  margin-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+}
+.txt {
+  display: flex;
+  justify-content: center;
+}
+
+ .main9 textarea {
+  background-color: rgba(38, 56, 79, 1);
+  color: white;
+  border-radius: 2px;
+  border: 2px solid rgba(38, 56, 79, 1);
+  margin-bottom: 20px;
+ }
+
+
 
 @media only screen and (max-width:780px) {
   .two>img {
