@@ -48,9 +48,9 @@ background-color:rgba(41, 50, 65, 1) ;
  }
 
  .main6 { 
+  background-color:rgba(41, 50, 65, 1) ;
 display: flex;
 justify-content: space-evenly;
-background-color:rgba(41, 50, 65, 1) ;
 margin-bottom: 50px;
 }
 
