@@ -28,21 +28,25 @@
 }
 
  .main3 {
-display: flex;
-justify-content: ;
+  display: flex;
   background-color: rgba(41, 50, 65, 1);
   color: white;
 
  }
- .two>img {
-  height: 400px;
 
+ .two>img {
+  height: 400px; 
  }
- .main6 {
-  background-color:rgba(41, 50, 65, 1) ;
+ 
+ .m56 {
+background-color:rgba(41, 50, 65, 1) ;
+ }
+
+ .main6 { 
 display: flex;
 justify-content: space-evenly;
- }
+background-color:rgba(41, 50, 65, 1) ;
+}
 
  .main5 {
   background-color:rgba(41, 50, 65, 1) ;
@@ -58,10 +62,15 @@ justify-content: space-evenly;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
+}
 
- }
- .main4>p {
+.main4>p {
   text-decoration: underline coral;
+ }
+
+ .m56>p {
+  text-decoration: underline coral;
+  text-align: center;
  }
 
 @media only screen and (max-width:780px) {
