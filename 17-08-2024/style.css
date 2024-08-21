@@ -35,10 +35,43 @@
     display: flex;
     flex-wrap:wrap ;
 row-gap: 5px;
+justify-content: center;
 
 }
 
 .div3a {
  row-gap: 5px;
  column-gap: 5px;
+}
+
+
+
+
+.div4 {
+    display: flex;
+align-content: space-around;
+}
+
+.div4>.one {
+    display: flex;
+  
+}
+
+.div4 >.two {
+    display: flex;
+ 
+}
+
+.div4 >.three {
+    display: flex;
+
+}
+
+.div4 >.four {
+    display: flex;
+    
+}
+
+.div4 img {
+    border-radius: 45px;
 }
