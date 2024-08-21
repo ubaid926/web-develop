@@ -44,12 +44,14 @@ justify-content: center;
  column-gap: 5px;
 }
 
-
+.div03 {
+    margin-top: 100px;
+}
 
 
 .div4 {
     display: flex;
-align-content: space-around;
+    margin-top: 100px;
 }
 
 .div4>.one {
@@ -74,4 +76,8 @@ align-content: space-around;
 
 .div4 img {
     border-radius: 45px;
+}
+
+.div5{
+    margin-top: 100px;
 }
