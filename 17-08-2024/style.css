@@ -80,4 +80,19 @@ justify-content: center;
 
 .div5{
     margin-top: 100px;
+position: relative;
+
+}
+
+
+
+.text3 {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    font-size: larger;
+}
+
+.div6 {
+    margin-top: 100px;
 }
