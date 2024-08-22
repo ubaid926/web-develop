@@ -154,12 +154,43 @@ bottom: 100px;
     color: red;
 }
 
-.div9 img {
+/* .div9 {
     position: relative;
-}
+
+} */
 
 .div9 h3 {
+    color : white;
+
+}
+
+.div9 i {
+    color: red;
+}
+
+
+
+
+.h3a {
     position: absolute;
     bottom: 100px;
-    color: white;
+
+}
+
+.h3b {
+    position: absolute;
+    bottom: 100px;
+
+}
+
+.h3c {
+    position: absolute;
+    bottom: 100px;
+
+}
+
+.h3d {
+    position: absolute;
+    bottom: 100px;
+
 }
