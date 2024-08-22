@@ -105,10 +105,35 @@ position: relative;
     display: flex;
 }
 
+
+
+.div7a>div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    
+}
+
 .div7b {
     display: flex;
 }
 
+
+.div7b>div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    
+}
+
 .div7c {
     display: flex;
+}
+
+
+.div7c>div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    
 }
