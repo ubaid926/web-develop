@@ -274,3 +274,35 @@ bottom: 100px;
     bottom: 50px;
 
 }
+
+.div11 i {
+    color: red;
+}
+
+.footer {
+    background-color: black;
+}
+
+.div12 {
+    color: white;
+}
+
+.div12 i {
+    color: red;
+}
+
+.div13 li{
+    list-style: none;
+    color: white;
+}
+
+.end {
+    
+    color: white;
+}
+
+.end li {
+    display: inline;
+    margin-left: 15px;
+    list-style: none;
+}
