@@ -154,10 +154,10 @@ bottom: 100px;
     color: red;
 }
 
-/* .div9 {
-    position: relative;
-
-} */
+.div9 {
+    display: flex;
+    margin-bottom: 50px;
+}
 
 .div9 h3 {
     color : white;
@@ -186,24 +186,91 @@ bottom: 100px;
 
 .h3a {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
 
 }
 
 .h3b {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
 
 }
 
 .h3c {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
 
 }
 
 .h3d {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
+
+}
+
+
+.div10 {
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+.div10 h3 {
+    color : white;
+
+}
+
+.div10 i {
+    color: red;
+}
+
+.div10a{
+    position: relative;
+}
+
+.div10b{
+    position: relative;
+}
+
+.div10c{
+    position: relative;
+}
+
+.div10d{
+    position: relative;
+}
+
+.h3e {
+    position: absolute;
+    bottom: 50px;
+
+}
+
+.h3f {
+    position: absolute;
+    bottom: 50px;
+
+}
+
+.h3g {
+    position: absolute;
+    bottom: 50px;
+
+}
+
+.h3h {
+    position: absolute;
+    bottom: 50px;
+
+}
+
+.div11 {
+    position: relative;
+}
+
+.div11 div {
+    color: white;
+    position: absolute;
+    bottom: 50px;
 
 }
