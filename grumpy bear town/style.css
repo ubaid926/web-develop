@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #6d71c6;   
+       
      height: 100px;
     
 }
@@ -9,11 +9,17 @@ ul {
     justify-content: space-between;
 }
 
-li {
-    margin-left: 20px;
-    
-}
-
 .butn {
     border-radius: 55px !important ;
+
+}
+
+.div1 {
+    background-image: url(images/bg1-min.png);
+}
+
+.img4 {
+    position: absolute;
+    right: 35%;
+    
 }
