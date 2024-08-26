@@ -1,12 +1,6 @@
 .navbar {
-       
      height: 100px;
     
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
 }
 
 .butn {
