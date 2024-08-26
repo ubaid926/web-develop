@@ -1,12 +1,17 @@
 .navbar {
      height: 100px;
-    
+   
 }
 
+.list {
+    font-size: large;
+}
 .butn {
     border-radius: 55px !important ;
-
 }
+
+
+
 
 .div1 {
     background-image: url(images/bg1-min.png);
@@ -16,4 +21,14 @@
     position: absolute;
     right: 35%;
     
+}
+
+.butn3 {
+    border-radius: 5px !important ;
+width: 100px;
+}
+
+.butn2 {
+    border-radius: 55px !important ;
+width: 100px;
 }
