@@ -25,10 +25,20 @@
 
 .butn3 {
     border-radius: 5px !important ;
-width: 100px;
+    border: 2px solid #212529 !important;
+order: 1 !important;
 }
 
 .butn2 {
     border-radius: 55px !important ;
-width: 100px;
+    border: 2px solid #dc3545 !important;
+  order: 1 !important;    
+}
+
+.div1c {
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
 }
