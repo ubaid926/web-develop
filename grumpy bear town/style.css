@@ -23,22 +23,26 @@
     
 }
 
+
 .butn3 {
     border-radius: 5px !important ;
     border: 2px solid #212529 !important;
-order: 1 !important;
+    margin-left: 10px;
+    
 }
 
 .butn2 {
     border-radius: 55px !important ;
     border: 2px solid #dc3545 !important;
-  order: 1 !important;    
+    
 }
 
 .div1c {
 
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 200px;
+    /* display: flex;
+    justify-content: center; */
+    /* position: absolute;
+    top: 400px;
+
+    left: 500px; */
 }
