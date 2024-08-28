@@ -27,22 +27,48 @@
 .butn3 {
     border-radius: 5px !important ;
     border: 2px solid #212529 !important;
-    margin-left: 10px;
+
+    width: 200px;
+    margin-left: 5px;
     
 }
 
 .butn2 {
     border-radius: 55px !important ;
     border: 2px solid #dc3545 !important;
-    
+    width: 200px; 
+    margin-right: 5px;  
+}
+
+.butn4 {
+    border-radius: 55px !important ;
+ width: 400px;
+ border: 2px solid white !important;
+ 
+}
+
+
+
+.headings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div1c1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.div1c2 {
+    display: flex;
+    justify-content: center;
 }
 
 .div1c {
+ 
+    position: absolute;
+    top: 300px;
 
-    /* display: flex;
-    justify-content: center; */
-    /* position: absolute;
-    top: 400px;
-
-    left: 500px; */
+    left: 500px;
 }
