@@ -56,19 +56,31 @@
 
 .div1c1 {
     display: flex;
-    justify-content: center;
     margin-bottom: 10px;
+    
 }
 
-.div1c2 {
-    display: flex;
-    justify-content: center;
+.div1c1 button {
+    text-align: center;
 }
 
-.div1c {
+.div1c2 button {
+    text-align: center;
+}
+
+/* .div1c {
  
     position: absolute;
     top: 300px;
+display: flex;
+justify-content: center;
+    
+    
+} */
 
-    left: 500px;
+
+@media only screen and (max-width:)
+{
+
 }
+
