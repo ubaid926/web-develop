@@ -23,6 +23,10 @@
     
 }
 
+.none {
+    display: none;
+}
+
 
 .butn3 {
     border-radius: 5px !important ;
@@ -137,10 +141,7 @@
         width: 250px;
     }
 
-    /* .div1c2 {
-        display: flex;
-        flex-wrap: wrap;
-    } */
+    
 .butn3 {
     display: block !important;
     width: 250px;
@@ -176,7 +177,23 @@
         display: none;
     }
 
-    .none1 {
-        src: url(images/g6.png);
+    .none {
+display: block;
+display: flex;
+justify-content: center;
     }
+
+    .div1b {
+        
+        flex-direction: column-reverse;
+    }
+
+    .div1c {
+        position: static;
+        
+    }
+    .img4 {
+        position: static;
+    }
+
 }
