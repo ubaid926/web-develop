@@ -1,6 +1,6 @@
 .navbar {
-     height: 100px;
-   
+    height: 100px;
+    
 }
 
 .list {
@@ -29,7 +29,7 @@
     border: 2px solid #212529 !important;
 
     width: 200px;
-    margin-left: 5px;
+    
     
 }
 
@@ -37,7 +37,7 @@
     border-radius: 55px !important ;
     border: 2px solid #dc3545 !important;
     width: 200px; 
-    margin-right: 5px;  
+      
 }
 
 .butn4 {
@@ -55,32 +55,72 @@
 }
 
 .div1c1 {
-    display: flex;
+    
     margin-bottom: 10px;
     
 }
 
-.div1c1 button {
-    text-align: center;
+
+ 
+
+.div1c2{
+    column-gap: 2px;
 }
 
-.div1c2 button {
-    text-align: center;
-}
-
-/* .div1c {
+.div1c {
  
     position: absolute;
-    top: 300px;
-display: flex;
-justify-content: center;
+    top: 350px;
+   right: 450px;
     
     
-} */
-
-
-@media only screen and (max-width:)
-{
-
 }
 
+
+
+
+@media only screen and (max-width:1200px)
+
+{
+    .div1c {
+        right: 400px;
+        top: 300px;
+    }
+
+    .butn4 {
+        width: 300px;
+    }
+    .butn3 {
+        width: 150px;
+    }
+    .butn2 {
+        width: 150px;
+    }
+
+    .butn3 img {
+        width: 15px;
+    }
+}
+
+@media only screen and (max-width:992px)
+
+{
+    .div1c {
+        right: 300px;
+        top: 300px;
+    }
+
+    .butn4 {
+        width: 200px;
+    }
+    .butn3 {
+        width: 100px;
+    }
+    .butn2 {
+        width: 100px;
+    }
+
+    .butn3 img {
+        width: 15px;
+    }
+}
