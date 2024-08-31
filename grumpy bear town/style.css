@@ -114,6 +114,7 @@
 
 .div3 {
     background-color: #2f559d;
+
 }
 
 .div3 h1 {
@@ -137,11 +138,27 @@
     color: #7bd1ff;
     list-style: none;
     font-size: 36px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+
 }
 
-.div3. {
+.div3m {
     display: flex;
     justify-content: space-around;
+}
+
+
+.div3>h1 {
+    text-align: center;
+    
+}
+
+.div3b h1 {
+    padding-left: 25px ;
 }
 
 @media only screen and (max-width:1200px)
