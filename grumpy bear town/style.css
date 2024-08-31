@@ -157,8 +157,13 @@
     
 }
 
-.div3b h1 {
-    padding-left: 25px ;
+.div3b ul {
+    padding:0px ;
+    
+}
+
+.div4 {
+    background-image: url(images/bg3-min.png);
 }
 
 @media only screen and (max-width:1200px)
