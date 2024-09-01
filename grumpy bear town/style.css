@@ -15,6 +15,7 @@
 
 .div1 {
     background-image: url(images/bg1-min.png);
+position: relative;
 }
 
 .img4 {
@@ -35,7 +36,6 @@
     border: 2px solid #212529 !important;
 
     width: 200px;
-    
     
 }
 
@@ -70,14 +70,15 @@
  
 
 .div1c2{
+    
     column-gap: 2px;
 }
 
 .div1c {
- 
     position: absolute;
     top: 350px;
-   right: 450px;
+   /* right: 450px; */
+
     
     
 }
@@ -169,10 +170,10 @@
 @media only screen and (max-width:1200px)
 
 {
-    .div1c {
+    /* .div1c {
         right: 400px;
         top: 300px;
-    }
+    } */
 
     .butn4 {
         width: 300px;
@@ -194,10 +195,10 @@
 {
     
 
-    .div1c {
+    /* .div1c {
         right: 300px;
         top: 400px;
-    }
+    } */
 
     .butn4 {
         width: 300px;
@@ -226,10 +227,10 @@
 @media only screen and (max-width:768px)
 
 {
-    .div1c {
+    /* .div1c {
         right: 250px;
         top: 350px;
-    }
+    } */
 
     .butn4 {
         width: 250px;
@@ -257,14 +258,14 @@
 @media only screen and (max-width:576px)
 
 {
-    .div1c {
+    /* .div1c {
         right: 150px;
         top: 300px;
     }
     
     .img4 {
         right: 30%;
-    }
+    } */
     .div2a img {
         object-fit: contain;
 
@@ -273,13 +274,15 @@
 
 @media only screen and (max-width:350px)
 {
-    .div1c {
+    /* .div1c {
         position: static;
     margin-right: 10px;
     margin-left: 10px;
-    }
+    } */
 
-    
+    /* .div1 {
+        position: relative;
+    } */
 
     
 
@@ -302,11 +305,11 @@ justify-content: center;
     }
 
     
-    .img4 {
+    /* .img4 {
         position: static;
         margin-left: auto;
         margin-right: auto;
         width: 250px !important;
-    }
+    } */
 
 }
