@@ -166,11 +166,17 @@ align-items: center;
 
 .div4smallbox {
     background-color:#6cb1ed ;
-    text-align: center;
         color: #fce956;
         font-size: 32px;
         font-family: fantasy;
         width: 80%;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+}
+
+.div4smallbox>h1 {
+    text-align: center;
 }
 
 .div4sectionone {
@@ -180,9 +186,58 @@ align-items: center;
 
 .div4allparts {
     width: 80%;
+
     display: flex;
-    justify-content: center;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
+
+.div4sectionone h1 {
+    
+font-size: 48px;
+font-weight: 500;
+}
+
+.div4sectionone p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+font-size: 22px;
+font-weight: 700;
+
+}
+
+
+
+.div4sectionone {
+    display: flex;
+
+    align-items: center;
+
+}
+
+.div4section1img {
+    margin-left: 15px;
+}
+
+.div4section1content {
+    margin-left: 15px;
+}
+
+.div4section2 {
+    color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.div4section2btn>h1 {
+    border: solid black 5px ;
+    padding: 25px 45px;
+}
+
+
+
 
 @media only screen and (max-width:1200px) {
     .div1c {
