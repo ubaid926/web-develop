@@ -159,20 +159,26 @@
 
 .div4main {
     background-image: url(images/bg3-min.png);
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
 }
 
 .div4smallbox {
-    background-color:#6cb1ed ;
-        color: #fce956;
-        font-size: 32px;
-        font-family: fantasy;
-        width: 80%;
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    background-color: #6cb1ed;
+    color: #fce956;
+    font-size: 32px;
+    font-family: fantasy;
+    width: 80%;
+    height: 90%;
+
 }
 
 .div4smallbox>h1 {
@@ -181,62 +187,152 @@ align-items: center;
 
 .div4sectionone {
     background-color: #fce956;
-    color :#212529;
+    color: #212529;
 }
 
 .div4allparts {
     width: 80%;
-
+    height: 100%;
     display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+
 }
 
 .div4sectionone h1 {
-    
-font-size: 48px;
-font-weight: 500;
+
+    font-size: 48px;
+    font-weight: 500;
 }
 
 .div4sectionone p {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-font-size: 22px;
-font-weight: 700;
+    font-size: 22px;
+    font-weight: 700;
 
 }
 
 
 
 .div4sectionone {
+    width: 100%;
     display: flex;
-
     align-items: center;
 
 }
 
-.div4section1img {
+/* .div4section1img {
     margin-left: 15px;
 }
 
 .div4section1content {
     margin-left: 15px;
-}
+} */
 
 .div4section2 {
     color: black;
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    width: 100%;
+    
 }
 
 .div4section2btn>h1 {
-    border: solid black 5px ;
+    border: solid black 5px;
     padding: 25px 45px;
 }
 
+.div4section2content {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
 
+.div4section3 {
+    color: black;
+    display: flex;
+    width: 100%;
+}
+
+.div4section3content {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.div4section3btn>h1 {
+    border: solid black 5px;
+    padding: 25px 45px;
+}
+
+.div4section4 {
+    color: black;
+    display: flex;
+    width: 100%;
+
+}
+
+.div4section4content {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.div4section4btn>h1 {
+    border: solid black 5px;
+    padding: 25px 45px;
+}
+
+.div4section5 {
+    color: black;
+    display: flex;
+    width: 100%;
+}
+
+.div4section5content {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.div4section5btn>h1 {
+    border: solid black 5px;
+    padding: 25px 45px;
+
+}
+
+.div4section6 {
+    color: black;
+    display: flex;
+    width: 100%;
+}
+
+.div4section6content {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.div4section6btn>h1 {
+    border: solid black 5px;
+    padding: 25px 35px;
+}
+
+.div5main {
+    background-image: url(images/bg2-min.png);
+}
+
+.div5main>h1 {
+    color: #fce956;
+}
 
 
 @media only screen and (max-width:1200px) {
