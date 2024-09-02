@@ -162,22 +162,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1200px;
+    /* height: 1200px; */
 }
 
 .div4smallbox {
     display: flex;
     flex-direction: column;
+
     align-items: center;
-
-
 
     background-color: #6cb1ed;
     color: #fce956;
     font-size: 32px;
     font-family: fantasy;
     width: 80%;
-    height: 90%;
+    /* height: 90%; */
 
 }
 
@@ -188,17 +187,16 @@
 .div4sectionone {
     background-color: #fce956;
     color: #212529;
+    
 }
 
 .div4allparts {
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-
-
+    justify-content:space-evenly;
 
 }
 
@@ -219,30 +217,29 @@
 
 
 .div4sectionone {
-    width: 100%;
+    
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    column-gap: 10px;
+    padding:10px;
 }
 
-/* .div4section1img {
-    margin-left: 15px;
-}
 
-.div4section1content {
-    margin-left: 15px;
-} */
 
 .div4section2 {
     color: black;
     display: flex;
-    width: 100%;
+    align-items: center;
     
+    column-gap: 10px;
+    margin-top: 50px;
 }
 
 .div4section2btn>h1 {
     border: solid black 5px;
     padding: 25px 45px;
+
 }
 
 .div4section2content {
@@ -255,9 +252,11 @@
 .div4section3 {
     color: black;
     display: flex;
+    align-items: center;
     width: 100%;
+    column-gap: 10px;
+    margin-top: 50px;
 }
-
 .div4section3content {
     font-weight: 700;
     font-size: 25px;
@@ -267,15 +266,23 @@
 
 .div4section3btn>h1 {
     border: solid black 5px;
-    padding: 25px 45px;
+    padding: 25px 43px;
 }
 
 .div4section4 {
     color: black;
     display: flex;
+    align-items: center;
     width: 100%;
+    column-gap: 10px;
+    margin-top: 50px;
 
 }
+
+/* .div4section4 h1 {
+    display: inline-block;
+
+} */
 
 .div4section4content {
     font-weight: 700;
@@ -286,13 +293,16 @@
 
 .div4section4btn>h1 {
     border: solid black 5px;
-    padding: 25px 45px;
+    padding: 25px 43px;
 }
 
 .div4section5 {
     color: black;
+    margin-top: 50px;
     display: flex;
+    align-items: center;
     width: 100%;
+    column-gap: 10px;
 }
 
 .div4section5content {
@@ -311,7 +321,10 @@
 .div4section6 {
     color: black;
     display: flex;
+    align-items: center;
+    column-gap: 10px;
     width: 100%;
+    margin-top: 50px;
 }
 
 .div4section6content {
@@ -419,6 +432,80 @@
         object-fit: none;
 
     }
+
+.div4allparts {
+    width: 90%;
+}
+
+.div4sectionone h1 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.div4sectionone p {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div4sectionone img {
+    width: 70px;
+}
+
+.div4sectionone {
+    padding: 30px;
+}
+
+.div4section2btn>h1 {
+    padding: 15px 20px;
+    font-weight: 400 !important;
+    font-size: 1rem;
+}
+
+.div4section2content{
+    font-size: 1rem;
+    
+}
+
+.div4section3btn>h1 {
+    padding: 15px 20px;
+    font-size: 1rem;
+}
+
+.div4section3content{
+    font-size: 1rem;
+    
+}
+
+.div4section4btn>h1 {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.div4section4content{
+    font-size: 1rem;
+    
+}
+
+.div4section5btn>h1 {
+    padding: 15px 20px;
+    font-size: 1rem;
+}
+
+.div4section5content{
+    font-size: 1rem;
+    
+}
+
+.div4section6btn>h1 {
+    padding: 15px 20px;
+    font-size: 1rem;
+}
+
+.div4section6content{
+    font-size: 1rem;
+    
+}
 
 }
 
