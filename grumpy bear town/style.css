@@ -457,8 +457,8 @@
 }
 
 .div4section2btn>h1 {
-    padding: 15px 20px;
-    font-weight: 400 !important;
+    padding: 15px 21px;
+    
     font-size: 1rem;
 }
 
@@ -478,7 +478,7 @@
 }
 
 .div4section4btn>h1 {
-    padding: 1rem 2rem;
+    padding: 15px 20px;
     font-size: 1rem;
 }
 
@@ -488,7 +488,7 @@
 }
 
 .div4section5btn>h1 {
-    padding: 15px 20px;
+    padding: 15px 21px;
     font-size: 1rem;
 }
 
@@ -498,7 +498,7 @@
 }
 
 .div4section6btn>h1 {
-    padding: 15px 20px;
+    padding: 15px 17px;
     font-size: 1rem;
 }
 
@@ -549,6 +549,10 @@
     .img4 {
         position: static;
 
+    }
+
+    .div4sectionone {
+        padding: 0px;
     }
 
 }
