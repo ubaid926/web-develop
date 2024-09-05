@@ -1,5 +1,8 @@
 .container {
     background-color: rgba(255, 255, 255, 1);
+    display: flex; 
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .navbar li {
@@ -109,18 +112,46 @@ justify-content: center;
 }
 
 .div2 {
-    
-    background-color: aqua;
-display: flex;
 
-}
-
-.div2leftsection {
+    background-color: rgba(251, 251, 251, 1);
     display: flex;
+    column-gap: 20px;
+    justify-content: space-around;
+    padding-left: 80px;
+    padding-right: 80px;
 }
+
 
 .div2images {
     display: flex;
+   column-gap: 10px;
+}
+
+.div2imagessection1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+
+.div2content>h1 {
+    color: rgba(189, 189, 189, 1);
+
+
+}
+
+.div2content p {
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.div2content button {
+
+    background-color: rgba(255, 255, 255, 1);
+    width: 221px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 1);
 }
 
 
@@ -154,7 +185,7 @@ display: flex;
 
     .div1rightsection button {
         height: 50px;
-        width:  170px ;
+        width: 170px;
     }
 }
 
@@ -259,6 +290,6 @@ display: flex;
         width: 100px;
         height: 15px;
         font-size: 10px;
-        
+
     }
 }
