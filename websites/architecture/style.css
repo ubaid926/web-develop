@@ -154,6 +154,10 @@ justify-content: center;
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
+/* .div3 {
+    background-color: aqua;
+} */
+
 .div3>h1 {
     color: rgba(189, 189, 189, 1);
 
@@ -163,21 +167,59 @@ justify-content: center;
     color: rgba(242, 242, 242, 1);
     font-weight: 900;
     font-size: 200px;
+    /* background-color: pink; */
 }
 
 .div3leftsectionnum {
     color: rgba(242, 242, 242, 1);
     font-weight: 900;
     font-size: 200px;
+    /* background-color: pink; */
+   
 }
 
+.div3allsections {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div3leftsection {
+    display: flex;
+    align-items: center;
+}
+
+.div3rightsection {
+    display: flex;
+    align-items: center;
+}
 
 .div3leftsectioncontent {
     color: rgba(51, 51, 51, 1);
+line-height: 36px;
+font-size: 22px;
+padding-top: 10px;
 }
 
 .div3rightsectioncontent {
     color: rgba(51, 51, 51, 1);
+    line-height: 36px;
+    font-size: 22px;
+ padding-top: 10px;   
+}
+
+.div4section1 {
+    display: flex;
+}
+
+.div4section2 {
+    display: flex;
+}
+
+.div4h1 {
+   color:  rgba(189, 189, 189, 1);
+   font-size:64px ;
+   font-weight: 300;
 }
 
 @media only screen and (max-width:1200px) {
@@ -216,9 +258,20 @@ justify-content: center;
         height: 50px ;
     }
 
+.div3rightsectioncontent {
+
+line-height: 30px;
+padding-top: 20px;
 
 }
 
+.div3leftsectioncontent {
+
+    line-height: 30px;
+    
+    }
+
+}
 
 
 @media only screen and (max-width:992px) {
@@ -258,6 +311,18 @@ justify-content: center;
     }
 
     
+.div3rightsectioncontent {
+
+    line-height: 24px;
+    font-size: 18px;
+    }
+    
+    .div3leftsectioncontent {
+    
+        line-height: 24px;
+        font-size: 18px;
+        padding-top: 15px;
+        }
 
     
 }
@@ -309,7 +374,18 @@ justify-content: center;
     }
 
     
+    .div3rightsectioncontent {
 
+        line-height: 36px;
+        font-size: 22px;
+        }
+        
+        .div3leftsectioncontent {
+        
+            line-height: 36px;
+            font-size: 22px;
+            
+            }
    
 
     /* .div1 {
@@ -334,6 +410,8 @@ justify-content: center;
         width: 100px ;
         height: 30px ;
     }
+
+    
 
     
 
@@ -370,4 +448,17 @@ justify-content: center;
         font-size: 10px;
 
     }
+
+    .div3rightsectioncontent {
+
+        line-height: 15px;
+        font-size: 15px;
+        }
+        
+        .div3leftsectioncontent {
+        
+            line-height: 20px;
+            font-size: 15px;
+            
+            }
 }
