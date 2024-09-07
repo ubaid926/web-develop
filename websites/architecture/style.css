@@ -279,6 +279,9 @@ padding-top: 10px;
 
 .footer {
   background-color:   rgba(44, 44, 44, 1);
+  
+  /* display: flex;
+  justify-content: space-evenly; */
 }
 
 /* .div5form {
@@ -289,6 +292,31 @@ padding-top: 10px;
     display: flex;
 
 } */
+
+.footermain{
+    background-color:   rgba(44, 44, 44, 1);
+}
+
+.footersection2 , .footersection3 , .footersection4 {
+    color: white;
+}
+
+.footersection2 ul {
+    list-style: none;
+}
+
+.footersection3 ul {
+    list-style: none;
+}
+
+.footersection4 ul {
+    list-style: none;
+}
+
+
+   
+
+
 
 
 
