@@ -1,0 +1,16 @@
+.navbar {
+   background-color: #141619;
+   color: white !important;
+   text-transform: uppercase;
+    
+}
+
+.navbar a{
+    color: white !important;
+   text-transform: uppercase;
+}
+
+.list {
+    display: flex !important;
+    justify-content: center !important;
+}
