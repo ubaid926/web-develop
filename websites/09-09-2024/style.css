@@ -6,6 +6,7 @@
 }
 
 .navbar a{
+    background-color: #141619;
     color: white !important;
    text-transform: uppercase;
 }
@@ -13,4 +14,17 @@
 .list {
     display: flex !important;
     justify-content: center !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.list li {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.navbar button {
+    border: #141619 solid 2px !important;
+    color: white;
+    text-transform: uppercase;
 }
