@@ -30,17 +30,24 @@
     text-transform: uppercase;
 }
 
+.navbar button:hover {
+    background-color: gray !important;
+
+}
+
 .dropdown-menu {
     background-color: #141619 !important;
 }
 
-.dropdown-menu.submit:hover {
+.dropdown-menu:hover {
     background-color: gray !important;
 }
 
-.dropdown-menu>li:hover {
+.dropdown-menu a:hover {
     background-color: gray !important;
 }
+
+
 
 @media only  screen and (max-width:992px)
  {
