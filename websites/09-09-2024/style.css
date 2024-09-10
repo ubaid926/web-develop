@@ -19,12 +19,35 @@
 }
 
 .list li {
-    display: flex !important;
-    justify-content: center !important;
+    /* display: flex !important;
+    justify-content: center !important; */
+    text-align: center;
 }
 
 .navbar button {
     border: #141619 solid 2px !important;
     color: white;
     text-transform: uppercase;
+}
+
+.dropdown-menu {
+    background-color: #141619 !important;
+}
+
+.dropdown-menu.submit:hover {
+    background-color: gray !important;
+}
+
+.dropdown-menu>li:hover {
+    background-color: gray !important;
+}
+
+@media only  screen and (max-width:992px)
+ {
+    .navbar form {
+        
+        display: flex;
+        justify-content: center;
+    }
+    
 }
