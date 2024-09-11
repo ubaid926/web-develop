@@ -54,11 +54,13 @@
 .div1 h1 {
     font-size: 75px;
     color: white;
+    text-align: center;
 }
 
 .div1 p {
     color: rgba(229, 229, 229, 1);
     font-size: 18px;
+    text-align: center;
 }
 
 .div1button {
@@ -75,16 +77,46 @@
     /* width: 584px;
     height: 400px; */
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+    row-gap: 50px;
+
 }
 
 
 
 .div1para {
-    width: 584px;
+    width: 534px;
 }
+
+
+.div2 {
+    color: white;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div2heading {
+    font-size: 56px;
+    text-align: center;
+}
+
+.div2para {
+    font-size: 20px;
+    text-align: center;
+    width: 612px;
+}
+
+.div1n2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 400px;
+}
+
+
 
 
 
@@ -98,4 +130,118 @@
         justify-content: center;
     }
 
+    .div1 h1 {
+        font-size: 60px;
+
+
+    }
+
+    .div1 p {
+        font-size: 15px;
+
+    }
+
+    .div1para {
+        width: 434px;
+    }
+
+    .div1button {
+        width: 160px;
+        height: 40px;
+    }
+
+    .div2heading {
+        font-size: 46px;
+    }
+
+    .div2para {
+        font-size: 17px;
+        width: 512px;
+    }
+
+    .div1n2{
+        row-gap: 350px;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+
+    .div1 h1 {
+        font-size: 50px;
+
+
+    }
+
+    .div1 p {
+        font-size: 13px;
+
+    }
+
+    .div1para {
+        width: 414px;
+    }
+
+    .div1button {
+        width: 160px;
+        height: 40px;
+    }
+
+    
+    .div2heading {
+        font-size: 36px;
+    }
+
+    .div2para {
+        font-size: 15px;
+        width: 412px;
+    }
+
+    .div1n2{
+        row-gap: 300px;
+    }
+}
+
+
+
+@media only screen and (max-width:576px) {
+
+    .div1 h1 {
+        font-size: 35px;
+
+
+    }
+
+    .div1 p {
+        font-size: 12px;
+
+    }
+
+    .div1para {
+        /* width: 334px; */
+        width: auto;
+    }
+
+    .div1button {
+        width: 120px;
+        height: 25px;
+    }
+
+    .div1 {
+        row-gap: 30px;
+    }
+
+    
+    .div2heading {
+        font-size: 25px;
+    }
+
+    .div2para {
+        font-size: 15px;
+        width: auto;
+    }
+
+    .div1n2{
+        row-gap: 300px;
+    }
 }
