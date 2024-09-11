@@ -116,10 +116,121 @@
     row-gap: 400px;
 }
 
+.tabledata1 {
+    width: 264px;
+    height: 180px;
+    color: white;
+    
+}
 
+.tabledata2 {
+    width: 264px;
+    height: 180px;
+    color: white;
+    border-style: solid;
+    border-bottom: 0;
+    border-right: 0;
+    border-top:0 ;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(90deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+ 
+}
 
+.tabledata3 {
+    width: 264px;
+    height: 180px;
+    color: white;
+    border-style: solid;
+    border-bottom: 0;
+    border-right: 0;
+    border-top:0 ;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(90deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+ 
+}
 
+.tabledata4 {
+    width: 264px;
+    height: 180px;
+    color: white;
+    border-style: solid;
+    border-bottom: 0;
+    border-right: 0;
+    border-top:0 ;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(90deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+ 
+}
 
+.tablesection2data1 {
+    width: 264px;
+    height: 180px;
+    color: white;
+    
+}
+
+.tablesection2data2 {
+    width: 264px;
+    height: 180px;
+    color: white;
+    border-style: solid;
+    border-bottom: 0;
+    border-right: 0;
+    border-top:0 ;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(50deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+ 
+}
+
+.tablesection2data3 {
+    width: 264px;
+    height: 180px;
+    color: white;
+    border-style: solid;
+    border-bottom: 0;
+    border-right: 0;
+    border-top:0 ;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(50deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+ 
+}
+
+.tablesection2data4 {
+    width: 264px;
+    height: 180px;
+    color: white;
+    border-style: solid;
+    border-bottom: 0;
+    border-right: 0;
+    border-top:0 ;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(50deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+ 
+    
+}
+
+.tablesection1 {
+
+    display: flex;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-top:0 ;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(20deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+ 
+}
+
+.tablesection2 {
+    display: flex;
+}
 
 
 
