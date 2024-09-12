@@ -461,8 +461,8 @@
     .tablesection2data1,
     .tablesection2data2,
     .tablesection2data3,
-    .tablesection2data4,{
-        padding-top: 0px;
+    .tablesection2data4{
+        padding-top: 20px;
     }
 
     .tabledata1,
@@ -471,6 +471,8 @@
     .tabledata4 {
         padding-top: 0px;
     }
+
+
 
 
 }
@@ -512,14 +514,89 @@
         row-gap: 300px;
     }
 
-    .tablesection1{
-        flex-wrap: wrap;
-        
-    }
 
     .tablesection2 {
         flex-wrap: wrap;
     }
+
+    .tablesection1 {
+
+        flex-wrap: wrap;
+      border-bottom: 0;
+        /* border-style: none;
+        
+        border-image-slice: 1;
+        border-width: 2px;
+        border-image-source: linear-gradient(20deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+     */
+    }
+
+    .tablesection2data1,
+    .tablesection2data2,
+    .tablesection2data3,
+    .tablesection2data4,
+    .tabledata1,
+    .tabledata2,
+    .tabledata3,
+    .tabledata4 {
+        width: 200px;
+        height: 120px;
+    }
+
+    .tablesection2data3,
+    .tabledata3 {
+        border-left: 0;
+    }
+
+    .tablesection2data1,
+    .tabledata1,
+    .tabledata3
+     {
+       border-style: solid;
+        border-image-slice: 1;
+        border-width: 2px;
+        border-image-source: linear-gradient(250deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+       border-top: 0;
+       border-left: 0;
+       border-right: 0 ;
+    }
+
+    .tablesection2data2,
+    .tabledata2,
+    .tabledata4 {
+        border-style: solid;
+        border-image-slice: 1;
+        border-width: 2px;
+        border-image-source: linear-gradient(120deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+       border-top: 0;
+       border-right: 0 ;
+    
+    }
+
+    .tablesection2data1,
+    .tablesection2data2,
+    .tablesection2data3,
+    .tablesection2data4 {
+        padding-top: 30px;
+    }
+
+    .tabledata1,
+    .tabledata2,
+    .tabledata3,
+    .tabledata4 {
+        padding-top: 20px;
+    }
+
+    .tabledata1 p,
+    .tabledata2 p,
+    .tabledata3 p,
+    .tabledata4 p {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
 }
 
 
@@ -564,4 +641,64 @@
     .div1n2 {
         row-gap: 300px;
     }
+
+    
+}
+
+@media only screen and (max-width:450px) {
+
+.tablesection2data1,
+.tablesection2data2,
+.tablesection2data3,
+.tablesection2data4,
+.tabledata1,
+.tabledata2,
+.tabledata3,
+.tabledata4 {
+    width: 130px;
+    height: 80px;
+    
+}
+
+.tablesection2data1,
+.tablesection2data2,
+.tablesection2data3,
+.tablesection2data4 {
+    padding-top: 15px;
+}
+
+.tabledata2,
+.tabledata4 {
+    padding-top: 5px;
+}
+
+.tabledata1,
+.tabledata3 {
+    padding-top: 10px;
+}
+
+
+
+.tablesection2data1 h1,
+.tablesection2data2 h1,
+.tablesection2data3 h1,
+.tablesection2data4 h1,
+.tabledata1 h1,
+.tabledata2 h1,
+.tabledata3 h1,
+.tabledata4 h1 {
+    font-size: 15px;
+}
+
+.tablesection2data1 p,
+.tablesection2data2 p,
+.tablesection2data3 p,
+.tablesection2data4 p,
+.tabledata1 p,
+.tabledata2 p,
+.tabledata3 p,
+.tabledata4 p {
+    font-size: 10px;
+
+}
 }
