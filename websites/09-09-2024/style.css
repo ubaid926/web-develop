@@ -324,7 +324,71 @@
     flex-direction: column;
     align-items: center;
 }
+ 
+.tabledata1:hover {
+    background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+    
+}
 
+.tabledata2:hover {
+    background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+    
+}
+
+.tabledata3:hover {
+    background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+    
+}
+
+.tabledata4:hover {
+    background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+    
+}
+
+.tablesection2data1:hover {
+    background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+    
+}
+
+.tablesection2data2:hover {
+    background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+    
+}
+
+.tablesection2data3:hover {
+    background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+    
+}
+
+.tablesection2data4:hover {
+    background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+    
+}
+
+.div3 {
+    color: white;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    margin-top: 150px;
+}
+
+.div3heading {
+    font-size: 56px;
+    text-align: center;
+}
+
+.div3para {
+    font-size: 20px;
+    text-align: center;
+    width: 612px;
+}
+
+.backgrounddiv {
+    background-image: url(src:images/background-blob-service-1.png.png);
+}
 
 @media only screen and (max-width:1200px) {
 
