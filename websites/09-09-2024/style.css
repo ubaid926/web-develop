@@ -324,45 +324,45 @@
     flex-direction: column;
     align-items: center;
 }
- 
+
 .tabledata1:hover {
     background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
-    
+
 }
 
 .tabledata2:hover {
     background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
-    
+
 }
 
 .tabledata3:hover {
     background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
-    
+
 }
 
 .tabledata4:hover {
     background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
-    
+
 }
 
 .tablesection2data1:hover {
     background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
-    
+
 }
 
 .tablesection2data2:hover {
     background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
-    
+
 }
 
 .tablesection2data3:hover {
     background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
-    
+
 }
 
 .tablesection2data4:hover {
     background-image: linear-gradient(170deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
-    
+
 }
 
 .div3 {
@@ -387,7 +387,10 @@
 }
 
 .backgrounddiv {
-    background-image: url(src:images/background-blob-service-1.png.png);
+    background-image: url(images/background-blob-service-1.png.png);
+   background-size: cover;
+   /* clip-path: polygon(0 0, 75% 25%, 100% 100%, 0 100%); */
+   transform: rotate();
 }
 
 @media only screen and (max-width:1200px) {
@@ -525,7 +528,7 @@
     .tablesection2data1,
     .tablesection2data2,
     .tablesection2data3,
-    .tablesection2data4{
+    .tablesection2data4 {
         padding-top: 20px;
     }
 
@@ -586,7 +589,7 @@
     .tablesection1 {
 
         flex-wrap: wrap;
-      border-bottom: 0;
+        border-bottom: 0;
         /* border-style: none;
         
         border-image-slice: 1;
@@ -614,15 +617,14 @@
 
     .tablesection2data1,
     .tabledata1,
-    .tabledata3
-     {
-       border-style: solid;
+    .tabledata3 {
+        border-style: solid;
         border-image-slice: 1;
         border-width: 2px;
         border-image-source: linear-gradient(250deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
-       border-top: 0;
-       border-left: 0;
-       border-right: 0 ;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
     }
 
     .tablesection2data2,
@@ -632,9 +634,9 @@
         border-image-slice: 1;
         border-width: 2px;
         border-image-source: linear-gradient(120deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
-       border-top: 0;
-       border-right: 0 ;
-    
+        border-top: 0;
+        border-right: 0;
+
     }
 
     .tablesection2data1,
@@ -706,63 +708,63 @@
         row-gap: 300px;
     }
 
-    
+
 }
 
 @media only screen and (max-width:450px) {
 
-.tablesection2data1,
-.tablesection2data2,
-.tablesection2data3,
-.tablesection2data4,
-.tabledata1,
-.tabledata2,
-.tabledata3,
-.tabledata4 {
-    width: 130px;
-    height: 80px;
-    
-}
+    .tablesection2data1,
+    .tablesection2data2,
+    .tablesection2data3,
+    .tablesection2data4,
+    .tabledata1,
+    .tabledata2,
+    .tabledata3,
+    .tabledata4 {
+        width: 130px;
+        height: 80px;
 
-.tablesection2data1,
-.tablesection2data2,
-.tablesection2data3,
-.tablesection2data4 {
-    padding-top: 15px;
-}
+    }
 
-.tabledata2,
-.tabledata4 {
-    padding-top: 5px;
-}
+    .tablesection2data1,
+    .tablesection2data2,
+    .tablesection2data3,
+    .tablesection2data4 {
+        padding-top: 15px;
+    }
 
-.tabledata1,
-.tabledata3 {
-    padding-top: 10px;
-}
+    .tabledata2,
+    .tabledata4 {
+        padding-top: 5px;
+    }
+
+    .tabledata1,
+    .tabledata3 {
+        padding-top: 10px;
+    }
 
 
 
-.tablesection2data1 h1,
-.tablesection2data2 h1,
-.tablesection2data3 h1,
-.tablesection2data4 h1,
-.tabledata1 h1,
-.tabledata2 h1,
-.tabledata3 h1,
-.tabledata4 h1 {
-    font-size: 15px;
-}
+    .tablesection2data1 h1,
+    .tablesection2data2 h1,
+    .tablesection2data3 h1,
+    .tablesection2data4 h1,
+    .tabledata1 h1,
+    .tabledata2 h1,
+    .tabledata3 h1,
+    .tabledata4 h1 {
+        font-size: 15px;
+    }
 
-.tablesection2data1 p,
-.tablesection2data2 p,
-.tablesection2data3 p,
-.tablesection2data4 p,
-.tabledata1 p,
-.tabledata2 p,
-.tabledata3 p,
-.tabledata4 p {
-    font-size: 10px;
+    .tablesection2data1 p,
+    .tablesection2data2 p,
+    .tablesection2data3 p,
+    .tablesection2data4 p,
+    .tabledata1 p,
+    .tabledata2 p,
+    .tabledata3 p,
+    .tabledata4 p {
+        font-size: 10px;
 
-}
+    }
 }
