@@ -323,6 +323,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 .tabledata1:hover {
@@ -386,20 +387,51 @@
     width: 612px;
 }
 
-.backgrounddiv {
-   /* height: auto;
-   width: 100%; */
+/* .backgrounddiv {
+
     background: url(images/background-blob-service-1.png.png);
    background-size: cover;
-   /* clip-path: polygon(0 0, 75% 25%, 100% 100%, 0 100%); */
-   /* transform: rotate(30deg); */
-}
+   
+} */
 
-.backgrounddiv::after {
-    /* background: url(images/background-blob-service-1.png.png); */
+/* .backgrounddiv::after {
+    background: url(images/background-blob-service-1.png.png);
     transform: rotate(160deg);
     
+} */
+
+.div4 {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+
 }
+
+.div4 h1 {
+    font-size: 36px;
+}
+
+.div4boldpara {
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.div4underlinepara {
+    text-decoration: underline;
+    margin-top: 0px;
+}
+
+.div4underlinepara i {
+    font-size: 10px;
+}
+
+.div4 img {
+    object-fit: contain;
+}
+
+
+
 
 @media only screen and (max-width:1200px) {
 
@@ -486,6 +518,17 @@
         width: 512px;
     }
 
+    .div3heading {
+        font-size: 46px;
+
+    }
+
+    .div3para {
+        font-size: 17px;
+
+        width: 512px;
+    }
+
     .div1n2 {
         row-gap: 350px;
     }
@@ -547,7 +590,9 @@
         padding-top: 0px;
     }
 
-
+    .div4 h1 {
+        font-size: 30px;
+    }
 
 
 }
@@ -581,6 +626,15 @@
     }
 
     .div2para {
+        font-size: 15px;
+        width: 412px;
+    }
+
+    .div3heading {
+        font-size: 36px;
+    }
+
+    .div3para {
         font-size: 15px;
         width: 412px;
     }
@@ -670,6 +724,26 @@
         padding-right: 20px;
     }
 
+   
+    .div4mainpara {
+        font-size: 15px;
+    }
+
+    .div4boldpara {
+        font-size: 15px;
+    }
+
+    .div4underlinepara {
+        font-size: 15px;
+    }
+
+    /* .div4 img {
+        object-fit: contain;
+    } */
+
+    .div4 h1 {
+        font-size: 25px;
+    }
 
 }
 
@@ -712,10 +786,31 @@
         width: auto;
     }
 
+    .div3heading {
+        font-size: 25px;
+    }
+
+    .div3para {
+        font-size: 15px;
+        width: auto;
+    }
+
+
     .div1n2 {
         row-gap: 300px;
     }
+/* 
+    .div4mainpara {
+        font-size: 12px;
+    } */
 
+    .div4 {
+        flex-direction: column-reverse;
+        
+        justify-content:center ;
+    
+        
+    }
 
 }
 
