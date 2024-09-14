@@ -403,7 +403,8 @@
     
 } */
 
-.div4 , .div5 {
+.div4,
+.div5 {
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -415,21 +416,25 @@
     align-items: center;
 }
 
-.div4 h1 , .div5 h1 {
+.div4 h1,
+.div5 h1 {
     font-size: 36px;
 }
 
-.div4boldpara , .div5boldpara {
+.div4boldpara,
+.div5boldpara {
     font-weight: bold;
     margin-top: 0px;
 }
 
-.div4underlinepara , .div5underlinepara {
+.div4underlinepara,
+.div5underlinepara {
     text-decoration: underline;
     margin-top: 0px;
 }
 
-.div4underlinepara i , .div5underlinepara i {
+.div4underlinepara i,
+.div5underlinepara i {
     font-size: 10px;
 }
 
@@ -438,13 +443,55 @@
 }
 
 /* .div5 img {
-    object-fit: cover;
+ background-image: url(images/div\ \(3\).png);
+ background-size: cover;
+}  */
+
+
+
+.backgrounddiv {
+    background-image: url(images/div\ \(3\).png);
+    background-image: url(images/background-blob-service-1.png.png);
+    background-image: url(images/middle-left-2.png.png);
+    background-size: cover;
+    /* background-position: left; */
+    /* background-repeat:round; */
+}
+
+/* .div6 .div6image1 {
+    width: 72px;
+    height: 82px;
 } */
 
+.div6 {
+    width: 50%;
+    display: flex;
+    padding: 0;
+    margin-left: 50px;
+    background-image: url(images/middle-left-2.png.png);
+    /* background-size: auto; */
+    background-position:right;
+    /* background-attachment:fixed; */
+    /* background-origin: padding-box; */
+}
 
 
 
-@media only screen and (max-width:1200px) {
+.div6image1 {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 0;
+}
+
+.div6image3 {
+    /* margin-top: 40px; */
+    padding-top: 100px;
+    /* padding-right: 40px; */
+}
+
+
+
+ @media only screen and (max-width:1200px) {
 
     .tablesection2data1 h1,
     .tablesection2data2 h1,
@@ -601,7 +648,8 @@
         padding-top: 0px;
     }
 
-    .div4 h1 ,.div5 h1 {
+    .div4 h1,
+    .div5 h1 {
         font-size: 30px;
     }
 
@@ -735,16 +783,19 @@
         padding-right: 20px;
     }
 
-   
-    .div4mainpara , .div5mainpara{
+
+    .div4mainpara,
+    .div5mainpara {
         font-size: 15px;
     }
 
-    .div4boldpara , .div5boldpara {
+    .div4boldpara,
+    .div5boldpara {
         font-size: 15px;
     }
 
-    .div4underlinepara , .div5underlinepara {
+    .div4underlinepara,
+    .div5underlinepara {
         font-size: 15px;
     }
 
@@ -752,9 +803,14 @@
         object-fit: contain;
     } */
 
-    .div4 h1 , .div5 h1 {
+    .div4 h1,
+    .div5 h1 {
         font-size: 25px;
     }
+
+    .backgrounddiv {
+        background-position: center;
+       }
 
 }
 
@@ -810,31 +866,47 @@
     .div1n2 {
         row-gap: 300px;
     }
-/* 
+
+    /* 
     .div4mainpara {
         font-size: 12px;
     } */
 
     .div4 {
         flex-direction: column-reverse;
-        
-        justify-content:center ;
+
+        justify-content: center;
         row-gap: 20px;
-    
-        
+
+
     }
 
     .div4 img {
         width: 450px;
     }
 
-    
 
-    .div4leftsection p, .div4leftsection h1 , .div5leftsection p , .div5leftsection h1 {
+
+    .div4leftsection p,
+    .div4leftsection h1,
+    .div5leftsection p,
+    .div5leftsection h1 {
         text-align: center;
     }
-    
-    
+
+    .backgrounddiv {
+     background-position: center;
+    }
+
+    /* .div4 {
+        background-image: url(images/div\ \(3\).png);
+    }
+
+    .div5 {
+        background-image: url(images/div\ \(3\).png);
+    } */
+
+
 
 }
 
@@ -897,10 +969,11 @@
 
     .div4 img {
         width: 250px;
-    
+
     }
 
-    .div4leftsection p, .div4leftsection h1  {
+    .div4leftsection p,
+    .div4leftsection h1 {
         text-align: center;
     }
 
