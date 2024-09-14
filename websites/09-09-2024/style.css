@@ -464,18 +464,22 @@
 } */
 
 .div6 {
-    width: 50%;
+    /* width: 50%; */
     display: flex;
-    padding: 0;
+    /* padding: 0; */
     margin-left: 50px;
-    background-image: url(images/middle-left-2.png.png);
+    
     /* background-size: auto; */
-    background-position:right;
+    /* background-position:right; */
     /* background-attachment:fixed; */
     /* background-origin: padding-box; */
 }
 
-
+/* .div6m {
+    background-image: url(images/middle-left-2.png.png);
+    background-position: left top;
+    
+} */
 
 .div6image1 {
     padding: 20px;
