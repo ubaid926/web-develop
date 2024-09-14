@@ -49,6 +49,9 @@
 
 .main {
     background-color: rgba(20, 22, 25, 1);
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
 }
 
 .div1 h1 {
@@ -373,7 +376,7 @@
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
-    margin-top: 150px;
+    /* margin-top: 150px; */
 }
 
 .div3heading {
@@ -400,35 +403,43 @@
     
 } */
 
-.div4 {
+.div4 , .div5 {
     color: white;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 150px;
+    /* margin-top: 150px; */
 
 }
 
-.div4 h1 {
+.div5 {
+    align-items: center;
+}
+
+.div4 h1 , .div5 h1 {
     font-size: 36px;
 }
 
-.div4boldpara {
+.div4boldpara , .div5boldpara {
     font-weight: bold;
     margin-top: 0px;
 }
 
-.div4underlinepara {
+.div4underlinepara , .div5underlinepara {
     text-decoration: underline;
     margin-top: 0px;
 }
 
-.div4underlinepara i {
+.div4underlinepara i , .div5underlinepara i {
     font-size: 10px;
 }
 
 .div4 img {
     object-fit: contain;
 }
+
+/* .div5 img {
+    object-fit: cover;
+} */
 
 
 
@@ -590,7 +601,7 @@
         padding-top: 0px;
     }
 
-    .div4 h1 {
+    .div4 h1 ,.div5 h1 {
         font-size: 30px;
     }
 
@@ -725,15 +736,15 @@
     }
 
    
-    .div4mainpara {
+    .div4mainpara , .div5mainpara{
         font-size: 15px;
     }
 
-    .div4boldpara {
+    .div4boldpara , .div5boldpara {
         font-size: 15px;
     }
 
-    .div4underlinepara {
+    .div4underlinepara , .div5underlinepara {
         font-size: 15px;
     }
 
@@ -741,7 +752,7 @@
         object-fit: contain;
     } */
 
-    .div4 h1 {
+    .div4 h1 , .div5 h1 {
         font-size: 25px;
     }
 
@@ -808,9 +819,22 @@
         flex-direction: column-reverse;
         
         justify-content:center ;
+        row-gap: 20px;
     
         
     }
+
+    .div4 img {
+        width: 450px;
+    }
+
+    
+
+    .div4leftsection p, .div4leftsection h1 , .div5leftsection p , .div5leftsection h1 {
+        text-align: center;
+    }
+    
+    
 
 }
 
@@ -870,4 +894,15 @@
         font-size: 10px;
 
     }
+
+    .div4 img {
+        width: 250px;
+    
+    }
+
+    .div4leftsection p, .div4leftsection h1  {
+        text-align: center;
+    }
+
+
 }
