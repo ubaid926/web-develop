@@ -391,27 +391,28 @@
 }
 
 /* .backgrounddiv {
+    
+background: url(images/background-blob-service-1.png.png);
+background-size: cover;
 
-    background: url(images/background-blob-service-1.png.png);
-   background-size: cover;
-   
 } */
 
 /* .backgrounddiv::after {
     background: url(images/background-blob-service-1.png.png);
     transform: rotate(160deg);
     
-} */
-
-.div4,
-.div5 {
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    /* margin-top: 150px; */
-
-}
-
+    } */
+    
+    .div4,
+    .div5 {
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        /* margin-top: 150px; */
+        
+    }
+    
+    
 .div5 {
     align-items: center;
 }
@@ -442,26 +443,11 @@
     object-fit: contain;
 }
 
-/* .div5 img {
- background-image: url(images/div\ \(3\).png);
- background-size: cover;
-}  */
 
 
 
-.backgrounddiv {
-    background-image: url(images/div\ \(3\).png);
-    background-image: url(images/background-blob-service-1.png.png);
-    background-image: url(images/middle-left-2.png.png);
-    background-size: cover;
-    /* background-position: left; */
-    /* background-repeat:round; */
-}
 
-/* .div6 .div6image1 {
-    width: 72px;
-    height: 82px;
-} */
+
 
 .div6 {
     /* width: 50%; */
@@ -469,17 +455,46 @@
     /* padding: 0; */
     margin-left: 50px;
     
-    /* background-size: auto; */
-    /* background-position:right; */
-    /* background-attachment:fixed; */
-    /* background-origin: padding-box; */
+  }
+
+
+.backgrounddiv1 {
+    background-image: url(images/background-blob-service-1.png.png), url(images/middle-left-2.png.png);
+    background-position: top left ;
+    background-size: 70%;
+    /* background-origin:  content-box; */
+    /* background-image: url(images/middle-left-2.png.png); */
+    /* background-clip: padding-box, content-box , border-box; */
+    background-repeat:no-repeat;
 }
 
-/* .div6m {
-    background-image: url(images/middle-left-2.png.png);
-    background-position: left top;
+.backgrounddiv2 {
+    background-image: url(images/background-blob-service-1.png.png), url(images/middle-left-2.png.png);
+    background-position: left;
+    background-size: 100%;
+    /* background-origin:  content-box; */
+    /* background-image: url(images/middle-left-2.png.png); */
+    /* background-clip: padding-box, content-box , border-box; */
+    background-repeat:no-repeat;
+}
+
+.backgrounddiv3 {
+    background-image: url(images/background-blob-service-1.png.png), url(images/middle-left-2.png.png);
+    background-position: bottom left;
+    background-size:50%;
+    /* background-origin:  content-box; */
+    /* background-image: url(images/middle-left-2.png.png); */
+    /* background-clip: padding-box, content-box , border-box; */
+    background-repeat:no-repeat;
     
-} */
+}
+
+
+.div6images {
+    
+    padding-left: 120px;
+    
+}
 
 .div6image1 {
     padding: 20px;
@@ -489,13 +504,14 @@
 
 .div6image3 {
     /* margin-top: 40px; */
-    padding-top: 100px;
+    padding-top: 150px;
+    /* padding-left: 50px; */
     /* padding-right: 40px; */
 }
 
 
 
- @media only screen and (max-width:1200px) {
+@media only screen and (max-width:1200px) {
 
     .tablesection2data1 h1,
     .tablesection2data2 h1,
@@ -814,7 +830,7 @@
 
     .backgrounddiv {
         background-position: center;
-       }
+    }
 
 }
 
@@ -899,7 +915,7 @@
     }
 
     .backgrounddiv {
-     background-position: center;
+        background-position: center;
     }
 
     /* .div4 {
