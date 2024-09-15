@@ -402,23 +402,23 @@ background-size: cover;
     transform: rotate(160deg);
     
     } */
-    
-    .div4,
-    .div5 {
-        color: white;
-        display: flex;
-        justify-content: space-evenly;
-        /* margin-top: 150px; */
-        
-    }
-    
-    
+
+.div4,
+.div5 {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: 150px; */
+
+}
+
+
 .div5 {
     align-items: center;
 }
 
-.div4 h1,
-.div5 h1 {
+.div4headpara,
+.div5headpara {
     font-size: 36px;
 }
 
@@ -444,56 +444,41 @@ background-size: cover;
 }
 
 
+.div6m {
+    background-image: url(images/middle-left-2.png.png);
+    background-size: 40%;
+    /* background-origin: border-box; */
+    background-repeat: no-repeat;
+    background-position: top left;
 
+}
 
-
-
-
-.div6 {
-    /* width: 50%; */
-    display: flex;
-    /* padding: 0; */
-    margin-left: 50px;
-    
-  }
-
+.div5images {
+    padding-left: 50px;
+}
 
 .backgrounddiv1 {
-    background-image: url(images/background-blob-service-1.png.png), url(images/middle-left-2.png.png);
-    background-position: top left ;
-    background-size: 70%;
-    /* background-origin:  content-box; */
-    /* background-image: url(images/middle-left-2.png.png); */
-    /* background-clip: padding-box, content-box , border-box; */
-    background-repeat:no-repeat;
+    background-image: url(images/div\ \(3\).png);
+    background-position: top left;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .backgrounddiv2 {
-    background-image: url(images/background-blob-service-1.png.png), url(images/middle-left-2.png.png);
+    background-image: url(images/div\ \(3\).png);
     background-position: left;
     background-size: 100%;
-    /* background-origin:  content-box; */
-    /* background-image: url(images/middle-left-2.png.png); */
-    /* background-clip: padding-box, content-box , border-box; */
-    background-repeat:no-repeat;
+
+    background-repeat: no-repeat;
 }
 
 .backgrounddiv3 {
-    background-image: url(images/background-blob-service-1.png.png), url(images/middle-left-2.png.png);
+    background-image: url(images/background-blob-service-1.png.png);
     background-position: bottom left;
-    background-size:50%;
-    /* background-origin:  content-box; */
-    /* background-image: url(images/middle-left-2.png.png); */
-    /* background-clip: padding-box, content-box , border-box; */
-    background-repeat:no-repeat;
-    
-}
+    background-size: 100%;
 
+    background-repeat: no-repeat;
 
-.div6images {
-    
-    padding-left: 120px;
-    
 }
 
 .div6image1 {
@@ -503,10 +488,70 @@ background-size: cover;
 }
 
 .div6image3 {
-    /* margin-top: 40px; */
+
     padding-top: 150px;
-    /* padding-left: 50px; */
-    /* padding-right: 40px; */
+
+}
+
+.div7images img {
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+}
+
+.div7image1,
+.div7image2,
+.div7image3,
+.div7image4 {
+    border: 2px solid rgba(41, 52, 68, 1);
+    background-color: rgba(22, 24, 28, 1);
+
+    width: 192px;
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.div7image1 h1,
+.div7image2 h1,
+.div7image3 h1,
+.div7image4 h1 {
+    font-size: 11px;
+    color: rgba(153, 153, 153, 1);
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.div7 {
+    display: flex;
+    justify-content: space-evenly !important;
+
+}
+
+.div7images {
+    display: flex;
+    column-gap: 20px;
+}
+
+.div7heading h1 {
+    color: white;
+    font-size: 60px;
+
+}
+
+/* .div7heading {
+    width: 30%;
+} */
+
+
+.div7imagessection2,
+.div7image2,
+.div7image4 {
+    margin-top: 20px;
 }
 
 
@@ -668,8 +713,8 @@ background-size: cover;
         padding-top: 0px;
     }
 
-    .div4 h1,
-    .div5 h1 {
+    .div4headpara,
+    .div5headpara {
         font-size: 30px;
     }
 
@@ -823,8 +868,8 @@ background-size: cover;
         object-fit: contain;
     } */
 
-    .div4 h1,
-    .div5 h1 {
+    .div4headpara,
+    .div5headpara {
         font-size: 25px;
     }
 
@@ -992,8 +1037,7 @@ background-size: cover;
 
     }
 
-    .div4leftsection p,
-    .div4leftsection h1 {
+    .div4leftsection p {
         text-align: center;
     }
 
