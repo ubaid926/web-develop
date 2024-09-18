@@ -566,14 +566,11 @@
 }
 
 .div8icons i {
-   font-size: 50px;
-   background: linear-gradient(220deg, rgba(102, 93, 205, 1),rgba(95, 164, 230, 1),rgba(210, 171, 103, 1));
-   color: transparent;
-   /* text-align: center; */
-   /* margin-right: auto;
-   margin-left: auto; */
-   -webkit-background-clip: text;
-   margin: 10px;
+    font-size: 50px;
+    background: linear-gradient(220deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+    color: transparent;
+    -webkit-background-clip: text;
+    margin: 10px;
 }
 
 .div8icons {
@@ -582,7 +579,7 @@
 
 }
 
-.div8 h1{
+.div8 h1 {
     color: white;
     font-size: 57px;
     text-align: center;
@@ -597,10 +594,83 @@
     font-size: 20px;
 }
 
+.div8para3 {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.div8para4 {
+    color: white;
+    font-size: 14px;
+
+}
+
+.div8para4>span {
+    font-weight: bold;
+    border-left: 2px solid rgba(102, 102, 102, 1);
+
+}
 
 .div8para2 {
     font-size: 26px;
 }
+
+.div9 h1 , .div9 p {
+    color: white;
+} 
+
+.div9headings h1 {
+    font-size: 53px;
+}
+
+.div9para1 ,.div9para2 {
+    font-size: 19px;
+}
+
+.div9para3 {
+    font-size: 18px;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(20deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+
+}
+
+.div9para3 i {
+    font-size: 15px;
+    background: linear-gradient(220deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.div9 {
+    display: flex;
+    
+    justify-content: space-evenly;
+    /* background-image: url(images/div\ \(10\).png);
+    background-position:left;
+    background-size:contain;
+
+    background-repeat: no-repeat; */
+}
+
+.div9headings {
+    width: 40%;
+    background-image: url(images/div\ \(10\).png);
+    background-position:right;
+    background-size:contain;
+
+    background-repeat: no-repeat;
+}
+
+.div9paras {
+    width: 40%;
+}
+
 @media only screen and (max-width:1200px) {
 
     .tablesection2data1 h1,
@@ -805,7 +875,7 @@
     .div6image3 {
         object-fit: cover;
         width: 60px;
-        
+
     }
 
     .div7images img {
@@ -877,6 +947,45 @@
         margin-top: 10px;
     }
 
+    .div8icons i {
+        font-size: 45px;
+        margin: 10px;
+    }
+
+    .div8icons {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .div8 h1 {
+
+        font-size: 50px;
+
+    }
+
+
+    .div8para1 {
+        font-size: 18px;
+    }
+
+    .div8para3 {
+
+        font-size: 16px;
+    }
+
+    .div8para4 {
+
+        font-size: 12px;
+
+    }
+
+
+
+    .div8para2 {
+        font-size: 24px;
+    }
+
 }
 
 
@@ -934,7 +1043,7 @@
 
         flex-wrap: wrap;
         border-bottom: 0;
-     
+
     }
 
     .tablesection2data1,
@@ -1017,7 +1126,7 @@
         font-size: 15px;
     }
 
-    
+
 
     .div4headpara,
     .div5headpara {
@@ -1026,7 +1135,7 @@
 
     .backgrounddiv {
         background-position: center;
-    
+
     }
 
     .div6image1,
@@ -1034,7 +1143,7 @@
     .div6image3 {
         object-fit: cover;
         width: 50px;
-        
+
     }
 
     .div7images img {
@@ -1106,6 +1215,41 @@
         margin-top: 10px;
     }
 
+
+    .div8icons i {
+        font-size: 40px;
+        margin: 10px;
+    }
+
+
+
+    .div8 h1 {
+
+        font-size: 45px;
+
+    }
+
+
+    .div8para1 {
+        font-size: 16px;
+    }
+
+    .div8para3 {
+
+        font-size: 14px;
+    }
+
+    .div8para4 {
+
+        font-size: 12px;
+
+    }
+
+
+
+    .div8para2 {
+        font-size: 22px;
+    }
 
 }
 
@@ -1193,7 +1337,40 @@
         background-position: center;
     }
 
+    .div8icons i {
+        font-size: 35px;
+        margin: 10px;
+    }
 
+
+
+    .div8 h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .div8para1 {
+        font-size: 16px;
+    }
+
+    .div8para3 {
+
+        font-size: 14px;
+    }
+
+    .div8para4 {
+
+        font-size: 12px;
+
+    }
+
+
+
+    .div8para2 {
+        font-size: 20px;
+    }
 
 
 }
@@ -1274,7 +1451,7 @@
     .div6image3 {
         object-fit: cover;
         width: 50px;
-        
+
     }
 
     .div6m {
@@ -1324,9 +1501,9 @@
     }
 
 
-    #div6image1 ,
+    #div6image1,
 
-    #div6image3 ,
+    #div6image3,
 
     #div6image2 {
         display: none;
@@ -1338,9 +1515,8 @@
         margin-top: 10px;
     }
 
-    .div7imagessection2
-{
-    margin-top: 0px;
-}
+    .div7imagessection2 {
+        margin-top: 0px;
+    }
 
 }
