@@ -390,18 +390,6 @@
     width: 612px;
 }
 
-/* .backgrounddiv {
-    
-background: url(images/background-blob-service-1.png.png);
-background-size: cover;
-
-} */
-
-/* .backgrounddiv::after {
-    background: url(images/background-blob-service-1.png.png);
-    transform: rotate(160deg);
-    
-    } */
 
 .div4,
 .div5 {
@@ -445,8 +433,8 @@ background-size: cover;
 
 
 .div6m {
-    display: flex;
-    justify-content: space-evenly;
+    /* display: flex;
+    justify-content: space-evenly; */
     background-image: url(images/middle-left-2.png.png);
     background-size: 40%;
     background-repeat: no-repeat;
@@ -454,8 +442,15 @@ background-size: cover;
 
 }
 
+.div7 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
 .div6images {
-    margin-left: 50px;
+    /* margin-top: 150px; */
     /* padding-top: 150px; */
 }
 
@@ -490,14 +485,15 @@ background-size: cover;
 }
 
 .div6image3 {
-    margin-left: 20px;
-    margin-top: 100px;
+    margin-left: 10px;
+    margin-top: 60px;
+padding-top: 100px;
 
 }
 
-/* .div6image2 {
-    margin-bottom: 50px;
-} */
+.div6image2 {
+    margin-bottom: 20px;
+}
 
 .div7images img {
     width: 80px;
@@ -535,7 +531,7 @@ background-size: cover;
 .div7images {
     display: flex;
     column-gap: 20px;
-    margin-top: 230px;
+    /* margin-top: 230px; */
 }
 
 .div6heading h1 {
@@ -544,9 +540,9 @@ background-size: cover;
 
 }
 
-.div6heading {
-    width: 60%;
-}
+/* .div6heading {
+    width: 4%;
+} */
 
 
 .div7imagessection2,
