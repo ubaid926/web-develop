@@ -565,8 +565,42 @@
     margin-top: 20px;
 }
 
+.div8icons i {
+   font-size: 50px;
+   background: linear-gradient(220deg, rgba(102, 93, 205, 1),rgba(95, 164, 230, 1),rgba(210, 171, 103, 1));
+   color: transparent;
+   /* text-align: center; */
+   /* margin-right: auto;
+   margin-left: auto; */
+   -webkit-background-clip: text;
+   margin: 10px;
+}
+
+.div8icons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.div8 h1{
+    color: white;
+    font-size: 57px;
+    text-align: center;
+}
+
+.div8 p {
+    color: white;
+    text-align: center;
+}
+
+.div8para1 {
+    font-size: 20px;
+}
 
 
+.div8para2 {
+    font-size: 26px;
+}
 @media only screen and (max-width:1200px) {
 
     .tablesection2data1 h1,
