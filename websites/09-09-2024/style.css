@@ -736,8 +736,11 @@ body {
     text-transform: capitalize;
 }
 
-.footer h4 {
+.footerh4 {
     color: white;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;
 }
 
 .footer {
@@ -1720,4 +1723,10 @@ body {
         margin-top: 0px;
     }
 
+    .footer {
+     /* flex-direction: row-reverse; */
+     flex-wrap: wrap-reverse;
+     justify-content: center;
+     row-gap: 50px;
+    }
 }
