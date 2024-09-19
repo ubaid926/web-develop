@@ -52,7 +52,7 @@ body {
 }
 
 .main {
-    
+
     display: flex;
     flex-direction: column;
     row-gap: 100px;
@@ -461,7 +461,7 @@ body {
     background-image: url(images/div\ \(3\).png);
     background-position: left;
     background-size: 100%;
-    
+
     background-repeat: no-repeat;
 }
 
@@ -471,7 +471,7 @@ body {
     background-size: 100%;
 
     background-repeat: no-repeat;
-    
+
 }
 
 .div6images {
@@ -484,16 +484,16 @@ body {
     width: 73px;
     height: 83px;
     object-fit: cover;
-    
+
     transform: translate(40px 60px);
 }
 
 #div6image3 {
-    
+
     position: absolute;
     left: 110px;
     top: 100px;
-    
+
     width: 72px;
     height: 82px;
 }
@@ -633,41 +633,43 @@ body {
     font-size: 26px;
 }
 
-.div9 h1 , .div9 p {
+.div9 h1,
+.div9 p {
     color: white;
-} 
+}
 
 .div9headings h1 {
     font-size: 53px;
 }
 
-.div9para1 ,.div9para2 {
+/* .div9para1 ,.div9para2 {
     font-size: 19px;
-}
+} */
 
 .div9para3 {
-    font-size: 18px;
+    /* font-size: 18px; */
     border-style: solid;
     border-left: 0;
     border-right: 0;
     border-top: 0;
-    /* border-image-slice: 1; */
+    border-image-slice: 1;
     border-width: 2px;
     border-image-source: linear-gradient(20deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
 
 }
 
 .div9para3 i {
-    font-size: 15px;
+    font-size: 12px;
     background: linear-gradient(220deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
     color: transparent;
     -webkit-background-clip: text;
+
 }
 
 .div9 {
     display: flex;
-    
-    justify-content: center;
+
+    justify-content: space-between;
     /* background-image: url(images/div\ \(10\).png);
     background-position:left;
     background-size:contain;
@@ -678,8 +680,8 @@ body {
 .div9headings {
     /* width: 40%; */
     background-image: url(images/div\ \(10\).png);
-    background-position:right;
-    background-size:contain;
+    background-position: right;
+    background-size: contain;
 
     background-repeat: no-repeat;
 }
@@ -1007,6 +1009,25 @@ body {
         width: 65%;
     }
 
+    /* 
+    
+.div9headings h1 {
+    font-size: 45px;
+}
+
+.div9para1 ,.div9para2 {
+    font-size: 15px;
+}
+
+.div9para3 {
+    font-size: 15px;
+    
+} */
+
+    /* .div9para3 i {
+    font-size: 11px;
+
+} */
 }
 
 
@@ -1277,6 +1298,25 @@ body {
         width: 75%;
     }
 
+
+    .div9headings h1 {
+        font-size: 40px;
+    }
+
+    .div9para1,
+    .div9para2 {
+        font-size: 15px;
+    }
+
+    .div9para3 {
+        font-size: 15px;
+
+    }
+
+    .div9para3 i {
+        font-size: 10px;
+
+    }
 }
 
 
@@ -1401,6 +1441,32 @@ body {
     .div8 {
         width: 100%;
     }
+
+    .div9headings,
+    .div9para1,
+    .div9para2,
+    .div9para3 {
+        text-align: center;
+    }
+
+    .div9headings h1 {
+        font-size: 40px;
+    }
+
+    /*     
+    .div9para1 ,.div9para2 {
+        font-size: 13px;
+    }
+    
+    .div9para3 {
+        font-size: 12px;
+        
+    }
+    
+    .div9para3 i {
+        font-size: 10px;
+      
+    } */
 
 
 }
