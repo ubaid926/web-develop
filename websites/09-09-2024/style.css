@@ -578,15 +578,16 @@ body {
     margin: 10px;
 }
 
-.div8main {
+.div8 {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
 
-.div8 {
+
+.div8 p  {
     width: 55%;
 }
 
@@ -655,12 +656,14 @@ body {
     border-image-slice: 1;
     border-width: 2px;
     border-image-source: linear-gradient(20deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
-
+  /* text-decoration: underline; */
+  /* text-decoration-color:  linear-gradient(20deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));  */
+  
 }
 
 .div9para3 i {
     font-size: 12px;
-    background: linear-gradient(220deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
+    background: linear-gradient(120deg, rgba(102, 93, 205, 1), rgba(95, 164, 230, 1), rgba(210, 171, 103, 1));
     color: transparent;
     -webkit-background-clip: text;
 
@@ -689,6 +692,36 @@ body {
 /* .div9paras {
     width: 40%;
 } */
+
+
+.div10 {
+    color: white;
+   display: flex;
+   flex-direction: column;
+align-items: center;
+row-gap: 20px;
+background-image: url(images/div\ \(13\).png);
+background-image: url(images/div\ \(12\).png);
+background-repeat: no-repeat;
+}
+
+.div10 h1,
+.div10 p {
+    width: 52%;
+    text-align: center;
+}
+
+.div10 h1 {
+    font-size: 56px;
+}
+
+.div10 p {
+    font-size: 18px;
+}
+
+
+
+
 
 @media only screen and (max-width:1200px) {
 
@@ -1445,7 +1478,7 @@ body {
     .div9headings,
     .div9para1,
     .div9para2,
-    .div9para3 {
+    .div9para3main {
         text-align: center;
     }
 
