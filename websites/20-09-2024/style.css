@@ -4,7 +4,7 @@ body {
 }
 
 .navbar a,
-.navbar span {
+.navbar-text {
     color: white !important;
 
 }
@@ -14,14 +14,14 @@ body {
     margin-right: auto !important;
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:992px) {
     
 
 
-.navbar span {
-    margin-left: auto !important;
-    margin-right: auto !important;
-text-align: center !important;
+.navbar-text {
+ display: block;
+ 
+ text-align: center;
 }
 
 
