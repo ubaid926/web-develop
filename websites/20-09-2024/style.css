@@ -1,9 +1,29 @@
-.navbar ,body {
+.navbardiv,
+body {
     background-color: rgba(0, 0, 0, 1) !important;
 }
 
-.navbar a, .navbar span {
+.navbar a,
+.navbar span {
     color: white !important;
 
 }
 
+.navbar-nav li {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+@media only screen and (max-width:1200px) {
+    
+
+
+.navbar span {
+    margin-left: auto !important;
+    margin-right: auto !important;
+text-align: center !important;
+}
+
+
+
+}
