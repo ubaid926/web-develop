@@ -14,14 +14,15 @@ body {
     margin-right: auto !important;
 }
 
-/* .main {
+.main {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: center; */
     flex-direction: column;
-    align-items: ;
-} */
+    /* align-items:center ; */
+    row-gap: 100px;
+}
 
-.container img {
+.div1>img {
     width: 100%;
 }
 
@@ -30,6 +31,8 @@ body {
     text-transform: capitalize;
     font-size: 20px;
 }
+
+
 
 .div1images {
     display: flex;
@@ -61,6 +64,44 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
+.div3border {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    height: 155px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.div3border>span {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    text-align: center;
+    width: 36px;
+    height: 56px;
+}
+
+.div3images
+ {
+    display: flex;
+    /* flex-direction: row; */
+    /* column-gap: 10px; */
+}
+
+.div3leftsection,
+.div3rightsection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.div3>h1{
+    color: white;
+    text-transform: capitalize;
+    font-size: 48px;
+}
+
 @media only screen and (max-width:1200px) {
 
     .div1 p {
@@ -72,6 +113,10 @@ body {
         justify-content:initial;
     } */
 
+
+    .div2 p {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width:992px) {
@@ -80,10 +125,20 @@ body {
         font-size: 14px;
     }
 
+    .div2 p {
+        font-size: unset;
+    }
+
     .navbar-text {
         display: block;
 
         text-align: center;
+    }
+
+    .div2content p,
+    .div2content h4 {
+        text-align: center;
+
     }
 }
 
@@ -112,4 +167,14 @@ body {
         width: auto;
         height: auto;
     }
+
+    .div2 p {
+        font-size: 14px;
+    }
+
+    .div2 {
+        flex-direction: column-reverse;
+    }
+
+
 }
