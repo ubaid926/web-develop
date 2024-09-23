@@ -105,8 +105,7 @@ body {
 .div3>h1,
 .div4>h1,
 .div5>h1,
-.div6 h1
- {
+.div6 h1 {
     color: white;
     /* text-transform: capitalize; */
     font-size: 98px;
@@ -146,12 +145,18 @@ body {
     margin-left: 20px;
 }
 
-.div5 {
+.div5
+ {
     display: flex;
     flex-direction: column;
     row-gap: 100px;
 }
 
+.main2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 200px;
+}
 
 .div5secondh4,
 .div5thirdh4,
@@ -183,11 +188,25 @@ body {
 .div6 {
     display: flex;
     justify-content: space-between;
-
+/* background-color: aqua; */
 }
 
 .div6image2 {
     padding-top: 200px;
+    object-fit: contain;
+}
+
+.div6image1 {
+    padding-bottom: 440px;
+    object-fit: contain;
+}
+
+.div6image3 {
+    padding-top: 300px;
+}
+
+.div6imagenone {
+    display: none;
 }
 
 @media only screen and (max-width:1200px) {
@@ -215,6 +234,23 @@ body {
         font-size: 80px;
     }
 
+    .div6 h1 {
+        font-size: 80px
+    }
+
+    .div6image2 {
+        padding-top: 20px;
+        
+    }
+    
+    .div6image1 {
+        padding-bottom: 270px;
+        
+    }
+    
+    .div6image3 {
+        padding-top: 100px;
+    }
 
 }
 
@@ -258,6 +294,28 @@ body {
         width: 60%;
         font-size: 70px;
     }
+
+    .div6para1 {
+        line-height: 20px;
+    }
+
+    .div6 h1 {
+        font-size: 70px
+    }
+
+    .div6image2 {
+        padding-top: 10px;
+        
+    }
+    
+    .div6image1 {
+        padding-bottom: 200px;
+        
+    }
+    
+    .div6image3 {
+        padding-top: 50px;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -299,6 +357,41 @@ body {
 
     .div5 {
         row-gap: 50px;
+    }
+
+    .div6para1 {
+        line-height: 13px;
+    }
+
+    .div6 h1 {
+        font-size: 40px;
+    }
+
+    /* .div6image3 {
+        width: 100px !important;
+    } */
+
+    
+    .div6image2 {
+        padding-top: 0px;
+        
+    }
+    
+    .div6image1 {
+        padding-bottom: 0px;
+        
+    }
+    
+    .div6image3 {
+        padding-top: 0px;
+    }
+
+    /* .div6imagenone {
+        display:;
+    } */
+
+    .div6image3 {
+        display: none;
     }
 
 }
