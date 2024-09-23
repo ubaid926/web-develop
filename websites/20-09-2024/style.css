@@ -145,8 +145,7 @@ body {
     margin-left: 20px;
 }
 
-.div5
- {
+.div5 {
     display: flex;
     flex-direction: column;
     row-gap: 100px;
@@ -188,11 +187,11 @@ body {
 .div6 {
     display: flex;
     justify-content: space-between;
-/* background-color: aqua; */
+    /* background-color: aqua; */
 }
 
 .div6image2 {
-    padding-top: 200px;
+    padding-top: 100px;
     object-fit: contain;
 }
 
@@ -202,12 +201,72 @@ body {
 }
 
 .div6image3 {
-    padding-top: 300px;
+    padding-top: 200px;
 }
 
-.div6imagenone {
+.div6imagenone,
+.div6imagenone2 {
     display: none;
 }
+
+.footer {
+    display: flex;
+}
+
+.footersection1 h4,
+.footersection2 h6,
+.footersection3 h6,
+.footersection1p2,
+.footersection4 i {
+    color: white;
+}
+
+.footersection4 i {
+    color: white;
+    font-size: 30px;
+}
+
+.footersection1p2 {
+    margin-top: 80px;
+}
+
+.footersection2 li,
+.footersection3 li,
+.footersection1p1 {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.footer ul {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.footer {
+    position: relative;
+    /* background-image: url(images/div\ \(18\).png);
+    background-image: url(images/div\ \(19\).png);
+    background-image: url(images/div\ \(20\).png);
+    background-repeat: no-repeat;
+    background-position: right; */
+}
+
+.footerimage1 {
+    position: absolute;
+    bottom:  100px;
+}
+
+.footerimage2 {
+    position: absolute;
+    bottom:  100px;
+}
+
+.footerimage3 {
+    position: absolute;
+    bottom:  100px;
+}
+
 
 @media only screen and (max-width:1200px) {
 
@@ -240,14 +299,14 @@ body {
 
     .div6image2 {
         padding-top: 20px;
-        
+
     }
-    
+
     .div6image1 {
         padding-bottom: 270px;
-        
+
     }
-    
+
     .div6image3 {
         padding-top: 100px;
     }
@@ -305,14 +364,14 @@ body {
 
     .div6image2 {
         padding-top: 10px;
-        
+
     }
-    
+
     .div6image1 {
         padding-bottom: 200px;
-        
+
     }
-    
+
     .div6image3 {
         padding-top: 50px;
     }
@@ -371,27 +430,33 @@ body {
         width: 100px !important;
     } */
 
-    
+
     .div6image2 {
         padding-top: 0px;
-        
+
     }
-    
+
     .div6image1 {
         padding-bottom: 0px;
-        
+
     }
-    
+
     .div6image3 {
         padding-top: 0px;
     }
 
-    /* .div6imagenone {
-        display:;
-    } */
+    .div6imagenone,
+    .div6imagenone2 {
+        display: block;
+    }
 
-    .div6image3 {
+    .div6image3,
+    .div6image2 {
         display: none;
+    }
+
+    .div6imagenone {
+        object-fit: cover;
     }
 
 }
@@ -466,5 +531,23 @@ body {
 
         font-size: 30px;
     }
+
+    .div6 {
+        row-gap: 20px;
+    }
+
+    .div6content {
+        text-align: center;
+    }
+
+    /* .div6imagenone,
+    .div6imagenone2,
+    .div6image1 {
+        object-fit: contain;
+    } */
+
+
+
+
 
 }
