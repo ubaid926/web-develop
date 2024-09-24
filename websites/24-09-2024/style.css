@@ -1,4 +1,55 @@
 .navbar {
-    
+
     background-color: rgba(255, 255, 255, 1);
+}
+
+.navbar a,
+.navbar button {
+    text-transform: capitalize;
+    color: rgba(46, 47, 53, 1);
+}
+
+.button1 {
+    background-color: rgba(255, 255, 255, 1) !important;
+    border: 2px solid rgba(46, 47, 53, 1) !important;
+    border: 2px solid rgba(46, 47, 53, 1) !important;
+    border-right: 5px solid rgba(46, 47, 53, 1) !important;
+    border-bottom: 5px solid rgba(46, 47, 53, 1) !important;
+    border-radius: 12px !important;
+    height: 44px !important;
+    margin-left: 10px;
+}
+
+.button2 {
+    border: 2px solid rgba(46, 47, 53, 1) !important;
+    border: 2px solid rgba(46, 47, 53, 1) !important;
+    border-right: 5px solid rgba(46, 47, 53, 1) !important;
+    border-bottom: 5px solid rgba(46, 47, 53, 1) !important;
+    color: white !important;
+
+    background-color: rgba(255, 109, 44, 1) !important;
+    border-radius: 12px !important;
+    height: 44px !important;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:1200px) {
+    .navbar li,
+    .button1,
+    .button2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button1,
+    .button2 {
+        display: block !important;
+
+    }
+
+    .button2 {
+        margin-top: 10px;
+    }
+
+    
 }
