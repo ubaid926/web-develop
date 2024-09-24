@@ -3,6 +3,15 @@
     background-color: rgba(255, 255, 255, 1);
 }
 
+@font-face {
+    font-family: inter;
+    src: url(fonts/Inter_18pt-Regular.ttf);
+}
+
+* {
+    font-family: inter;
+}
+
 .navbar a,
 .navbar button {
     text-transform: capitalize;
@@ -33,7 +42,22 @@
     margin-left: 10px;
 }
 
+.button3 {
+    border: 2px solid rgba(46, 47, 53, 1) !important;
+    border: 2px solid rgba(46, 47, 53, 1) !important;
+    border-right: 5px solid rgba(46, 47, 53, 1) !important;
+    border-bottom: 5px solid rgba(46, 47, 53, 1) !important;
+    color: white !important;
+    width: 260px;
+    height: 64px;
+    background-color: rgba(255, 109, 44, 1) !important;
+    border-radius: 12px !important;
+    text-transform: uppercase;
+}
+
+
 @media only screen and (max-width:1200px) {
+
     .navbar li,
     .button1,
     .button2 {
@@ -51,5 +75,5 @@
         margin-top: 10px;
     }
 
-    
+
 }
