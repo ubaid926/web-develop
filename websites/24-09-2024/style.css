@@ -55,12 +55,18 @@
     text-transform: uppercase;
 }
 
-.div1 {
+.divs {
     background-color: rgba(224, 248, 242, 1);
-    display: flex;
-   }
+}
 
-.div1content{
+.div1 {
+    /* background-color: rgba(224, 248, 242, 1); */
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+}
+
+.div1content {
     /* margin-top: 50px; */
     display: flex;
     justify-content: center;
@@ -87,10 +93,19 @@
 
 }
 
-.div1icons>i {
-color: rgba(253, 198, 57, 1);
-font-size: 18px;
-letter-spacing: 6px;
+.div1icons i {
+    color: rgba(253, 198, 57, 1);
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+
+.div1icons {
+    height: 64px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+padding-top: 8px;
 }
 
 
