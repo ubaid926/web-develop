@@ -42,7 +42,7 @@
     margin-left: 10px;
 }
 
-.button3 {
+.div1button {
     border: 2px solid rgba(46, 47, 53, 1) !important;
     border: 2px solid rgba(46, 47, 53, 1) !important;
     border-right: 5px solid rgba(46, 47, 53, 1) !important;
@@ -53,6 +53,44 @@
     background-color: rgba(255, 109, 44, 1) !important;
     border-radius: 12px !important;
     text-transform: uppercase;
+}
+
+.div1 {
+    background-color: rgba(224, 248, 242, 1);
+    display: flex;
+   }
+
+.div1content{
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+
+}
+
+.div1content>h1 {
+    font-size: 82px;
+    font-weight: 600;
+    /* line-height: 96px; */
+}
+
+.div1content>p {
+    font-size: 20px;
+}
+
+.div1span {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    column-gap: 50px;
+
+}
+
+.div1icons>i {
+color: rgba(253, 198, 57, 1);
+font-size: 18px;
+letter-spacing: 6px;
 }
 
 
