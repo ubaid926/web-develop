@@ -1,7 +1,27 @@
 .navbar {
-
+    /* justify-content: first baseline !important; */
     background-color: rgba(255, 255, 255, 1);
+    padding-bottom: 0px !important;
+    box-sizing: border-box !important;
+    /* display: flex ;
+    align-items:first baseline !important; */
 }
+
+.navbar a {
+    /* padding-bottom: 0px !important; */
+    display: flex !important;
+    align-items: baseline !important;
+    /* justify-content: baseline !important; */
+}
+
+/* .navbar ul {
+    display: flex ;
+    flex-direction: column;
+    align-items: baseline !important;
+    
+     justify-content: baseline !important;
+} */
+
 
 @font-face {
     font-family: inter;
@@ -12,8 +32,11 @@
     font-family: inter;
 }
 
+
 .navbar a,
 .navbar button {
+    /* justify-content: first baseline !important; */
+    /* padding-bottom: 0px; */
     text-transform: capitalize;
     color: rgba(46, 47, 53, 1);
 }
@@ -35,7 +58,6 @@
     border-right: 5px solid rgba(46, 47, 53, 1) !important;
     border-bottom: 5px solid rgba(46, 47, 53, 1) !important;
     color: white !important;
-
     background-color: rgba(255, 109, 44, 1) !important;
     border-radius: 12px !important;
     height: 44px !important;
@@ -60,9 +82,8 @@
 }
 
 .div1 {
-    /* background-color: rgba(224, 248, 242, 1); */
     display: flex;
-    /* justify-content: ; */
+
     align-items: center;
 }
 
@@ -101,11 +122,7 @@
 
 .div1icons {
     height: 64px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-padding-top: 8px;
+    padding-top: 8px;
 }
 
 
