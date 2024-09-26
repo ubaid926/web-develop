@@ -1,0 +1,19 @@
+ * {
+     background-color: black;
+
+ }
+.box {
+    color: aliceblue;
+    height: 50vh;
+
+}
+
+.box::after{
+
+    content: url(New/div\ \(14\).png);
+    /* background-image:url(New/div\ \(14\).png) ;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+}

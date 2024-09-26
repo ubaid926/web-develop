@@ -683,11 +683,13 @@ body {
     background-repeat: no-repeat; */
 }
 
-.div9headings {
+.div9headings::after {
+
     /* width: 40%; */
     background-image: url(images/div\ \(10\).png);
     background-position: left ;
     background-size: 90%;
+    width: 100%;
 
     background-repeat: no-repeat;
 }
