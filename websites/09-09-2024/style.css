@@ -436,21 +436,24 @@ body {
 }
 
 
-.div6m {
+.div6m::after {
+    
+    background-image: url(images/background-blob-service-1.png.png);
+    /* transform: rotate(45deg); */
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
     /* flex-direction: column; */
-    background-image: url(images/middle-left-2.png.png);
-    background-size: 30%;
+    /* background-image: url(images/middle-left-2.png.png); */
+    background-size: 90%;
     background-repeat: no-repeat;
-    background-position: top left;
+    /* background-position: top left; */
 
 }
 
 
 
-.backgrounddiv1 {
+/* .backgrounddiv1 {
     background-image: url(images/div\ \(3\).png);
     background-position: top left;
     background-size: 100%;
@@ -463,16 +466,16 @@ body {
     background-size: 100%;
 
     background-repeat: no-repeat;
-}
+} */
 
-.backgrounddiv3 {
+/* .backgrounddiv3 {
     background-image: url(images/background-blob-service-1.png.png);
     background-position: bottom left;
     background-size: 100%;
 
     background-repeat: no-repeat;
 
-}
+} */
 
 .div6images {
     position: relative;
