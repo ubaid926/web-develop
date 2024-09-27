@@ -5,15 +5,17 @@
 .box {
     color: aliceblue;
     height: 50vh;
+    font-size: 40px;
 
 }
 
-.box::after{
-
+.box::before{
+  position: absolute;
+  left: 100px;
     content: url(New/div\ \(14\).png);
-    /* background-image:url(New/div\ \(14\).png) ;
-    background-size: 100%;
-    background-position: center;
+    /* background-image:url(New/div\ \(14\).png) ; */
+    /* width:  0%; */
+    /* background-position: center;
     background-repeat: no-repeat; */
-
+    
 }

@@ -381,6 +381,7 @@ body {
     align-items: center;
     row-gap: 30px;
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .div3heading {
@@ -407,6 +408,7 @@ body {
 
 .div5 {
     align-items: center;
+
 }
 
 .div4headpara,
@@ -436,31 +438,40 @@ body {
 }
 
 
-.div6m::after {
-    
-    background-image: url(images/background-blob-service-1.png.png);
+.div6m::before {
+
+    content: url(images/background-blob-service-1.png.png);
+    object-fit: contain;
+    position: absolute;
+    /* left: 0px; */
+    /* bottom: 50px; */
+    /* right: 5%; */
+    /* width: 50%; */
     /* transform: rotate(45deg); */
-    /* display: flex; */
-    /* justify-content: center; */
+    /* display: flex;
+    justify-content: center; */
     /* align-items: center; */
     /* flex-direction: column; */
     /* background-image: url(images/middle-left-2.png.png); */
-    background-size: 90%;
-    background-repeat: no-repeat;
+    /* background-size: 90%; */
+    /* background-repeat: no-repeat; */
     /* background-position: top left; */
 
 }
 
 
 
-/* .backgrounddiv1 {
-    background-image: url(images/div\ \(3\).png);
+.backgrounddiv1 {
+    position: relative;
+    /* background-image: url(images/div\ \(3\).png);
+
+
     background-position: top left;
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
-.backgrounddiv2 {
+/* .backgrounddiv2 {
     background-image: url(images/div\ \(3\).png);
     background-position: left;
     background-size: 100%;
@@ -586,6 +597,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 200px;
 
 }
 
@@ -687,7 +699,7 @@ body {
 
     /* width: 40%; */
     background-image: url(images/div\ \(10\).png);
-    background-position: left ;
+    background-position: left;
     background-size: 90%;
     width: 100%;
 
@@ -702,7 +714,7 @@ body {
 .div10background {
     /* background-image: url(images/div\ \(12\).png); */
     background-image: url(images/div\ \(14\).png);
-    background-position:top right;
+    background-position: top right;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -715,7 +727,7 @@ body {
     row-gap: 20px;
     background-image: url(images/div\ \(13\).png);
     /* background-image: url(images/div\ \(12\).png); */
-    background-position:left;
+    background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1729,9 +1741,9 @@ body {
     }
 
     .footer {
-     /* flex-direction: row-reverse; */
-     flex-wrap: wrap-reverse;
-     justify-content: center;
-     row-gap: 50px;
+        /* flex-direction: row-reverse; */
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        row-gap: 50px;
     }
 }
