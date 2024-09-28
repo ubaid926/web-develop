@@ -403,7 +403,10 @@ body {
     justify-content: space-between;
     /* margin-top: 150px; */
 
+
 }
+
+
 
 
 .div5 {
@@ -435,28 +438,24 @@ body {
 
 .div4 img {
     object-fit: contain;
+
 }
 
 
 .div6m::before {
     content: "";
-    
+
     background-image: url(images/background-blob-service-1.png.png);
-/* text-align: center; */
-    /* object-fit: cover; */
+
     position: absolute;
-    /* z-index: -1; */
-    /* left: 20%; */
-    /* bottom: 50px; */
-    /* right: 5%; */
-    height: 100vh;
-    width: 80%;
-    /* transform: rotate(45deg); */
-    /* display: flex;
-    justify-content: center; */
-    /* align-items: center; */
-    /* flex-direction: column; */
-    /* background-image: url(images/middle-left-2.png.png); */
+
+    left: 0px;
+
+
+    top: 40vh;
+    height: 120vh;
+    width: 100%;
+
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -466,34 +465,22 @@ body {
 
 
 .backgrounddiv1 {
-    /* position: relative; */
-    /* background-image: url(images/div\ \(3\).png);
-
-
-    background-position: top left;
-    background-size: 100%;
-    background-repeat: no-repeat; */
+    position: relative;
 }
-
-/* .backgrounddiv2 {
-    background-image: url(images/div\ \(3\).png);
-    background-position: left;
-    background-size: 100%;
-
-    background-repeat: no-repeat;
-} */
-
-/* .backgrounddiv3 {
-    background-image: url(images/background-blob-service-1.png.png);
-    background-position: bottom left;
-    background-size: 100%;
-
-    background-repeat: no-repeat;
-
-} */
 
 .div6images {
     position: relative;
+}
+
+.div6images::after {
+    content: "";
+    background-image: url(images/middle-left-2.png.png);
+    position: absolute;
+    height: 200px;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 #div6image1 {
@@ -692,22 +679,20 @@ body {
     display: flex;
 
     justify-content: space-between;
-    /* background-image: url(images/div\ \(10\).png);
-    background-position:left;
-    background-size:contain;
-
-    background-repeat: no-repeat; */
+    position: relative;
 }
 
 .div9headings::after {
 
     /* width: 40%; */
+    content: "";
     background-image: url(images/div\ \(10\).png);
-    background-position: left;
-    background-size: 90%;
-    width: 100%;
-
+    background-position: center;
+    background-size: 100%;
+    width: 50%;
+    height: 200px;
     background-repeat: no-repeat;
+    position: absolute;
 }
 
 /* .div9paras {
@@ -717,7 +702,7 @@ body {
 
 .div10background {
     /* background-image: url(images/div\ \(12\).png); */
-    background-image: url(images/div\ \(14\).png);
+    /* background-image: url(images/div\ \(14\).png); */
     background-position: top right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -729,7 +714,7 @@ body {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
-    background-image: url(images/div\ \(13\).png);
+    /* background-image: url(images/div\ \(13\).png); */
     /* background-image: url(images/div\ \(12\).png); */
     background-position: left;
     background-size: contain;
@@ -1253,33 +1238,35 @@ body {
         padding-right: 20px;
     }
 
+    .div4leftsection,
+    .div4rightsection {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
 
     .div4mainpara,
     .div5mainpara {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .div4boldpara,
     .div5boldpara {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .div4underlinepara,
     .div5underlinepara {
-        font-size: 15px;
+        font-size: 12px;
     }
 
 
 
     .div4headpara,
     .div5headpara {
-        font-size: 25px;
+        font-size: 21px;
     }
 
-    .backgrounddiv {
-        background-position: center;
 
-    }
 
     .div6image1,
     .div6image2,
@@ -1391,7 +1378,7 @@ body {
 
 
     .div8para2 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
 
@@ -1406,7 +1393,7 @@ body {
 
     .div9para1,
     .div9para2 {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .div9para3 {
@@ -1432,6 +1419,15 @@ body {
     .div10 p {
         font-size: 14px;
     }
+
+    .div6images::after {
+        background-image: none;
+    }
+
+    .div6m::before {
+        background-image: none;
+    }
+
 }
 
 
@@ -1514,9 +1510,7 @@ body {
         text-align: center;
     }
 
-    .backgrounddiv {
-        background-position: center;
-    }
+
 
     .div8icons i {
         font-size: 35px;
@@ -1527,13 +1521,13 @@ body {
 
     .div8 h1 {
 
-        font-size: 40px;
+        font-size: 35px;
 
     }
 
 
     .div8para1 {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .div8para3 {
@@ -1550,7 +1544,7 @@ body {
 
 
     .div8para2 {
-        font-size: 20px;
+        font-size: 12px;
     }
 
     .div8 p {
@@ -1679,9 +1673,7 @@ body {
 
     }
 
-    .div6m {
-        background-size: 100%;
-    }
+
 
     .div7 {
         display: block;
