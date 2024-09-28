@@ -1,58 +1,50 @@
 :root {
-    --orange :rgba(255, 109, 44, 1);
-    --blue :rgba(224, 248, 242, 1);
+    --orange: rgba(255, 109, 44, 1);
+    --blue: rgba(224, 248, 242, 1);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+
+.navdiv {
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .navbar {
     /* justify-content: first baseline !important; */
-    background-color: rgba(255, 255, 255, 1);
     padding-bottom: 0px !important;
-    /* box-sizing: content-box !important; */
-    /* display: flex !important;
-    align-items:first baseline !important; */
+    position: absolute;
+    top: 10px;
+    /* z-index: -1; */
+
 }
 
 
 
 
 
-
-
-
-/* .navbar ul {
-    display: flex ;
-    flex-direction: column;
-    align-items: baseline !important;
-    
-     justify-content: baseline !important;
-} */
-
-/* .navbar li {
-padding-top: 25px;
-padding-bottom: 0px;
-} */
-
 @font-face {
     font-family: inter;
     src: url(fonts/Inter_18pt-Regular.ttf);
+    font-family: grace;
+    src: url(fonts/CoveredByYourGrace-Regular.ttf);
 }
 
 * {
     font-family: inter;
 }
 
-.mainlist {
-    display: flex !important;
-    align-items: baseline !important;
-}
+
 
 
 .navbar a,
 .navbar button {
-    /* justify-content: first baseline !important; */
-    /* padding-bottom: 0px; */
+
     text-transform: capitalize;
     color: rgba(46, 47, 53, 1);
+
 }
 
 .button1 {
@@ -68,7 +60,7 @@ padding-bottom: 0px;
 
 .button2 {
     border: 2px solid rgba(46, 47, 53, 1) !important;
-    border: 2px solid rgba(46, 47, 53, 1) !important;
+
     border-right: 5px solid rgba(46, 47, 53, 1) !important;
     border-bottom: 5px solid rgba(46, 47, 53, 1) !important;
     color: white !important;
@@ -93,11 +85,14 @@ padding-bottom: 0px;
 
 .div1image {
     filter: blur(4px);
+    object-fit: contain;
 }
 
 .divs {
     background-color: var(--blue);
 }
+
+
 
 .div1 {
     display: flex;
@@ -106,18 +101,26 @@ padding-bottom: 0px;
 }
 
 .div1content {
-    /* margin-top: 50px; */
+
     display: flex;
     justify-content: center;
     flex-direction: column;
-    row-gap: 30px;
-
+    /* row-gap: 30px; */
+    box-sizing: border-box;
+    /* padding-top: 100px; */
 }
 
 .div1content>h1 {
     font-size: 82px;
     font-weight: 600;
-    /* line-height: 96px; */
+    /* box-sizing: content-box; */
+    line-height: 66px;
+}
+
+.div1h1span {
+    font-family: grace;
+   color:  rgba(0, 147, 135, 1);
+   font-weight: normal;
 }
 
 .div1content>p {
@@ -159,9 +162,13 @@ padding-bottom: 0px;
 
     }
 
+
+
+
+}
+
+@media only screen and (max-width:992px) {
     .button2 {
         margin-top: 10px;
     }
-
-
 }

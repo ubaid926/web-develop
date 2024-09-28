@@ -453,7 +453,7 @@ body {
 
 
     top: 40vh;
-    height: 120vh;
+    height: 130vh;
     width: 100%;
 
     background-size: 100%;
@@ -684,15 +684,18 @@ body {
 
 .div9headings::after {
 
-    /* width: 40%; */
+
     content: "";
     background-image: url(images/div\ \(10\).png);
     background-position: center;
-    background-size: 100%;
-    width: 50%;
-    height: 200px;
+    background-size: 80%;
+    width: 60%;
+    height: 60vh;
     background-repeat: no-repeat;
     position: absolute;
+    bottom: 30px;
+    right: 55%;
+    z-index: -1;
 }
 
 /* .div9paras {
@@ -706,6 +709,7 @@ body {
     background-position: top right;
     background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .div10 {
@@ -719,6 +723,42 @@ body {
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+.div10::after {
+    content: "";
+    background-image: url(images/div\ \(13\).png);
+    /* background-image: url(images/div\ \(12\).png); */
+    background-position: center;
+    background-size: 80%;
+    width: 40%;
+    height: 55vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    /* bottom: 30px; */
+    /* right: 0px; */
+    left: 0px;
+    top: 50px;
+    z-index: -1;
+
+
+}
+
+.div10::before {
+    content: "";
+    background-image: url(images/div\ \(12\).png);
+    background-position: center;
+    background-size: 80%;
+    width: 40%;
+    height: 65vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    /* bottom: 30px; */
+    top: 20px;
+    right: 0px;
+    z-index: -1;
+
 }
 
 .div10 h1,
@@ -1094,26 +1134,9 @@ body {
     }
 
 
-
-    /* 
-    
-.div9headings h1 {
-    font-size: 45px;
-}
-
-.div9para1 ,.div9para2 {
-    font-size: 15px;
-}
-
-.div9para3 {
-    font-size: 15px;
-    
-} */
-
-    /* .div9para3 i {
-    font-size: 11px;
-
-} */
+    .div9headings::after {
+        height: 80vh;
+    }
 }
 
 
@@ -1386,6 +1409,11 @@ body {
         width: 75%;
     }
 
+    .div9headings::after {
+        height: 70vh;
+        width: 70%;
+        right: 45%;
+    }
 
     .div9headings h1 {
         font-size: 40px;
@@ -1404,6 +1432,18 @@ body {
     .div9para3 i {
         font-size: 10px;
 
+    }
+
+    
+    .div10::before {
+       
+       
+        width: 100%;
+    }
+
+    .div10::after {
+       
+        width: 100%;
     }
 
     .div10 h1,
@@ -1562,6 +1602,12 @@ body {
         font-size: 40px;
     }
 
+    .div9headings::after {
+        height: 70vh;
+        width: 80%;
+        right: 10%;
+    }
+
     .div10 h1,
     .div10 p {
         width: 100%;
@@ -1576,20 +1622,6 @@ body {
         font-size: 12px;
     }
 
-    /*     
-    .div9para1 ,.div9para2 {
-        font-size: 13px;
-    }
-    
-    .div9para3 {
-        font-size: 12px;
-        
-    }
-    
-    .div9para3 i {
-        font-size: 10px;
-      
-    } */
 
 
 }
@@ -1742,4 +1774,11 @@ body {
         justify-content: center;
         row-gap: 50px;
     }
+
+    .div9headings::after {
+        background-image: none;
+    }
+
+    
+
 }
