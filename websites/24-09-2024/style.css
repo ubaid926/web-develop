@@ -86,6 +86,7 @@
 .div1image {
     filter: blur(4px);
     object-fit: contain;
+    /* object-position: top bottom; */
 }
 
 .divs {
@@ -107,20 +108,22 @@
     flex-direction: column;
     /* row-gap: 30px; */
     box-sizing: border-box;
-    /* padding-top: 100px; */
+    padding-top: 100px;
+    padding-bottom: 70px;
 }
 
-.div1content>h1 {
+.div1content h1 {
     font-size: 82px;
     font-weight: 600;
     /* box-sizing: content-box; */
     line-height: 66px;
 }
 
-.div1h1span {
+.div1h1span,
+.div2h1span {
     font-family: grace;
-   color:  rgba(0, 147, 135, 1);
-   font-weight: normal;
+    color: rgba(0, 147, 135, 1);
+    font-weight: normal;
 }
 
 .div1content>p {
@@ -146,6 +149,40 @@
     padding-top: 8px;
 }
 
+.div2 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.div2h1 {
+    font-size: 63px;
+    text-align: center;
+    /* width: 50%;
+    margin-left:auto ;
+    margin-right: auto; */
+}
+
+.div2cardtext1 img {
+    padding-left: 20px !important;
+
+}
+
+.div2cardtext3 img {
+    padding-left: 35px !important;
+}
+
+.div2cardtext4 img {
+    padding-left: 80px !important;
+}
+
+/* .div2cards {
+    display: flex;
+} */
+
+.div2card {
+    border: none !important;
+}
+
 
 @media only screen and (max-width:1200px) {
 
@@ -162,13 +199,191 @@
 
     }
 
+    .div1content {
+        padding-top: 80px;
+        padding-bottom: 60px;
 
+    }
 
+    .div1content h1 {
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    .div1content>p {
+        font-size: 18px;
+    }
+
+    .div1button {
+
+        width: 220px;
+        height: 55px;
+        background-color: var(--orange) !important;
+        border-radius: 12px !important;
+
+    }
+
+    .div1span {
+        column-gap: 40px;
+    }
+
+    .div1icons i {
+
+        font-size: 16px;
+        letter-spacing: 6px;
+    }
+
+    .div1icons {
+        height: 55px;
+        padding-top: 5px;
+    }
 
 }
 
 @media only screen and (max-width:992px) {
     .button2 {
         margin-top: 10px;
+    }
+
+    .div1content h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .div1content>p {
+        font-size: 16px;
+    }
+
+    .div1button {
+
+        width: 210px;
+        height: 50px;
+        background-color: var(--orange) !important;
+        border-radius: 12px !important;
+
+    }
+
+    .div1content {
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+    }
+
+    .div1span {
+        column-gap: 40px;
+    }
+
+    .div1icons i {
+
+        font-size: 14px;
+        letter-spacing: 6px;
+    }
+
+    .div1icons {
+        height: 50px;
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .div1content h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .div1content p {
+        font-size: 14px;
+    }
+
+    .div1button {
+
+        width: 180px;
+        height: 45px;
+        background-color: var(--orange) !important;
+        border-radius: 12px !important;
+
+    }
+
+    .div1span {
+        column-gap: 20px;
+    }
+
+    .div1icons i {
+
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+    .div1icons {
+        height: 45px;
+        padding-top: 0px;
+    }
+
+    .div1content {
+        padding-top: 40px;
+        padding-bottom: 30px;
+
+    }
+}
+
+
+@media only screen and (max-width:578px) {
+
+    .div1main {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+
+    .div1content {
+        padding-top: 0px;
+        padding-bottom: 20px;
+
+    }
+
+
+}
+
+@media only screen and (max-width:400px) {
+    .div1content h1 {
+        font-size: 28px;
+        line-height: 25px;
+    }
+
+    .div1content p {
+        font-size: 12px;
+    }
+
+    .div1button {
+        font-size: 12px !important;
+        width: 160px;
+        height: 42px;
+        background-color: var(--orange) !important;
+        border-radius: 12px !important;
+
+    }
+
+    .div1span {
+        /* column-gap: 5px; */
+        display: inline-block;
+    }
+
+    .div1icons i {
+
+        font-size: 10px;
+        letter-spacing: 5px;
+    }
+
+    .div1icons {
+        height: 42px;
+        margin-top: 12px;
+        margin-left: 20px;
+
+    }
+
+    .div1main {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 50px;
     }
 }
