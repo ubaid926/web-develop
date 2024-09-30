@@ -184,6 +184,57 @@
     border: none !important;
 }
 
+.div3m{
+    background-color: rgba(243, 250, 250, 1);
+
+}
+
+.div3 {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding-top: 100px;
+}
+
+.div3h1 {
+    text-align: center;
+    width: 55%;
+    margin: auto;
+
+}
+
+.div3 h1
+ {
+    font-size: 63px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.div3h1span{
+    font-family: grace;
+    color: rgba(0, 147, 135, 1);
+    font-weight: normal;
+}
+
+.div3 p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.div3allsections {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div3section3 {
+    box-sizing: content-box;
+
+}
+
+
 
 @media only screen and (max-width:1200px) {
 
@@ -248,9 +299,6 @@
 
     .div2cardtext1 img {
         padding-left: 0px !important;
-        /* padding-right: 20px !important; */
-        /* object-fit: contain !important;
-        object-position: center !important; */
     }
 
     .div2cardtext3 img {
@@ -264,6 +312,18 @@
     .div2cardtext2 img {
         width: 100%;
         /* margin-right: 20px !important; */
+    }
+
+    .div3h1 {
+        width: 55%;
+    }
+
+    .div3 h1{
+        font-size: 55px;
+    }
+
+    .div3allsections {
+        justify-content:center;
     }
 }
 
@@ -338,6 +398,17 @@
     .div2cardtext2 img {
         width: 105%;
 
+    }
+    .div3 h1{
+        font-size: 50px;
+    }
+
+    .div3h1{
+        width: 70%;
+    }
+
+    .div3allsections{
+        justify-content: unset;
     }
 
 }
@@ -418,29 +489,27 @@
     .div2cardtext1 img {
         /* padding-left: 50px; */
         width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 120px;
+        
     }
 
     .div2cardtext2 img {
-        padding-left: 50px;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        
+        width: 70%;
+        margin-left: 80px;
     }
 
     .div2cardtext3 img {
-        padding-left: 150px;
+        margin-left: 120px;
         
         width: 50%;
     }
 
     .div2cardtext4 img {
-        width: auto;
-        padding-left: 50px;
+        width: 35%;
+        margin-left: 130px;
         /* padding-right: auto; */
-        margin-left: auto;
-        margin-right: auto;
+    
     }
 
     /* .div2 img{
@@ -491,5 +560,27 @@
         display: flex;
         flex-direction: column-reverse;
         row-gap: 50px;
+    }
+
+    .div2cardtext1 img {
+        width: 50%;
+        margin-left: 60px;
+        
+    }
+
+    .div2cardtext2 img {
+        width: 70%;
+        margin-left: 40px;
+    }
+
+    .div2cardtext3 img {
+        margin-left: 60px;
+        width: 50%;
+    }
+
+    .div2cardtext4 img {
+        width: auto;
+        margin-left: 20px;
+    
     }
 }
