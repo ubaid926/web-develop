@@ -157,9 +157,10 @@
 .div2h1 {
     font-size: 63px;
     text-align: center;
-    /* width: 50%;
-    margin-left:auto ;
-    margin-right: auto; */
+    width: 50%;
+    margin: auto;
+
+    /* margin-right: auto; */
 }
 
 .div2cardtext1 img {
@@ -175,9 +176,9 @@
     padding-left: 80px !important;
 }
 
-/* .div2cards {
-    display: flex;
-} */
+.div2cards {
+    padding-top: 50px;
+}
 
 .div2card {
     border: none !important;
@@ -238,6 +239,32 @@
         padding-top: 5px;
     }
 
+    .div2h1 {
+        font-size: 55px;
+
+        width: 55%;
+    }
+
+
+    .div2cardtext1 img {
+        padding-left: 0px !important;
+        /* padding-right: 20px !important; */
+        /* object-fit: contain !important;
+        object-position: center !important; */
+    }
+
+    .div2cardtext3 img {
+        padding-left: 10px !important;
+    }
+
+    .div2cardtext4 img {
+        padding-left: 70px !important;
+    }
+
+    .div2cardtext2 img {
+        width: 100%;
+        /* margin-right: 20px !important; */
+    }
 }
 
 @media only screen and (max-width:992px) {
@@ -283,6 +310,36 @@
         height: 50px;
         padding-top: 0px;
     }
+
+    .div2h1 {
+        font-size: 55px;
+
+        width: 70%;
+    }
+
+    .div2cardtext3 img {
+        padding-left: 0px !important;
+        width: 100%;
+
+    }
+
+    .div2cardtext1 img {
+        padding-left: 0px !important;
+        width: 100%;
+
+    }
+
+    .div2cardtext4 img {
+        padding-left: 30px !important;
+    }
+
+
+
+    .div2cardtext2 img {
+        width: 105%;
+
+    }
+
 }
 
 @media only screen and (max-width:768px) {
@@ -324,6 +381,14 @@
         padding-bottom: 30px;
 
     }
+
+    .div2cardtext4 img {
+        padding-left: 70px !important;
+    }
+
+    .div2h1 {
+        width: auto;
+    }
 }
 
 
@@ -340,6 +405,47 @@
         padding-bottom: 20px;
 
     }
+
+    .div2card {
+        margin-top: 10px;
+    }
+
+    .div2card>img {
+        /* width: auto; */
+        object-fit: cover;
+    }
+
+    .div2cardtext1 img {
+        /* padding-left: 50px; */
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .div2cardtext2 img {
+        padding-left: 50px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .div2cardtext3 img {
+        padding-left: 150px;
+        
+        width: 50%;
+    }
+
+    .div2cardtext4 img {
+        width: auto;
+        padding-left: 50px;
+        /* padding-right: auto; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* .div2 img{
+        object-fit: contain;
+    } */
 
 
 }
