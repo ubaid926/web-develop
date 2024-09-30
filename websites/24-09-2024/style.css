@@ -408,7 +408,7 @@
     }
 
     .div3allsections{
-        justify-content: unset;
+        justify-content: space-evenly;
     }
 
 }
@@ -458,6 +458,23 @@
     }
 
     .div2h1 {
+        width: auto;
+    }
+
+    .div3h1{
+        width: 80%;
+    }
+
+    .div3 h1{
+        font-size: 42px;
+    }
+
+    .div3allsections{
+        justify-content: unset;
+    }
+
+    .div3section2 img{
+        /* box-sizing: content-box; */
         width: auto;
     }
 }
