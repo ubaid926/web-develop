@@ -243,6 +243,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 200px;
+    padding-bottom: 100px;
 }
 
 .div4main h1 {
@@ -339,6 +340,100 @@
     float: right;
 
 }
+
+.div5allsections h4 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.div5main>h1 {
+    font-size: 63px;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.div5main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.div5main>h1>span {
+    font-family: grace;
+    color: rgba(0, 147, 135, 1);
+    font-weight: normal;
+}
+
+
+.div5section1,
+.div5section2 {
+    display: flex;
+    column-gap: 15px;
+}
+
+
+
+.div5card1 {
+    background-color: rgba(253, 243, 234, 1);
+}
+
+.div5card2 {
+    background-color: var(--blue);
+}
+
+.div5card3 {
+    background-color: rgba(238, 236, 255, 1);
+}
+
+.div5card4 {
+    background-color: rgba(217, 242, 247, 1);
+}
+
+.div5card5 {
+    background-color: rgba(250, 237, 237, 1);
+}
+
+.div5card6 {
+    background-color: rgba(241, 241, 241, 1);
+}
+
+.div5card1,
+.div5card2,
+.div5card3,
+.div5card4,
+.div5card5,
+.div5card6 {
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    width: 30%;
+}
+
+.div5allsections img {
+    width: 70%;
+    padding-bottom: 20px;
+    /* object-fit: cover; */
+
+}
+
+.div5allsections h4,
+.div5allsections p {
+    text-align: center;
+}
+
+.div5allsections {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
 
 
 
@@ -437,27 +532,15 @@
         font-size: 53px;
     }
 
-    /* .div4button {      
-        width: 250px;
-        height: 60px;
-       
-    } */
-
-
-
-    /* .div4section1,
-    .div4section3 {
-        width: 38%;
-    }
-    
-    .div4section2 {
-        width: 48%;   
-    } */
 
     .div4section1>p,
     .div4section2>p,
     .div4section3>p {
         font-size: 18px;
+    }
+
+    .div5main>h1 {
+        font-size: 55px;
     }
 }
 
@@ -585,6 +668,15 @@
         width: 80%;
     }
 
+    .div5main>h1 {
+        font-size: 50px;
+        width: auto;
+    }
+
+    .div5allsections h4 {
+        font-size: 24px;
+    }
+
 }
 
 @media only screen and (max-width:768px) {
@@ -655,6 +747,19 @@
 
     .div4main>h1 {
         width: auto;
+    }
+
+    .div5card1,
+    .div5card2,
+    .div5card3,
+    .div5card4,
+    .div5card5,
+    .div5card6 {
+        border-radius: 4px;
+        padding: 20px;
+
+        row-gap: 10px;
+        width: 50%;
     }
 }
 
