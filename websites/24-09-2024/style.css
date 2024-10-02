@@ -434,6 +434,77 @@
     row-gap: 15px;
 }
 
+.div6{
+    background-color: rgba(227, 248, 248, 1);
+}
+
+.div6main{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.div6main span{
+    font-family: grace;
+    color: rgba(0, 147, 135, 1);
+    font-weight: normal;
+}
+
+.div6main>h1 {
+    font-size: 60px;
+    font-weight:bold;
+
+    text-align: center;
+}
+
+.div6main h2{
+    font-size: 36px;
+    font-weight:bold;
+}
+
+
+.div6section1,
+.div6section2,
+.div6section4 span{
+    color: rgba(0, 147, 135, 0.4);
+}
+.div6section1 h2,
+.div6section2 h2,
+.div6section4 h2{
+    color: rgba(46, 47, 53, 0.4);
+
+}
+
+.div6section1 span,
+.div6section2 span,
+.div6section3 span,
+.div6section4 span{
+    font-size: 36px;
+}
+
+.div6section1 h2,
+.div6section2 h2,
+.div6section3 h2,
+.div6section4 h2{
+   display: inline-block;
+   margin-left: 10px;
+}
+
+.div6section1,
+.div6section2,
+.div6section3,
+.div6section4{
+    width: 40%;
+}
+
+.div6main ol{
+    /* font-size: 36px; */
+    /* list-style:decimal-leading-zero; */
+    /* list-style-type:grace ; */
+    font:normal 36px grace;
+    color: rgba(0, 147, 135, 1);
+}
+
+
 
 
 
@@ -879,7 +950,7 @@
         padding: 10px;
 
         row-gap: 10px;
-        width: 45%;
+        width: 60%;
     }
 
     .div5allsections h4 {
@@ -891,27 +962,20 @@
     }
 
     .div5allsections img {
-        width: 45%;
+        width: 55%;
     }
 
     .div5section1,
     .div5section2 {
         flex-wrap: wrap;
         row-gap: 15px;
-        display: inline-block;
+        justify-content: center;
     }
 
-    .div5section2 {
-        display: inline-block;
-    }
+    
 
 
-
-    .div5allsections {
-        display: inline-block;
-        /* flex-wrap: wrap;
-        flex-direction:column; */
-    }
+    
 
 
 
@@ -992,5 +1056,22 @@
     .subdivsection2div4>p,
     .subdivsection3div4>p {
         font-size: 12px;
+    }
+
+    .div5card1,
+    .div5card2,
+    .div5card3,
+    .div5card4,
+    .div5card5,
+    .div5card6 {
+        border-radius: 4px;
+        padding: 30px;
+
+        row-gap: 10px;
+        width: auto;
+    }
+
+    .div5allsections img {
+        width: 70%;
     }
 }
