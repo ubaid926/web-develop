@@ -749,6 +749,11 @@
         width: auto;
     }
 
+    .div5main>h1 {
+        font-size: 37px;
+
+    }
+
     .div5card1,
     .div5card2,
     .div5card3,
@@ -756,11 +761,26 @@
     .div5card5,
     .div5card6 {
         border-radius: 4px;
-        padding: 20px;
+        padding: 10px;
 
         row-gap: 10px;
         width: 50%;
     }
+
+    .div5allsections h4 {
+        font-size: 20px;
+    }
+
+    .div5allsections p {
+        font-size: 14px;
+    }
+
+    .div5allsections img {
+        width: 80%;
+    }
+
+
+
 }
 
 
@@ -843,6 +863,57 @@
     .div4section3>p {
         font-size: 16px;
     }
+
+    .div5main>h1 {
+        font-size: 32px;
+
+    }
+
+    .div5card1,
+    .div5card2,
+    .div5card3,
+    .div5card4,
+    .div5card5,
+    .div5card6 {
+        border-radius: 4px;
+        padding: 10px;
+
+        row-gap: 10px;
+        width: 45%;
+    }
+
+    .div5allsections h4 {
+        font-size: 18px;
+    }
+
+    .div5allsections p {
+        font-size: 14px;
+    }
+
+    .div5allsections img {
+        width: 45%;
+    }
+
+    .div5section1,
+    .div5section2 {
+        flex-wrap: wrap;
+        row-gap: 15px;
+        display: inline-block;
+    }
+
+    .div5section2 {
+        display: inline-block;
+    }
+
+
+
+    .div5allsections {
+        display: inline-block;
+        /* flex-wrap: wrap;
+        flex-direction:column; */
+    }
+
+
 
 
 }
