@@ -32,9 +32,9 @@
     src: url(fonts/CoveredByYourGrace-Regular.ttf);
 }
 
-* {
+/* * {
     font-family: inter;
-}
+} */
 
 
 
@@ -434,76 +434,118 @@
     row-gap: 15px;
 }
 
-.div6{
+.div6 {
     background-color: rgba(227, 248, 248, 1);
 }
 
-.div6main{
+.div6main {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.div6main span{
-    font-family: grace;
+.div6main>h1>span {
+    font-family: grace !important;
     color: rgba(0, 147, 135, 1);
     font-weight: normal;
+    padding:0px;
 }
 
 .div6main>h1 {
     font-size: 60px;
-    font-weight:bold;
+    font-weight: bold;
 
     text-align: center;
 }
 
-.div6main h2{
-    font-size: 36px;
-    font-weight:bold;
+
+
+.div6main li {
+    font: 36px grace;
+    list-style: decimal-leading-zero;
+    width: 40%;
+    padding-bottom: 20px;
 }
 
+.div6darknum {
+    color: rgba(0, 147, 135, 1);
 
-.div6section1,
-.div6section2,
-.div6section4 span{
+}
+
+.div6dark {
+    color: rgba(46, 47, 53, 1);
+    font-weight: bold;
+}
+
+.div6dark>p {
+    color: rgba(88, 89, 93, 1);
+    padding-left: 30px;
+}
+
+.div6main span {
+    padding-left: 30px;
+    text-transform: capitalize;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.div6main span>p {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.div6light {
+    color: rgba(46, 47, 53, 0.4);
+    font-weight: bold;
+}
+
+.div6lightnum {
     color: rgba(0, 147, 135, 0.4);
 }
-.div6section1 h2,
-.div6section2 h2,
-.div6section4 h2{
-    color: rgba(46, 47, 53, 0.4);
 
-}
-
-.div6section1 span,
-.div6section2 span,
-.div6section3 span,
-.div6section4 span{
-    font-size: 36px;
-}
-
-.div6section1 h2,
-.div6section2 h2,
-.div6section3 h2,
-.div6section4 h2{
-   display: inline-block;
-   margin-left: 10px;
-}
-
-.div6section1,
-.div6section2,
-.div6section3,
-.div6section4{
-    width: 40%;
-}
-
-.div6main ol{
-    /* font-size: 36px; */
-    /* list-style:decimal-leading-zero; */
-    /* list-style-type:grace ; */
-    font:normal 36px grace;
+.div7main>h1>span{
+    font-family: grace;
     color: rgba(0, 147, 135, 1);
 }
 
+.div7main>h1{
+    font-size: 63px;
+    font-weight: bold;
+}
+
+.div7card1section1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div7card1section1 i{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.div7card1{
+    border: 2px solid rgba(46, 47, 53, 1);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.div7card1section1 h3{
+    font-size: 15px;
+}
+
+.div7card1section1 img{
+    object-fit: contain;
+}
+
+.div7card1>p{
+    font-size: 14px;
+    margin-top: 10px;
+    width: 75%;
+}
+
+.div7card1span{
+    display: flex;
+    
+    /* align-items: center; */
+}
 
 
 
@@ -613,6 +655,18 @@
     .div5main>h1 {
         font-size: 55px;
     }
+
+    .div6main>h1 {
+        font-size: 55px;
+    }
+
+    .div6main li{
+        font-size: 33px;
+    }
+
+    .div6main span>p {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width:992px) {
@@ -705,14 +759,6 @@
         font-size: 43px;
     }
 
-    /* .div4button {      
-        width: 250px;
-        height: 60px;
-       
-    } */
-
-
-
     .div4section1,
     .div4section3 {
         width: auto;
@@ -746,6 +792,18 @@
 
     .div5allsections h4 {
         font-size: 24px;
+    }
+
+    .div6main>h1 {
+        font-size: 50px;
+    }
+
+    .div6main li{
+        font-size: 30px;
+    }
+
+    .div6main span>p {
+        font-size: 16px;
     }
 
 }
@@ -850,7 +908,18 @@
         width: 80%;
     }
 
+    .div6main>h1 {
+        font-size: 45px;
+    }
 
+    .div6main li{
+        font-size: 27px;
+        width: 60%;
+    }
+
+    .div6main span>p {
+        font-size: 16px;
+    }
 
 }
 
@@ -972,10 +1041,23 @@
         justify-content: center;
     }
 
-    
+    .div6main>h1 {
+        font-size: 35px;
+    }
+
+    .div6main li{
+        font-size: 25px;
+        width: 70%;
+    }
+
+    .div6main span>p {
+        font-size: 14px;
+    }
 
 
-    
+
+
+
 
 
 
@@ -1073,5 +1155,26 @@
 
     .div5allsections img {
         width: 70%;
+    }
+
+    .div6main>h1 {
+        font-size: 38px;
+    }
+
+    .div6main li{
+        font-size: 25px;
+        width: auto;
+    }
+
+    .div6main span>p {
+        font-size: 14px;
+    }
+
+    .div6dark>p {
+        padding-left: 10px;
+    }
+    
+    .div6main span {
+        padding-left: 10px;
     }
 }
