@@ -157,7 +157,7 @@
 .div2h1 {
     font-size: 63px;
     text-align: center;
-    width: 50%;
+    width: 60%;
     margin: auto;
 
     /* margin-right: auto; */
@@ -321,7 +321,7 @@
 }
 
 .div4button {
-    border: 2px solid rgba(46, 47, 53, 1) !important;
+    
     border: 2px solid rgba(46, 47, 53, 1) !important;
     border-right: 5px solid rgba(46, 47, 53, 1) !important;
     border-bottom: 5px solid rgba(46, 47, 53, 1) !important;
@@ -506,9 +506,15 @@
     color: rgba(0, 147, 135, 1);
 }
 
+.div7main{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .div7main>h1{
     font-size: 63px;
     font-weight: bold;
+    text-align: center;
 }
 
 .div7card1section1 {
@@ -539,6 +545,7 @@
     font-size: 14px;
     margin-top: 10px;
     width: 75%;
+    
 }
 
 .div7card1span{
@@ -547,6 +554,32 @@
     /* align-items: center; */
 }
 
+.div7button{
+    border: 2px solid rgba(46, 47, 53, 1) !important;
+    border-right: 5px solid rgba(46, 47, 53, 1) !important;
+    border-bottom: 5px solid rgba(46, 47, 53, 1) !important;
+    color: white !important;
+    width: 260px;
+    height: 64px;
+    background-color: var(--orange) !important;
+    border-radius: 12px !important;
+    text-transform: uppercase;
+    margin-top: 80px;
+    /* margin-left:  ;
+    margin-right:50%; */
+   
+
+}
+
+
+.div7card1span2{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.div7allcards {
+    padding-top: 80px;
+}
 
 
 
