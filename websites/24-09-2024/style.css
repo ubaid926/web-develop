@@ -321,7 +321,7 @@
 }
 
 .div4button {
-    
+
     border: 2px solid rgba(46, 47, 53, 1) !important;
     border-right: 5px solid rgba(46, 47, 53, 1) !important;
     border-bottom: 5px solid rgba(46, 47, 53, 1) !important;
@@ -448,7 +448,7 @@
     font-family: grace !important;
     color: rgba(0, 147, 135, 1);
     font-weight: normal;
-    padding:0px;
+    padding: 0px;
 }
 
 .div6main>h1 {
@@ -502,17 +502,17 @@
     color: rgba(0, 147, 135, 0.4);
 }
 
-.div7main>h1>span{
+.div7main>h1>span {
     font-family: grace;
     color: rgba(0, 147, 135, 1);
 }
 
-.div7main{
+.div7main {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.div7main>h1{
+.div7main>h1 {
     font-size: 63px;
     font-weight: bold;
     text-align: center;
@@ -523,40 +523,40 @@
     justify-content: space-between;
 }
 
-.div7card1section1 i{
+.div7card1section1 i {
     font-size: 25px;
     margin-top: 15px;
 }
 
-.div7card1{
+.div7card1 {
     border: 2px solid rgba(46, 47, 53, 1);
     border-radius: 10px;
     padding: 15px;
     width: 32%;
 }
 
-.div7card1section1 h3{
+.div7card1section1 h3 {
     font-size: 15px;
 }
 
-.div7card1section1 img{
+.div7card1section1 img {
     object-fit: contain;
 }
 
-.div7card1>p{
+.div7card1>p {
     font-size: 14px;
     margin-top: 10px;
     width: 75%;
-    
+
 }
 
-.div7card1span{
+.div7card1span {
     display: flex;
-    
+
     /* align-items: center; */
 }
 
-.div7button{
+.div7button {
     border: 2px solid rgba(46, 47, 53, 1) !important;
     border-right: 5px solid rgba(46, 47, 53, 1) !important;
     border-bottom: 5px solid rgba(46, 47, 53, 1) !important;
@@ -569,12 +569,12 @@
     margin-top: 80px;
     /* margin-left:  ;
     margin-right:50%; */
-   
+
 
 }
 
 
-.div7card1span2{
+.div7card1span2 {
     margin-top: 10px;
     margin-left: 5px;
 }
@@ -586,60 +586,61 @@
     justify-content: space-between;
 }
 
-.div7buttondiv{
+.div7buttondiv {
     display: flex;
     justify-content: center;
 }
 
-.div8{
+.div8 {
     background-color: rgba(238, 236, 255, 1);
 }
 
-.div8main{
+.div8main {
     padding-top: 100px;
     padding-bottom: 100px;
     /* display: flex;
     justify-content: space-between; */
 }
 
-.div8rightsection>h1{
+.div8rightsection>h1 {
     font-size: 63px;
     letter-spacing: -2px;
 }
 
-.div8rightsection>h1>span{
+.div8rightsection>h1>span {
     font-family: grace;
     color: rgba(0, 147, 135, 1);
 }
 
-.div8rightsection>p{
+.div8rightsection>p {
     font-size: 20px;
     margin-top: 10px;
 }
 
-.div8values{
+.div8values {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
-.div8button{
-    border: 2px solid rgba(46, 47, 53, 1) ;
-    border-right: 5px solid rgba(46, 47, 53, 1) ;
-    border-bottom: 5px solid rgba(46, 47, 53, 1) ;
-    color: black ;
+
+.div8button {
+    border: 2px solid rgba(46, 47, 53, 1);
+    border-right: 5px solid rgba(46, 47, 53, 1);
+    border-bottom: 5px solid rgba(46, 47, 53, 1);
+    color: black;
     font-weight: bold;
     font-size: 14px;
     width: 232px;
     height: 64px;
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 12px ;
+    border-radius: 12px;
     text-transform: uppercase;
     margin-top: 10px;
 }
 
-.div8images{
+.div8images {
     display: flex;
-    
+
 }
 
 .div8images img {
@@ -647,45 +648,57 @@
     margin-top: 50px;
 }
 
-.div8alldivs>img{
+.div8alldivs>img {
     object-fit: contain;
 }
 
-.div9{
+.div9 {
     background-color: rgba(255, 109, 44, 1);
 }
 
+.div9content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
 
-.div9content>h1{
+/* .div9image{
+    object-fit: cover;
+} */
+
+.div9content h1 {
     font-size: 81px;
     font-weight: bold;
     color: white;
 }
-.div9p1{
+
+.div9p1 {
     font-size: 20px;
-    
+
     color: white;
 }
 
-.div9button{
-    border: 2px solid rgba(46, 47, 53, 1) ;
-    border-right: 5px solid rgba(46, 47, 53, 1) ;
-    border-bottom: 5px solid rgba(46, 47, 53, 1) ;
-    color: black ;
+.div9button {
+    border: 2px solid rgba(46, 47, 53, 1);
+    border-right: 5px solid rgba(46, 47, 53, 1);
+    border-bottom: 5px solid rgba(46, 47, 53, 1);
+    color: black;
     font-weight: bold;
     font-size: 14px;
     width: 190px;
     height: 64px;
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 12px ;
-  
-  
+    border-radius: 12px;
+
+
 }
 
 
-.div9p2{
-font-size: 14px;
-color: white;
+.div9p2 {
+    font-size: 14px;
+    color: white;
 }
 
 .div9span {
@@ -707,10 +720,47 @@ color: white;
     padding-top: 8px;
 }
 
-.div9icons p{
+.div9icons p {
     color: white;
 }
 
+.div10 {
+    background-color: rgba(243, 250, 250, 1);
+}
+
+.div10main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.div10main>h1 {
+    font-size: 68px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.div10main>h1>span {
+    font-family: grace;
+    color: rgba(0, 147, 135, 1);
+    font-weight: normal;
+}
+
+.div10card1,
+.div10card2,
+.div10card3 {
+    border: none !important;
+    background-color: unset !important;
+}
+
+.div10card1body>p,
+.div10card2body>p,
+.div10card3body>p {
+    font-size: 28px;
+    font-weight: bold;
+}
 
 
 @media only screen and (max-width:1200px) {
@@ -823,7 +873,7 @@ color: white;
         font-size: 55px;
     }
 
-    .div6main li{
+    .div6main li {
         font-size: 33px;
     }
 
@@ -831,66 +881,120 @@ color: white;
         font-size: 18px;
     }
 
-    .div7main>h1{
+    .div7main>h1 {
         font-size: 55px;
     }
 
-    .div7card1section1 i{
+    .div7card1section1 i {
         font-size: 25px;
         margin-top: 15px;
     }
-    
-    .div7card1{
-        
+
+    .div7card1 {
+
         padding: 15px;
         width: 32%;
     }
-    
-    .div7card1section1 h3{
+
+    .div7card1section1 h3 {
         font-size: 15px;
     }
-    
-    
-    
-    .div7card1>p{
+
+
+
+    .div7card1>p {
         font-size: 14px;
         margin-top: 10px;
         width: 90%;
-        
+
     }
 
     .div7button {
 
         width: 220px;
         height: 55px;
-       
+
 
     }
 
-    .div8rightsection>h1{
+    .div8rightsection>h1 {
         font-size: 55px;
         letter-spacing: -2px;
     }
-    
-    
-    
-    .div8rightsection>p{
+
+
+
+    .div8rightsection>p {
         font-size: 18px;
         margin-top: 10px;
     }
-    
 
-    .div8button{
-        
+
+    .div8button {
+
         font-size: 14px;
         width: 192px;
         height: 60px;
-        
+
     }
 
-    .div8values h1{
+    .div8values h1 {
         font-size: 30px;
     }
+
+    .div9content h1 {
+        font-size: 70px;
+
+    }
+
+    .div9p1 {
+        font-size: 18px;
+
+
+    }
+
+    .div9button {
+
+        font-size: 14px;
+        width: 160px;
+        height: 55px;
+
+
+    }
+
+
+    .div9p2 {
+        font-size: 14px;
+        color: white;
+    }
+
+    .div9span {
+        column-gap: 40px;
+
+    }
+
+    .div9icons i {
+
+        font-size: 16px;
+        letter-spacing: 6px;
+    }
+
+    .div9icons {
+        height: 55px;
+        padding-top: 5px;
+    }
+
+    .div10card1body>p,
+    .div10card2body>p,
+    .div10card3body>p {
+        font-size: 26px;
+
+    }
+
+    .div10main>h1 {
+        font-size: 64px;
+    }
+
 }
 
 @media only screen and (max-width:992px) {
@@ -912,7 +1016,7 @@ color: white;
 
         width: 210px;
         height: 50px;
-    
+
 
     }
 
@@ -936,6 +1040,8 @@ color: white;
         height: 50px;
         padding-top: 0px;
     }
+
+
 
     .div2h1 {
         font-size: 55px;
@@ -1021,74 +1127,74 @@ color: white;
         font-size: 50px;
     }
 
-    .div6main li{
+    .div6main li {
         font-size: 30px;
     }
 
     .div6main span>p {
         font-size: 16px;
     }
-    
-    .div7main>h1{
+
+    .div7main>h1 {
         font-size: 55px;
     }
 
-    .div7card1section1 i{
+    .div7card1section1 i {
         font-size: 25px;
         margin-top: 15px;
     }
-    
-    .div7card1{
-        
+
+    .div7card1 {
+
         padding: 5px;
         width: 32%;
     }
-    
-    .div7card1section1 h3{
+
+    .div7card1section1 h3 {
         font-size: 15px;
     }
-    
-    
-    
-    .div7card1>p{
+
+
+
+    .div7card1>p {
         font-size: 14px;
         margin-top: 0px;
         width: 90%;
-        
+
     }
 
     .div7button {
 
         width: 210px;
         height: 50px;
-       
+
 
     }
 
-    
-    .div8rightsection>h1{
+
+    .div8rightsection>h1 {
         font-size: 45px;
         letter-spacing: -3px;
         line-height: 40px;
     }
-    
-    
-    
-    .div8rightsection>p{
+
+
+
+    .div8rightsection>p {
         font-size: 16px;
         margin-top: 10px;
     }
-    
 
-    .div8button{
-        
+
+    .div8button {
+
         font-size: 14px;
         width: 172px;
         height: 55px;
-        
+
     }
 
-    .div8values h1{
+    .div8values h1 {
         font-size: 28px;
     }
 
@@ -1096,6 +1202,62 @@ color: white;
        height:100%;
     } */
 
+    .div9content h1 {
+        font-size: 55px;
+
+    }
+
+    .div9p1 {
+        font-size: 16px;
+
+
+    }
+
+    .div9button {
+
+        font-size: 14px;
+        width: 160px;
+        height: 50px;
+
+
+    }
+
+
+    .div9p2 {
+        font-size: 14px;
+        color: white;
+    }
+
+    .div9span {
+        column-gap: 40px;
+
+    }
+
+    .div9icons i {
+
+        font-size: 14px;
+        letter-spacing: 6px;
+    }
+
+    .div9icons {
+        height: 50px;
+        padding-top: 0px;
+    }
+
+    .div9content {
+        row-gap: 20px;
+    }
+
+    .div10card1body>p,
+    .div10card2body>p,
+    .div10card3body>p {
+        font-size: 18px;
+
+    }
+
+    .div10main>h1 {
+        font-size: 60px;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -1122,8 +1284,8 @@ color: white;
 
     .div1icons i {
 
-        font-size: 12px;
-        letter-spacing: 4px;
+        font-size: 14px;
+        letter-spacing: 6px;
     }
 
     .div1icons {
@@ -1136,6 +1298,8 @@ color: white;
         padding-bottom: 30px;
 
     }
+
+
 
     .div2cardtext4 img {
         padding-left: 70px !important;
@@ -1200,7 +1364,7 @@ color: white;
         font-size: 45px;
     }
 
-    .div6main li{
+    .div6main li {
         font-size: 27px;
         width: 60%;
     }
@@ -1209,32 +1373,32 @@ color: white;
         font-size: 16px;
     }
 
-    .div7main>h1{
+    .div7main>h1 {
         font-size: 45px;
     }
 
-    .div7card1section1 i{
+    .div7card1section1 i {
         font-size: 25px;
         margin-top: 15px;
     }
-    
-    .div7card1{
-        
+
+    .div7card1 {
+
         padding: 5px;
         width: 48%;
     }
-    
-    .div7card1section1 h3{
+
+    .div7card1section1 h3 {
         font-size: 15px;
     }
-    
-    
-    
-    .div7card1>p{
+
+
+
+    .div7card1>p {
         font-size: 14px;
         margin-top: 0px;
         width: 90%;
-        
+
     }
 
     .div7allcards {
@@ -1247,40 +1411,114 @@ color: white;
 
         width: 180px;
         height: 45px;
-       
+
 
     }
 
-    .div8rightsection>h1{
+    .div8rightsection>h1 {
         font-size: 30px;
         letter-spacing: -3px;
         line-height: 25px;
     }
 
-    .div8values p{
+    .div8values p {
         font-size: 12px;
     }
-    
-    
-    
-    .div8rightsection>p{
+
+
+
+    .div8rightsection>p {
         font-size: 13px;
         margin-top: 10px;
     }
-    
 
-    .div8button{
-        
+
+    .div8button {
+
         font-size: 12px;
         width: 142px;
         height: 47px;
-        
+
     }
 
-    .div8values h1{
+    .div8values h1 {
         font-size: 18px;
     }
 
+
+    .div9content h1 {
+        font-size: 40px;
+
+    }
+
+    .div9p1 {
+        font-size: 14px;
+
+
+    }
+
+    .div9button {
+
+        font-size: 14px;
+        width: 150px;
+        height: 46px;
+
+
+    }
+
+
+    .div9p2 {
+        font-size: 12px;
+
+    }
+
+    .div9span {
+        row-gap: 10px;
+        column-gap: 0px;
+        flex-direction: column;
+    }
+
+    .div9icons i {
+
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+    .div9icons p {
+        font-size: 12px;
+    }
+
+    .div9image {
+        object-fit: contain;
+    }
+
+    .div9icons {
+        height: 50px;
+
+    }
+
+    .div9content {
+        row-gap: 10px;
+    }
+
+
+    .div10card1body>p,
+    .div10card2body>p,
+    .div10card3body>p {
+        font-size: 14px;
+
+    }
+
+    .div10card1body,
+    .div10card2body,
+    .div10card3body {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .div10main>h1 {
+        font-size: 50px;
+    }
 
 }
 
@@ -1406,7 +1644,7 @@ color: white;
         font-size: 35px;
     }
 
-    .div6main li{
+    .div6main li {
         font-size: 25px;
         width: 70%;
     }
@@ -1416,32 +1654,32 @@ color: white;
     }
 
 
-    .div7main>h1{
+    .div7main>h1 {
         font-size: 35px;
     }
 
-    .div7card1section1 i{
+    .div7card1section1 i {
         font-size: 25px;
         margin-top: 15px;
     }
-    
-    .div7card1{
-        
+
+    .div7card1 {
+
         padding: 5px;
         width: 70%;
     }
-    
-    .div7card1section1 h3{
+
+    .div7card1section1 h3 {
         font-size: 15px;
     }
-    
-    
-    
-    .div7card1>p{
+
+
+
+    .div7card1>p {
         font-size: 14px;
         margin-top: 0px;
         width: 90%;
-        
+
     }
 
     .div7allcards {
@@ -1455,43 +1693,101 @@ color: white;
 
         width: 180px;
         height: 45px;
-       
+
 
     }
 
-    .div8alldivs{
+    .div8alldivs>img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .div8alldivs {
         row-gap: 30px;
     }
-    
-    .div8rightsection>h1{
+
+    .div8rightsection>h1 {
         font-size: 35px;
         letter-spacing: -2px;
         line-height: 35px;
     }
 
-    .div8values p{
+    .div8values p {
         font-size: 12px;
     }
-    
-    
-    
-    .div8rightsection>p{
+
+
+
+    .div8rightsection>p {
         font-size: 13px;
         margin-top: 10px;
     }
-    
 
-    .div8button{
-        
+
+    .div8button {
+
         font-size: 12px;
         width: 142px;
         height: 47px;
-        
+
     }
 
-    .div8values h1{
+    .div8values h1 {
         font-size: 18px;
     }
+
+    .div9alldivs {
+        flex-direction: column-reverse;
+    }
+
+
+
+    .div9image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .div9content h1 {
+        font-size: 60px;
+
+    }
+
+    .div9p1 {
+        font-size: 16px;
+
+
+    }
+
+
+
+
+
+    .div9span {
+        column-gap: 10px;
+        flex-direction: row;
+    }
+
+
+
+
+    .div10card1body>p,
+    .div10card2body>p,
+    .div10card3body>p {
+        font-size: 18px;
+
+    }
+
+    .div10main>h1 {
+        font-size: 42px;
+    }
+
+    .div10cards{
+        display: flex;
+        justify-content: center;
+        row-gap: 15px;
+    }
+
 
 }
 
@@ -1538,6 +1834,10 @@ color: white;
         flex-direction: column-reverse;
         row-gap: 50px;
     }
+
+
+
+
 
     .div2cardtext1 img {
         width: 50%;
@@ -1592,7 +1892,7 @@ color: white;
         font-size: 38px;
     }
 
-    .div6main li{
+    .div6main li {
         font-size: 25px;
         width: auto;
     }
@@ -1604,37 +1904,37 @@ color: white;
     .div6dark>p {
         padding-left: 10px;
     }
-    
+
     .div6main span {
         padding-left: 10px;
     }
 
-    .div7main>h1{
+    .div7main>h1 {
         font-size: 35px;
     }
 
-    .div7card1section1 i{
+    .div7card1section1 i {
         font-size: 25px;
         margin-top: 15px;
     }
-    
-    .div7card1{
-        
+
+    .div7card1 {
+
         padding: 5px;
         width: 100%;
     }
-    
-    .div7card1section1 h3{
+
+    .div7card1section1 h3 {
         font-size: 15px;
     }
-    
-    
-    
-    .div7card1>p{
+
+
+
+    .div7card1>p {
         font-size: 14px;
         margin-top: 0px;
         width: 90%;
-        
+
     }
 
     .div7allcards {
@@ -1649,11 +1949,84 @@ color: white;
         font-size: 12px !important;
         width: 160px;
         height: 42px;
-       
+
 
     }
 
-    .div8rightsection>h1{
+    .div8rightsection>h1 {
         font-size: 30px;
     }
+
+    .div9content h1 {
+        font-size: 37px;
+
+    }
+
+    .div9p1 {
+        font-size: 12px;
+
+
+    }
+
+    .div9button {
+
+        font-size: 12px;
+        width: 140px;
+        height: 44px;
+
+
+    }
+
+
+    .div9p2 {
+        font-size: 10px;
+
+    }
+
+    .div9span {
+        row-gap: 10px;
+        column-gap: 0px;
+        flex-direction: column;
+    }
+
+    .div9icons i {
+
+        font-size: 10px;
+        letter-spacing: 5px;
+    }
+
+    .div9icons p {
+        font-size: 12px;
+    }
+
+    .div9image {
+        object-fit: contain;
+    }
+
+    .div9icons {
+        height: 42px;
+
+    }
+
+    .div9content {
+        row-gap: 7px;
+    }
+
+    .div10card1body>p,
+    .div10card2body>p,
+    .div10card3body>p {
+        font-size: 14px;
+
+    }
+
+    .div10main>h1 {
+        font-size: 30px;
+    }
+
+    .div10cards{
+        display: flex;
+        justify-content: center;
+        row-gap: 15px;
+    }
+
 }
