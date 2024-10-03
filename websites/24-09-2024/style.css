@@ -598,11 +598,13 @@
 .div8main{
     padding-top: 100px;
     padding-bottom: 100px;
-    display: flex;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .div8rightsection>h1{
     font-size: 63px;
+    letter-spacing: -2px;
 }
 
 .div8rightsection>h1>span{
@@ -612,11 +614,11 @@
 
 .div8rightsection>p{
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .div8values{
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -632,11 +634,12 @@
     background-color: rgba(255, 255, 255, 1);
     border-radius: 12px ;
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .div8images{
     display: flex;
+    
 }
 
 .div8images img {
@@ -644,9 +647,71 @@
     margin-top: 50px;
 }
 
-.div8main>img{
+.div8alldivs>img{
     object-fit: contain;
 }
+
+.div9{
+    background-color: rgba(255, 109, 44, 1);
+}
+
+
+.div9content>h1{
+    font-size: 81px;
+    font-weight: bold;
+    color: white;
+}
+.div9p1{
+    font-size: 20px;
+    
+    color: white;
+}
+
+.div9button{
+    border: 2px solid rgba(46, 47, 53, 1) ;
+    border-right: 5px solid rgba(46, 47, 53, 1) ;
+    border-bottom: 5px solid rgba(46, 47, 53, 1) ;
+    color: black ;
+    font-weight: bold;
+    font-size: 14px;
+    width: 190px;
+    height: 64px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px ;
+  
+  
+}
+
+
+.div9p2{
+font-size: 14px;
+color: white;
+}
+
+.div9span {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    column-gap: 50px;
+
+}
+
+.div9icons i {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+
+.div9icons {
+    height: 64px;
+    padding-top: 8px;
+}
+
+.div9icons p{
+    color: white;
+}
+
+
 
 @media only screen and (max-width:1200px) {
 
@@ -800,6 +865,31 @@
         height: 55px;
        
 
+    }
+
+    .div8rightsection>h1{
+        font-size: 55px;
+        letter-spacing: -2px;
+    }
+    
+    
+    
+    .div8rightsection>p{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+
+    .div8button{
+        
+        font-size: 14px;
+        width: 192px;
+        height: 60px;
+        
+    }
+
+    .div8values h1{
+        font-size: 30px;
     }
 }
 
@@ -975,6 +1065,37 @@
 
     }
 
+    
+    .div8rightsection>h1{
+        font-size: 45px;
+        letter-spacing: -3px;
+        line-height: 40px;
+    }
+    
+    
+    
+    .div8rightsection>p{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+
+    .div8button{
+        
+        font-size: 14px;
+        width: 172px;
+        height: 55px;
+        
+    }
+
+    .div8values h1{
+        font-size: 28px;
+    }
+
+    /* .div8main>img{
+       height:100%;
+    } */
+
 }
 
 @media only screen and (max-width:768px) {
@@ -1129,6 +1250,37 @@
        
 
     }
+
+    .div8rightsection>h1{
+        font-size: 30px;
+        letter-spacing: -3px;
+        line-height: 25px;
+    }
+
+    .div8values p{
+        font-size: 12px;
+    }
+    
+    
+    
+    .div8rightsection>p{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    
+
+    .div8button{
+        
+        font-size: 12px;
+        width: 142px;
+        height: 47px;
+        
+    }
+
+    .div8values h1{
+        font-size: 18px;
+    }
+
 
 }
 
@@ -1307,6 +1459,40 @@
 
     }
 
+    .div8alldivs{
+        row-gap: 30px;
+    }
+    
+    .div8rightsection>h1{
+        font-size: 35px;
+        letter-spacing: -2px;
+        line-height: 35px;
+    }
+
+    .div8values p{
+        font-size: 12px;
+    }
+    
+    
+    
+    .div8rightsection>p{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    
+
+    .div8button{
+        
+        font-size: 12px;
+        width: 142px;
+        height: 47px;
+        
+    }
+
+    .div8values h1{
+        font-size: 18px;
+    }
+
 }
 
 @media only screen and (max-width:400px) {
@@ -1465,5 +1651,9 @@
         height: 42px;
        
 
+    }
+
+    .div8rightsection>h1{
+        font-size: 30px;
     }
 }
