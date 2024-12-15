@@ -71,3 +71,16 @@
 // var age="15 years";
 // alert("I am " +age+ " old");
 
+// Q2
+// var visitingNotification="you have visited this site 14 times"
+// alert(visitingNotification);
+
+// Q3 
+// var birthYear=2000
+// document.write("my birthyear is "+ birthYear+ "\n Datatype of my declared variable is number");
+
+// Q4
+// var name= "Rashid"
+// var product="shoes"
+// var quantity=2
+// document.write("Rashid ordered two shoes on IJK clothing store");
