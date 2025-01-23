@@ -1,0 +1,182 @@
+body {
+    font-family: poppins;
+    background-color: yellowgreen !important;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    /* padding: 0px; */
+
+}
+
+/* .container {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.divhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+    margin-bottom: 20px;
+}
+
+#demo {
+    padding: 7px 15px;
+    font-weight: 500;
+    height: 40px;
+    font-size: 17px;
+}
+
+.box1head {
+    /* display: inline-block; */
+    font-size: 2.7em;
+}
+
+.box {
+    background-color: white;
+    width: 45%;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 50px auto;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center; */
+    /* align-items: center; */
+}
+
+
+.button {
+    border: 1px yellowgreen solid;
+    border-radius: 5px;
+    background: transparent;
+
+    /* position: relative; */
+    /* box-sizing: content-box; */
+}
+
+.button:hover {
+    background-color: yellowgreen;
+    color: white;
+    /* font-weight: bolder; */
+
+}
+
+.divpass {
+    /* background-color: blue; */
+    position: relative;
+    margin-bottom: 8px;
+
+}
+
+.divpass i {
+    /* position: absolute;
+    right: 50px;
+    font-weight: 900; */
+    font-size: 24px;
+    /* width: 100%; */
+}
+
+
+
+#invisibleeye {
+    display: none;
+    /* position: absolute;
+    right: 8px;
+    top: 7px; */
+}
+
+
+.eyebtn {
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    border: none;
+    background-color: transparent;
+    /* bottom: auto; */
+}
+
+
+.inputpas {
+    border: 1px yellowgreen solid;
+    border-radius: 5px;
+    background: transparent;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 24px;
+    /* font-weight: 500; */
+    /* height: 20px; */
+    width: 100%;
+    /* box-sizing: border-box; */
+}
+
+/* .divpasssection1{
+    width: 100%;
+    display: flex;
+
+} */
+
+.divcopybtn {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+#copybtn {
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 17px;
+    height: 40px;
+    /* margin-right: auto;
+    margin-left:auto ; */
+}
+
+.divrange {
+    margin-bottom: 10px;
+}
+
+.rangeinput {
+    width: 100%;
+}
+
+.divchar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.divcharinput>input {
+    /* display: flex; */
+    /* align-items: ; */
+    /* justify-content: space-between;
+     */
+    margin-left: 5px;
+}
+
+.divchar {
+    margin-bottom: 10px;
+}
+
+
+
+#generatebtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
+    width: 100%;
+}
+
+
+
+
+/* .divcharimput>input{
+    border-radius: 0px;
+} */

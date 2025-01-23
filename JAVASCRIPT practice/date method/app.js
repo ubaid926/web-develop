@@ -21,7 +21,7 @@
 // var today=days[date]
 // if (today=="sunday" || today=="saturday")
 //     {alert("its a funday")
-        
+
 //     }
 
 
@@ -57,7 +57,34 @@
 
 
 //Q10//
-var diff=new Date("5 dec 2015").getTime()-new Date("2015").getTime()
-console.log(diff/(1000*60))
+// var diff=new Date("5 dec 2015 22:50:16").getTime()-new Date("1 jan 2015").getTime()
+// console.log(Math.ceil(diff/(1000*60)))
 
 
+//Q11//
+// console.log(new Date("15 dec 2024").getHours())
+// console.log("Current date : "+new Date("15 dec 2024 20:00:00")+" 1 hour ago, it was "+ new Date("15 dec 2024 19:00:00") )
+
+
+//Q12//
+// console.log("Current date : "+new Date()+"100 years back, it was "+ new Date("1924"))
+
+
+//Q13//
+// var age = prompt("Enter your age")
+// console.log("Your age is " + age)
+// console.log("Your birthyear is " + (new Date().getFullYear() - age))
+
+
+//Q14//
+// var chargesPerUnit=16
+// var numberOfUnits=410
+// var latePaymentSurcharge=350
+// var netAmount=chargesPerUnit*numberOfUnits
+// console.log("Customer name : ABC ")
+// console.log("Month : December")
+// console.log("Number of units : " +numberOfUnits)
+// console.log("Charges per unit :"+ chargesPerUnit)
+// console.log("Net amount payable : "+(netAmount))
+// console.log("Late payment surcharge : "+latePaymentSurcharge)
+// console.log("Gross amount payable : "+(netAmount+latePaymentSurcharge))
