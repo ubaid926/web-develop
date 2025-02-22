@@ -31,9 +31,9 @@
             <!-- <div class="divpasssection1"> -->
             <input type="text" class="inputpas" minlength="8" maxlength="24" id="passwordinput" value="" placeholder="Strong Password" />
             <!-- </div> -->
-            <button class="eyebtn" onclick="eye()">
-                <i class="visibleeye fa-solid fa-eye" id="visibleeye" ></i>
-                <i class="fa-solid fa-eye-slash" id="invisibleeye"></i>
+            <button class="eyebtn" >
+                <i class="visibleeye fa-solid fa-eye" id="visibleeye" onclick="eye()" ></i>
+                <i class="fa-solid fa-eye-slash" id="invisibleeye" onclick="eye2()"></i>
             </button>
         </div>
         <div class="divcopybtn">
@@ -47,10 +47,10 @@
         <div class="divchar">
             <p id="divchar">Character Length : <span id="divcharspan"></span> </p>
             <div class="divcharinput">
-                <input type="checkbox" name="" id="" />a-z
-                <input type="checkbox" name="" id="" />A-Z
-                <input type="checkbox" name="" id="" />@#$
-                <input type="checkbox" name="" id="" />0-9
+                <input type="checkbox" name="" class="checkbox" id="a-z"  />a-z
+                <input type="checkbox" name="" class="checkbox" id="A-Z"  />A-Z
+                <input type="checkbox" name="" class="checkbox" id="@#$" />@#$
+                <input type="checkbox" name="" class="checkbox" id="0-9"  />0-9
             </div>
         </div>
         <!-- <br /> -->
