@@ -1,232 +1,213 @@
-// var alphabets = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+//Q1
+/*function plus(a,b){
+   let c= a+b
+   return c
+}
+console.log(plus(6,3))*/
 
-var inputPasJs = document.getElementById("passwordinput")
 
-// function fff(){
-//   var characters = "!@#$%^&*(){}<>?"
-//     let ddd=[]
-//     ddd.push(characters[Math.ceil(Math.random() * characters.length) - 1])
-//     console.log(ddd)
+//Q2
+// function year() {
+//    var b = +prompt()
+//    var d = b + 1
+//    var e = d.toString()
+//    var days = new Date(b.toString()).getTime() / (1000 * 60 * 60 * 24)
+//    var days2 = new Date(d.toString()).getTime() / (1000 * 60 * 60 * 24)
+//    let totaldays = days2 - days
+//    if (totaldays == 366) {
+//       document.write("This is leap year")
+//    }
+//    else { document.write("This is not leap year") }
+// }
+// year()
+
+
+//Q3
+// function area(S,a,b,c){
+//    var areavalue= S*((S-a)*(S-b)*(S-c))
+// console.log("area is "+areavalue)}
+// function valueofs(a,b,c){
+//   var S=(a+b+c)/2
+//   area(S,a,b,c) 
+// }
+// valueofs(2,2,2)
+
+
+//Q4
+// function mainFunction(){
+//   function average(){
+//       var averagevar= (subject1+subject2+subject3)/3
+//       return averagevar.toFixed(2)
 //   }
-  
-//   var ppp=fff()
-
-//   var abc="Refer"
-// var efg=[]
-// efg.push(...abc)
-// console.log(efg)
-  
-  function generator() {
-  var alphabets = "abcdefghijklmnopqrstuvwxyz"
-  var capitalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  var num = "1234567890"
-  var characters = "!@#$%^&*(){}<>?"
-    var capitalCheckbox=document.getElementById("A-Z")
-    var smallLetterCheckbox=document.getElementById("a-z")
-    var characterCheckbox=document.getElementById("@#$")
-    var numCheckbox=document.getElementById("0-9")
-    var rangeinputvalue = document.getElementById("rangeinput").value
-    function getCheckedValues(checkboxes) {
-      var checkedValue = [];
-      for (var i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i].checked) {checkedValue.push(checkboxes[i].value);}}
-      return checkedValue;}
-    var capitalLettersChecked = getCheckedValues([capitalCheckbox]);
-    var smallLettersChecked = getCheckedValues([smallLetterCheckbox]);
-    var numbersChecked = getCheckedValues([numCheckbox]);
-    var specialCharactersChecked = getCheckedValues([characterCheckbox]);
-    var pass = []; // array for random number
-    // If checkbox checked the push there value in the above array
-    if (capitalLettersChecked.length > 0) {
-      pass.push(...capitalLetters);}
-    if (smallLettersChecked.length > 0) {
-      pass.push(...alphabets);}
-    if (numbersChecked.length > 0) {
-      pass.push(...num);}
-    if (specialCharactersChecked.length > 0) {
-      pass.push(...characters);}
-    var generatePassword = "";
-    // Loop for generating password
-    for (var i = 0; i < rangeinputvalue; i++) {
-      var getPass = pass[Math.floor(Math.random() * pass.length)];
-      generatePassword += getPass;
-      if (generatePassword === "undefined") {
-        generatePassword = "";
-        break; }}
-    inputPasJs.value = generatePassword
-    // console.log(generatePassword)
-    //   function checked(checkboxes){
-//       var chekedValue=[]
-//       for (i=0; i<checkboxes.length; i++){
-//         if (checkboxes[i].checked){
-  //           chekedValue.push(checkboxes[i].value)
-  //         }
-  //         // console.log(chekedValue,"chekedvalue")
-  //       }
-  //       return chekedValue;
-  //     }
-  //   var capitalChecked=checked([capitalCheckbox])
-  //   var smallChecked=checked([smallLetterCheckbox])
-  //   var characterChecked=checked([characterCheckbox])
-  //   var numChecked=checked([numCheckbox])
-  
-  
-  //   // console.log(capitalChecked,"checkvalue")
-  //   var pas=[]
-  //   if (capitalChecked.length>0){
-    
-  //     pas.push(...capitalLetters)
-  //     // console.log(capitalChecked.length,"capitalchecked")
-  //   }
-  //   if (smallChecked.length>0){
-    //     pas.push(...alphabets)
+//   function percentage(){
+//         var percentagevar=((subject1+subject2+subject3)/300)*100
+//         return percentagevar.toFixed(2)
 //   }
-//   if (characterChecked.length>0){
-  //     pas.push(...characters)
-  //   }
-  //   if (numChecked.length>0){
-    //     pas.push(...num)
-    //   }
-    //   // console.log(pas,"pas")
-    //   var generatePassword=""
-    //   for (i=0; i<rangeinputvalue; i++){
-      
-    //     var getPas=pas[Math.ceil(Math.random()*pas.length-1)]
-    //      generatePassword+=getPas
-    //      if (generatePassword==="undefined"){
-      //       generatePassword=""
-      //       break
-      //      }
-      //   }
-      //   // console.log(generatePassword)
+//  var subject1=59
+//  var subject2=62
+//  var subject3=73
+//  var mainaverage="average is "+(average(subject1,subject2,subject3))
+//  var mainpercentage="Percentage is "+(percentage(subject1,subject2,subject3))
+//  console.log(mainaverage)
+//  console.log(mainpercentage)
+// }
+// mainFunction()
 
 
-      // function getCheckedValues( ){
-      //   const checkboxes=document.querySelectorAll(".checkbox")
-      //   const checkedValues= Array.from(checkboxes)
-      //   .filter(checkbox => checkbox.checked)
-      //   .map(checkbox=> checkbox.value)
-    
-      //   document.getElementById("passwordinput").textContent=checkedValues.join(",")
-      //   console.log(checkedValues)
-      // }
-      // getCheckedValues()
-    }
+//Q5
+// function findindex(){
+//    let word=prompt()
+//    let search=prompt()
+//    let index=""
+//    for (i=0; i<word.length; i++)
+//    {       
+//    if (search==word[i]){ 
+//          index= i +" is index of " + word[i] 
+//          console.log(index)}
+//    }
+// }
+// findindex()
 
-    
-    
-    
-    // function capitalschange() {
-      //   var capitalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-      //       var rangeinputvalue2 = document.getElementById("rangeinput").value
-//       var aa = ""
-//       for (i = 0; i < rangeinputvalue2; i++) {
-//           aa += capitalLetters[Math.ceil(Math.random() * capitalLetters.length) - 1]
+
+//Q6
+// function dlt() {
+//    var vowels = ""
+//    var sentense = prompt()
+//    var update = ""
+//    for (i = 0; i < sentense.length; i++) {
+//       if (sentense[i] === "a") {
+//          vowels += sentense[i]
 //       }
-//        console.log(aa)
-//     }
+//       else if (sentense[i] == "e") {
+//          vowels += sentense[i]
+//       }
+//       else if (sentense[i] == "i") {
+//          vowels += sentense[i]
+//       }
+//       else if (sentense[i] == "o") {
+//          vowels += sentense[i]
+//       }
+//       else if (sentense[i] == "u") {
+//          vowels += sentense[i]
+//       }
+//       else {
+//          update += sentense[i]
+//       }
+//    }
+// }
+// dlt()
 
-//     capitalschange()
 
-// function generator2(aa, bb, cc, dd) {
-//     var password = ""
-//     if (aa) {
-//         password += aa
-//         // console.log(aa)
-//     }
-//     if (bb) {
-//         password += bb
-//     }
-//     if (cc) {
-//         password += cc
-//     }
-//     if (dd) {
-//         password += dd
-//     }
-//     //    console.log(password)
+//Q7
+// var sentense = "please read this application and give me gratuity"
+// var vowels = "aeiou"
+// var counter = 0
+// for (i = 0; i < sentense.length; i++) {
+//    let dblwords = sentense[i]
+//    switch (dblwords) {
+//       case "a":
+//          for (j = 0; j < vowels.length; j++) {
+//             if (sentense[i + 1] == vowels[j]) {
+//                counter += 1
+//             }
+//          }
+//          break;
+//       case "i":
+//          for (k = 0; k < vowels.length; k++) {
+//             if (sentense[i + 1] == vowels[k]) {
+//                counter += 1
+//             }
+//          }
+//          break;
+//       case "o":
+//          for (l = 0; l < vowels.length; l++) {
+//             if (sentense[i + 1] == vowels[l]) {
+//                counter += 1
+//             }
+//          }
+//          break;
+//       case "u":
+//          for (m = 0; m < vowels.length; m++) {
+//             if (sentense[i + 1] == vowels[m]) {
+//                counter += 1
+//             }
+//          }
+//          break;
+//       case "e":
+//          for (n = 0; n < vowels.length; n++) {
+//             if (sentense[i + 1] == vowels[n]) {
+//                counter += 1
+//             }
+//          }
+//          break;
+//    }
+// }
+// console.log(counter)
 
-//     var rangeinputvalue2 = document.getElementById("rangeinput").value
-//     var new0 = ""
-//     for (i = 0; i < rangeinputvalue2; i++) {
-//         new0 += password[Math.ceil(Math.random() * password.length) - 1]
-//     }
-//     generator(new0)
-    
+
+//Q8 
+// var input=prompt()
+// function meter() {
+//   let metervar =input*1000
+//   console.log(metervar+" meter of "+ input +"km")
+//   centimeter(metervar)
+// }
+// function centimeter(metervar) {
+//   let centimetervar= metervar*100
+//   console.log(centimetervar+" centimeter of "+ input +"km")
+//   inch(centimetervar)
+// }
+// function inch(centimetervar) {
+//  let inchvar=centimetervar/2.54
+//  console.log(inchvar+ " inches of " + input + "km")
+// }
+// function feet() {
+//    let feetvar=input*3281
+//    console.log(feetvar+" feet of "+ input + "km")
+
+// }
+// if(input){
+//    meter()
+// feet()
 // }
 
 
-var rangeinputvalue = document.getElementById("rangeinput").value
-document.getElementById("divcharspan").innerText = rangeinputvalue
+//Q9
+// let hour = prompt()
+// if (hour > 40) {
+//    console.log((hour - 40) * 12 + " rupees overtime for " + hour + " hours")
+// }
+// else { console.log("no overtime for "+ hour+"hours") }
 
-function rangeValue() {
-    var rangeinputvalue = document.getElementById("rangeinput").value
-    document.getElementById("divcharspan").innerText = rangeinputvalue
+
+//Q10
+function divide() {
+   let a = +prompt()
+   let hundred=0
+   let fifty=0
+   let ten=0
+   for (i = 0; i < 10; i++) {
+      if (a >= 100) {
+        a= a-100
+         console.log(a)
+         hundred+=1
+      }
+      else if (a >= 50) {
+        a= a - 50
+         // console.log(50)
+         fifty+=1
+      }
+      else {
+         a=a - 10
+         // console.log(10)
+         ten+=1
+         // break
+      }
+   }
+   console.log(hundred+" hundred notes "+fifty+" fifty notes "+ ten+" ten notes")
 }
-
-function eye() {
-    document.getElementById("visibleeye").style.display = "none"
-    document.getElementById("invisibleeye").style.display = "block"
-    inputPasJs.setAttribute("type", "password")
-}
-
-function eye2() {
-    document.getElementById("invisibleeye").style.display = "none"
-    document.getElementById("visibleeye").style.display = "block"
-    inputPasJs.setAttribute("type", "text")
-}
-
-// function capitalschange() {
-//     var diffcapitalLetters = capitalLetters[Math.ceil(Math.random() * capitalLetters.length) - 1]
-//     var diffcapitalLetters2 = capitalLetters[Math.ceil(Math.random() * capitalLetters.length) - 1]
-//     var rangeinputvalue2 = document.getElementById("rangeinput").value
-//     var password2 = diffcapitalLetters + diffcapitalLetters2
-//     var aa = ""
-//     for (i = 0; i < rangeinputvalue2; i++) {
-//         aa += password2[Math.ceil(Math.random() * password2.length) - 1]
-//     }
-   
+// Number(a)
+// console.log(typeof(a))
+// if (a) {
+   divide()
 // }
-
-// function characterschange() {
-//     var diffChar = characters[Math.ceil(Math.random() * characters.length) - 1]
-//     var diffChar2 = characters[Math.ceil(Math.random() * characters.length) - 1]
-//     var rangeinputvalue2 = document.getElementById("rangeinput").value
-//     var password2 = diffChar + diffChar2
-//     var bb = ""
-//     for (i = 0; i < rangeinputvalue2; i++) {
-//         bb += password2[Math.ceil(Math.random() * password2.length) - 1]
-//     }
-//     generator2(bb)
-// }
-
-// function numschange() {
-
-//     var diffnum = num[Math.ceil(Math.random() * num.length) - 1]
-//     var diffnum2 = num[Math.ceil(Math.random() * num.length) - 1]
-//     var rangeinputvalue2 = document.getElementById("rangeinput").value
-//     var password2 = diffnum + diffnum2
-//     var cc = ""
-//     for (i = 0; i < rangeinputvalue2; i++) {
-//         cc += password2[Math.ceil(Math.random() * password2.length) - 1]
-//     }
-//     // console.log(new0)
-//     generator2(cc)
-// }
-
-// function letterschange() {
-//     var diffLetters = alphabets[Math.ceil(Math.random() * alphabets.length) - 1]
-//     var diffLetters2 = alphabets[Math.ceil(Math.random() * alphabets.length) - 1]
-//     var rangeinputvalue2 = document.getElementById("rangeinput").value
-//     var password2 = diffLetters + diffLetters2
-//     var dd = ""
-
-
-
-//     for (i = 0; i < rangeinputvalue2; i++) {
-//         dd += password2[Math.ceil(Math.random() * password2.length) - 1]
-//     }
-//     generator2(dd)
-// }
-
-
-
