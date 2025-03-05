@@ -71,8 +71,8 @@ console.log(plus(6,3))*/
 
 //Q6
 // function dlt() {
-//    var vowels = ""
-//    var sentense = prompt()
+   // var vowels = ""
+   // var sentense = prompt()
 //    var update = ""
 //    for (i = 0; i < sentense.length; i++) {
 //       if (sentense[i] === "a") {
@@ -96,10 +96,36 @@ console.log(plus(6,3))*/
 //    }
 // }
 // dlt()
+// function delt() {
+//    let a= sentense.split("")
+//    delete 
+   //  let b=a.filter(check)
+   //  console.log(b)
+   //  function check(vowels) {
+       
+   //    for (i=0; i<vowels.length; i++){
+         
+   //     }
+   //    return vowels=a
+   //  }
+// }
+// delt()
+
+
 
 
 //Q7
-// var sentense = "please read this application and give me gratuity"
+var sentense = "please read this application and give me gratuity"
+var a=sentense.split("")
+var b=a.filter(check)
+console.log(b)
+function check(vowels) {
+   // for (i=0; i<vowels.length; i++){
+
+   // }
+   // vowels="aeiou"
+   return vowels="e"
+ }
 // var vowels = "aeiou"
 // var counter = 0
 // for (i = 0; i < sentense.length; i++) {
@@ -181,33 +207,33 @@ console.log(plus(6,3))*/
 
 
 //Q10
-function divide() {
-   let a = +prompt()
-   let hundred=0
-   let fifty=0
-   let ten=0
-   for (i = 0; i < 10; i++) {
-      if (a >= 100) {
-        a= a-100
-         console.log(a)
-         hundred+=1
-      }
-      else if (a >= 50) {
-        a= a - 50
-         // console.log(50)
-         fifty+=1
-      }
-      else {
-         a=a - 10
-         // console.log(10)
-         ten+=1
-         // break
-      }
-   }
-   console.log(hundred+" hundred notes "+fifty+" fifty notes "+ ten+" ten notes")
-}
+// function divide() {
+//    let a = +prompt()
+//    let hundred=0
+//    let fifty=0
+//    let ten=0
+//    for (i = 0; i < 10; i++) {
+//       if (a >= 100) {
+//         a= a-100
+//          console.log(a)
+//          hundred+=1
+//       }
+//       else if (a >= 50) {
+//         a= a - 50
+//          // console.log(50)
+//          fifty+=1
+//       }
+//       else {
+//          a=a - 10
+//          // console.log(10)
+//          ten+=1
+//          // break
+//       }
+//    }
+//    console.log(hundred+" hundred notes "+fifty+" fifty notes "+ ten+" ten notes")
+// }
 // Number(a)
 // console.log(typeof(a))
 // if (a) {
-   divide()
+   // divide()
 // }
