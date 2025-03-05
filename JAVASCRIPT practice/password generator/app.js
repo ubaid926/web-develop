@@ -18,17 +18,17 @@ var inputPasJs = document.getElementById("passwordinput")
   
   function generator() {
   var alphabets = "abcdefghijklmnopqrstuvwxyz"
-  var capitalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   var num = "1234567890"
+  var capitalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   var characters = "!@#$%^&*(){}<>?"
-    var capitalCheckbox=document.getElementById("A-Z")
-    var smallLetterCheckbox=document.getElementById("a-z")
-    var characterCheckbox=document.getElementById("@#$")
-    var numCheckbox=document.getElementById("0-9")
-    var rangeinputvalue = document.getElementById("rangeinput").value
-    function getCheckedValues(checkboxes) {
-      var checkedValue = [];
-      for (var i = 0; i < checkboxes.length; i++) {
+  var capitalCheckbox=document.getElementById("A-Z")
+  var smallLetterCheckbox=document.getElementById("a-z")
+  var characterCheckbox=document.getElementById("@#$")
+  var numCheckbox=document.getElementById("0-9")
+  var rangeinputvalue = document.getElementById("rangeinput").value
+  function getCheckedValues(checkboxes) {
+    var checkedValue = [];
+    for (var i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {checkedValue.push(checkboxes[i].value);}}
       return checkedValue;}
     var capitalLettersChecked = getCheckedValues([capitalCheckbox]);
