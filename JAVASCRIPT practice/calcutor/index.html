@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcutor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0dabc7506f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="history" id="historydiv">
+           <h4> history</h4>
+           <ul id="historylist">
+
+           </ul>
+        </div>
+        <div class="btnnhistory">
+            <div class="input" id="inputdiv">
+                <input class="smallinput" id="inputsmallid">
+                <input class="input2" id="input2id">
+            </div>
+            <div class="buttons">
+                <div class="section1">
+                    <button class="btn dark">%</button>
+                    <button class="btn dark">CE</button>
+                    <button class="btn dark" onclick="remover()">C</button>
+                    <button class="btn dark"><i class="fa-solid fa-delete-left"></i></button>
+                </div>
+                <div class="section2">
+                    <button class="btn dark" id="">1/x</button>
+                    <button class="btn dark" >x</button>
+                    <button class="btn dark"><i class="fa-solid fa-square-root-variable"></i></button>
+                    <button  class="btn dark" onclick="divide()"><i class="fa-solid fa-divide"></i></button>
+                </div>
+                <div class="section3">
+                    <button class="btn" id="seven" onclick="seven()">7</button>
+                    <button class="btn" id="eight" onclick="eight()">8</button>
+                    <button class="btn" id="nine" onclick="nine()">9</button>
+                    <button class="btn dark" id="multiplybtn" onclick="multiply()"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="section4">
+                    <button class="btn" id="four" onclick="four()">4</button>
+                    <button class="btn" id="five" onclick="five()">5</button>
+                    <button class="btn" id="six" onclick="six()">6</button>
+                    <button class="btn dark" onclick="minus()"><i class="fa-solid fa-minus"></i></button>
+                </div>
+                <div class="section5">
+                    <button class="btn" id="one" onclick="one()">1</button>
+                    <button class="btn" id="two" onclick="two()">2</button>
+                    <button class="btn" id="three" onclick="three()">3</button>
+                    <button class="btn dark" onclick="plus()"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="section6">
+                    <button class="btn">+/-</button>
+                    <button class="btn" onclick="zero()">0</button>
+                    <button class="btn">.</button>
+                    <button class="btn blue" onclick="equals()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

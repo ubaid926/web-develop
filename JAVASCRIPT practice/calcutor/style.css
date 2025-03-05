@@ -1,0 +1,95 @@
+.btn{
+    width: 250px;
+    height: 80px;
+    background-color:#ffff ;
+    border: 2px #cac5c58f solid;
+    border-radius:5px ;
+    font-size: larger;
+}
+.history{
+    height: 600px;
+    overflow-y: scroll;
+
+}
+
+/* .btn >i{
+    color: black;
+    font-weight: 100;
+} */
+
+body{
+    background-color: #d1d0d08f;
+
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-content:flex-end;
+}
+
+/* .btnnhistory {
+    display: flex;
+} */
+
+.input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.smallinput{
+    /* margin-top: 10px; */
+    margin-bottom: 0px;
+    border: none;
+    background-color: inherit;
+    font-size:20px;
+    /* margin-left: auto; */
+
+    margin-right: 0px;
+    text-align: right;
+    width: 20%;
+    height: 2vh;
+    align-self: flex-end;
+    color: gray;
+}
+
+.input2 {
+    border: none;
+    background-color: inherit;
+    height: 10vh;
+    /* margin-left: auto; */
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.history {
+    width: 20%;
+    font-size: larger;
+    text-transform: capitalize;
+}
+
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.dark{
+    background-color: whitesmoke !important;
+}
+
+/* .buttons {
+    width: 80%;
+} */
+
+.blue{
+    background-color: rgb(41, 41, 148);
+    color: white;
+}
+
