@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <button class="signal signalred" id="red" onclick="stop()"></button> <br />
+        <button class="signal signalyellow" id="yellow" onclick="start()"></button> <br />
+        <button class="signal signalgreen" id="green" onclick="move()"></button>
+        <button class="signal signalorange" id="orange" onclick="reverse()"></button>
+    </div>
+    <div class="smokencar">
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"></script>
+        <dotlottie-player src="https://lottie.host/b4cc0fef-af3c-4d8f-b657-5cd183f88068/DJagiyIu2H.lottie"
+            background="transparent" id="smoke" class="smoke" speed="1" style="width: 100px; height: 100px" loop
+            autoplay></dotlottie-player>
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"></script>
+        <dotlottie-player class="car" id="car"
+            src="https://lottie.host/d0059b9e-ba83-4bac-bff7-db9d1a529b82/ivYIs1TrMo.lottie" background="transparent"
+            speed="1" style="width: 400px; height: 400px" loop autoplay></dotlottie-player>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

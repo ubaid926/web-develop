@@ -1,0 +1,123 @@
+.main {
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 700px;
+    height: 500px;
+    border-radius: 15px;
+    /* border: solid inherit ; */
+    /* padding: 35px; */
+    /* background-color: black; */
+    
+}
+
+body {
+    background-color: grey;
+}
+.footer>span{
+font-size: large;
+}
+.footer {
+    padding: 10px;
+    color: white;
+    background-color: #1b53d0;
+    /* border-top: #1b53d0; */
+    /* border-radius: 4px; */
+}
+
+.msg {
+    background-color: #f4f4f4;
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    /* position: relative; */
+    /* object-fit: fill; */
+    /* height: 70%; */
+}
+
+#input {
+    width: 100%;
+    border: none;
+    outline: none;
+    /* padding-left: 0px;
+    padding-right: 0px;
+    object-fit: fill;
+    position: relative; */
+}
+.inputdiv{
+    background-color: #ffffff;
+    padding: 8px;
+    /* border-bottom: 2px solid; */
+    position: relative;
+    /* border-radius: 5px; */
+}
+/* .msglist{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   list-style-position:outside;
+    align-items: flex-start;
+   
+}  */
+
+.arrow {
+    color: #cccccc;
+}
+.sender{
+    border: none;
+    position: absolute;
+    outline: none;
+    top: 5px;
+    right: 5px;
+    background-color: inherit;
+}
+
+.rightside {
+    margin-left: auto;
+    background-color: #4356e0;
+    color: #ffffff;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.leftside {
+    margin-top: 5px;
+    /* list-style-image: url("images/istockphoto-121124449-1024x1024.jpg") ; */
+    /* background-size: 3px;
+    margin-left: 0px;
+    border: solid 2px #ffffff; */
+    margin-right: auto;
+    background-color: #ffffff;
+    /* padding-left: 0px; */
+}
+
+.typing{
+    /* background-color: white; */
+    /* width: 80px; */
+    color:black;
+    display: none;
+    /* text-align: center; */
+    /* border-radius: 3px; */
+    /* height: 20px; */
+    /* position: absolute; */
+}
+
+.suggestion{
+    width: fit-content;
+    height: fit-content;
+    padding: 3px;
+    background-color: inherit;
+    border-radius: 6px;
+    color: #4356e0;
+    border:1px solid #4356e0;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    border-radius: 3px;
+    width: fit-content;
+    height: fit-content;
+    
+}

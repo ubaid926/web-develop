@@ -1,0 +1,26 @@
+.div1{
+    background-color: skyblue;
+    height:100vh ;
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+}
+
+.btn{
+    background-color: grey ;
+    border-bottom:2px solid skyblue !important;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    margin: 0px;
+}
+
+.div2{
+    height:100vh ;
+    background-color: grey;
+    display:none;
+}

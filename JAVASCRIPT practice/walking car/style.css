@@ -1,0 +1,58 @@
+body{
+    background-image:url(image/house-by-beach_1308-110261.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.car {
+    margin-top: 13%;
+    margin-right: auto;
+    /* margin-left: 1px; */
+    /* background-color: black; */
+    /* position: absolute; */
+    /* top: 0px; */
+    /* bottom: 0px; */
+    /* z-index: 1; */
+    
+}
+
+.smoke{
+    /* margin-top: 13%; */
+    /* background-color: aqua; */
+    /* display: inline-block; */
+   color: black !important;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    display: none;
+
+}
+
+.main{
+    margin-left: auto;
+    width: 100px;
+}
+
+.smokencar{
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+}
+.signal{
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    border-radius:20px ;
+}
+.signalyellow{
+    background-color: yellow;
+}
+.signalred{
+    background-color: red;
+}
+.signalgreen{
+    background-color: green;
+}
+.signalorange{
+    background-color: orange;
+}

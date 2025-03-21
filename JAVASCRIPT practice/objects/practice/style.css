@@ -1,0 +1,15 @@
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: antiquewhite;    
+    margin: 10px;
+}
+
+.main1,
+.main2,
+.main3{
+    display: flex;
+}
+
+
+

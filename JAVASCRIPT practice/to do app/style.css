@@ -1,0 +1,12 @@
+li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#update{
+    display:none;
+}
+
+ul{
+    padding: 0px;
+}
