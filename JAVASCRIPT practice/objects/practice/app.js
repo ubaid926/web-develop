@@ -103,26 +103,36 @@ var cars = {
     }
 
 }
-delete cars.Honda
-console.log(cars)
+for( key in cars){
+    let companySelect=document.getElementById("companyselect")
+    companySelect.innerHTML+=`<option>${key}</option>`
+}
+function selectedcompany(){
+let companySelect=document.getElementById("companyselect")
 
-let box1img=document.getElementById("box1img")
-let box2img=document.getElementById("box2img")
-let box3img=document.getElementById("box3img")
-let box4img=document.getElementById("box4img")
-let box5img=document.getElementById("box5img")
-let box6img=document.getElementById("box6img")
-let box7img=document.getElementById("box7img")
-let box8img=document.getElementById("box8img")
-let box9img=document.getElementById("box9img")
-let box10img=document.getElementById("box10img")
-box1img.src="image/Corolla-X-Cars-Cropped-Pictures-for-Website.jpg"
-box2img.src="image/Fortuner_-_PNG.png"
-box3img.src="image/Land_Cruiser_300_-_PNG.png"
-box4img.src="image/Suzuki_Alto_-_PNG.png"
-box5img.src="image/e1.jpg"
-box6img.src="image/SWIFT.jpg"
-box9img.src="image/Honda_City_Front.jpg"
-box7img.src="image/Honda_Accord_Front_Right_angled_.jpg"
-box8img.src="image/f.jpg"
-box10img.src="image/Honda_Vezel_Front_RIght_Angled.jpg"
+console.log(companySelect.value)
+}
+
+
+
+// on click change image to car details
+// let box1img=document.getElementById("box1img")
+// let box2img=document.getElementById("box2img")
+// let box3img=document.getElementById("box3img")
+// let box4img=document.getElementById("box4img")
+// let box5img=document.getElementById("box5img")
+// let box6img=document.getElementById("box6img")
+// let box7img=document.getElementById("box7img")
+// let box8img=document.getElementById("box8img")
+// let box9img=document.getElementById("box9img")
+// let box10img=document.getElementById("box10img")
+// box1img.src="image/Corolla-X-Cars-Cropped-Pictures-for-Website.jpg"
+// box2img.src="image/Fortuner_-_PNG.png"
+// box3img.src="image/Land_Cruiser_300_-_PNG.png"
+// box4img.src="image/Suzuki_Alto_-_PNG.png"
+// box5img.src="image/e1.jpg"
+// box6img.src="image/SWIFT.jpg"
+// box9img.src="image/Honda_City_Front.jpg"
+// box7img.src="image/Honda_Accord_Front_Right_angled_.jpg"
+// box8img.src="image/f.jpg"
+// box10img.src="image/Honda_Vezel_Front_RIght_Angled.jpg"

@@ -1,0 +1,23 @@
+li {
+    list-style: none;
+    /* display: inline-block; */
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.navbar {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    height: 25px;
+    color: white;
+    background-color: black;
+
+}

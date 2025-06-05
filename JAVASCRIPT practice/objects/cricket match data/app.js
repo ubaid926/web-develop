@@ -96,69 +96,226 @@ var worldCup = {
         result: "ENG won by 8 wickets"
     }
 }
-let box1 = document.getElementById("box1")
-let box1sect1=document.getElementById("box1sect1")
-let box1sect2=document.getElementById("box1sect2")
-let box1sect3=document.getElementById("box1sect3")
-let box1sect4=document.getElementById("box1sect4")
-// let a
-for (key in worldCup.matchno28) {
-    /*if (key == "date" || "matchno") {
-        box1.innerHTML += `<div> ${worldCup.matchno28[key]}<div/>`
-    }
-    else if (key == "teams") {
-        for (key in worldCup.matchno28.teams) {
-            if (key == "images") {
-                for (key in worldCup.matchno28.teams.images) {
-                    box1.innerHTML += `<img src="${worldCup.matchno28.teams.images[key]}">`
+
+for (key in worldCup) {
+
+    switch (key) {
+        case "matchno23":
+
+            for (key in worldCup.matchno23) {
+                let box1 = document.getElementById("box1")
+                let box1sect1 = document.getElementById("box1sect1")
+                let box1sect2 = document.getElementById("box1sect2")
+                let box1sect3 = document.getElementById("box1sect3")
+                let box1sect4 = document.getElementById("box1sect4")
+                switch (key) {
+                    case "date":
+                        box1sect1.innerHTML += `<div> ${worldCup.matchno23[key]}</div>`
+                        break;
+                    case "matchno":
+                        box1sect1.innerHTML += `<div> ${worldCup.matchno23[key]}</div>`
+                        break;
+                    case "scores":
+                        for (key in worldCup.matchno23.scores) {
+                            box1sect3.innerHTML += `<div>${worldCup.matchno23.scores[key]}</div>`
+                        }
+                        break;
+                    case "teams":
+                        for (key in worldCup.matchno23.teams) {
+                            if (key == "images") {
+                                for (key in worldCup.matchno23.teams.images) {
+
+                                    box1sect4.innerHTML += `<div class="box1imagediv"> <img src="${worldCup.matchno23.teams.images[key]}"<div/> `
+                                }
+                            }
+                            else {
+                                box1sect2.innerHTML += ` <div> ${worldCup.matchno23.teams[key][0]} </div> `
+                                box1sect2.innerHTML += ` <div> ${worldCup.matchno23.teams[key][1]} </div> `
+                            }
+                        }
+                        break;
+                    default:
+                        box1.innerHTML += `<div> ${worldCup.matchno23[key]}<div/>`
                 }
             }
-            else {
-                box1.innerHTML += worldCup.matchno28.teams[key]
-            }
-        }
-        console.log("agaya")
-    }
-    else if (key == "scores") {
-        for (key in worldCup.matchno28.scores) {
-            box1.innerHTML += worldCup.matchno28.scores[key]
-        }
-        console.log("agaya")
-    }
-    else {
-        box1.innerHTML += worldCup.matchno28[key]
-    }*/
-    // a += worldCup.matchno28[key]
-    switch(key){
-        case"date":
-         box1sect1.innerHTML += `<div> ${worldCup.matchno28[key]}</div>`
-         break;
-        case"matchno":
-         box1sect1.innerHTML += `<div> ${worldCup.matchno28[key]}</div>`
-         break;
-        case"scores":
-        for (key in worldCup.matchno28.scores) {
-            box1sect3.innerHTML +=   `<div>${worldCup.matchno28.scores[key]}</div>`
-        }
-         break;
-        case"teams":
-        for (key in worldCup.matchno28.teams) {
-            if (key == "images") {
-                for (key in worldCup.matchno28.teams.images) {
+            break;
 
-                    box1sect4.innerHTML += `<div class="box1imagediv"> <img src="${worldCup.matchno28.teams.images[key]}"<div/> `
+
+
+
+        case "matchno24":
+
+            for (key in worldCup.matchno24) {
+                let box2 = document.getElementById("box2")
+                let box2sect1 = document.getElementById("box2sect1")
+                let box2sect2 = document.getElementById("box2sect2")
+                let box2sect3 = document.getElementById("box2sect3")
+                let box2sect4 = document.getElementById("box2sect4")
+                switch (key) {
+                    case "date":
+                        box2sect1.innerHTML += `<div> ${worldCup.matchno24[key]}</div>`
+                        break;
+                    case "matchno":
+                        box2sect1.innerHTML += `<div> ${worldCup.matchno24[key]}</div>`
+                        break;
+                    case "scores":
+                        for (key in worldCup.matchno24.scores) {
+                            box2sect3.innerHTML += `<div>${worldCup.matchno24.scores[key]}</div>`
+                        }
+                        break;
+                    case "teams":
+                        for (key in worldCup.matchno24.teams) {
+                            if (key == "images") {
+                                for (key in worldCup.matchno24.teams.images) {
+
+                                    box2sect4.innerHTML += `<div class="box1imagediv"> <img src="${worldCup.matchno24.teams.images[key]}"<div/> `
+                                }
+                            }
+                            else {
+                                box2sect2.innerHTML += ` <div> ${worldCup.matchno24.teams[key][0]} </div> `
+                                box2sect2.innerHTML += ` <div> ${worldCup.matchno24.teams[key][1]} </div> `
+                            }
+                        }
+                        break;
+                    default:
+                        box2.innerHTML += `<div> ${worldCup.matchno24[key]}<div/>`
                 }
             }
-            else {
-                box1sect2.innerHTML +=` <div> ${worldCup.matchno28.teams[key][0]} </div> `
-                box1sect2.innerHTML +=` <div> ${worldCup.matchno28.teams[key][1]} </div> `
+            break;
+        case "matchno25":
+
+            for (key in worldCup.matchno25) {
+                switch (key) {
+                    case "date":
+                        box3sect1.innerHTML += `<div> ${worldCup.matchno25[key]}</div>`
+                        break;
+                    case "matchno":
+                        box3sect1.innerHTML += `<div> ${worldCup.matchno25[key]}</div>`
+                        break;
+                    case "scores":
+                        for (key in worldCup.matchno25.scores) {
+                            box3sect3.innerHTML += `<div>${worldCup.matchno25.scores[key]}</div>`
+                        }
+                        break;
+                    case "teams":
+                        for (key in worldCup.matchno25.teams) {
+                            if (key == "images") {
+                                for (key in worldCup.matchno25.teams.images) {
+
+                                    box3sect4.innerHTML += `<div class="box1imagediv"> <img src="${worldCup.matchno25.teams.images[key]}"<div/> `
+                                }
+                            }
+                            else {
+                                box3sect2.innerHTML += ` <div> ${worldCup.matchno25.teams[key][0]} </div> `
+                                box3sect2.innerHTML += ` <div> ${worldCup.matchno25.teams[key][1]} </div> `
+                            }
+                        }
+                        break;
+                    default:
+                        box3.innerHTML += `<div> ${worldCup.matchno25[key]}<div/>`
+                }
             }
-        }
-         break;
-         default:
-             box1.innerHTML += `<div> ${worldCup.matchno28[key]}<div/>`
+            break;
 
+        case "matchno26":
+            for (key in worldCup.matchno26) {
+                switch (key) {
+                    case "date":
+                        box4sect1.innerHTML += `<div> ${worldCup.matchno26[key]}</div>`
+                        break;
+                    case "matchno":
+                        box4sect1.innerHTML += `<div> ${worldCup.matchno26[key]}</div>`
+                        break;
+                    case "scores":
+                        for (key in worldCup.matchno26.scores) {
+                            box4sect3.innerHTML += `<div>${worldCup.matchno26.scores[key]}</div>`
+                        }
+                        break;
+                    case "teams":
+                        for (key in worldCup.matchno26.teams) {
+                            if (key == "images") {
+                                for (key in worldCup.matchno26.teams.images) {
 
+                                    box4sect4.innerHTML += `<div class="box1imagediv"> <img src="${worldCup.matchno26.teams.images[key]}"<div/> `
+                                }
+                            }
+                            else {
+                                box4sect2.innerHTML += ` <div> ${worldCup.matchno26.teams[key][0]} </div> `
+                                box4sect2.innerHTML += ` <div> ${worldCup.matchno26.teams[key][1]} </div> `
+                            }
+                        }
+                        break;
+                    default:
+                        box4.innerHTML += `<div> ${worldCup.matchno26[key]}<div/>`
+                }
+            }
+            break;
+        case "matchno27":
+            for (key in worldCup.matchno27) {
+                switch (key) {
+                    case "date":
+                        box5sect1.innerHTML += `<div> ${worldCup.matchno27[key]}</div>`
+                        break;
+                    case "matchno":
+                        box5sect1.innerHTML += `<div> ${worldCup.matchno27[key]}</div>`
+                        break;
+                    case "scores":
+                        for (key in worldCup.matchno27.scores) {
+                            box5sect3.innerHTML += `<div>${worldCup.matchno27.scores[key]}</div>`
+                        }
+                        break;
+                    case "teams":
+                        for (key in worldCup.matchno27.teams) {
+                            if (key == "images") {
+                                for (key in worldCup.matchno27.teams.images) {
+
+                                    box5sect4.innerHTML += `<div class="box1imagediv"> <img src="${worldCup.matchno27.teams.images[key]}"<div/> `
+                                }
+                            }
+                            else {
+                                box5sect2.innerHTML += ` <div> ${worldCup.matchno27.teams[key][0]} </div> `
+                                box5sect2.innerHTML += ` <div> ${worldCup.matchno27.teams[key][1]} </div> `
+                            }
+                        }
+                        break;
+                    default:
+                        box5.innerHTML += `<div> ${worldCup.matchno27[key]}<div/>`
+                }
+            }
+            break;
+        case "matchno28":
+            for (key in worldCup.matchno28) {
+                switch (key) {
+                    case "date":
+                        box6sect1.innerHTML += `<div> ${worldCup.matchno28[key]}</div>`
+                        break;
+                    case "matchno":
+                        box6sect1.innerHTML += `<div> ${worldCup.matchno28[key]}</div>`
+                        break;
+                    case "scores":
+                        for (key in worldCup.matchno28.scores) {
+                            box6sect3.innerHTML += `<div>${worldCup.matchno28.scores[key]}</div>`
+                        }
+                        break;
+                    case "teams":
+                        for (key in worldCup.matchno28.teams) {
+                            if (key == "images") {
+                                for (key in worldCup.matchno28.teams.images) {
+
+                                    box6sect4.innerHTML += `<div class="box1imagediv"> <img src="${worldCup.matchno28.teams.images[key]}"<div/> `
+                                }
+                            }
+                            else {
+                                box6sect2.innerHTML += ` <div> ${worldCup.matchno28.teams[key][0]} </div> `
+                                box6sect2.innerHTML += ` <div> ${worldCup.matchno28.teams[key][1]} </div> `
+                            }
+                        }
+                        break;
+                    default:
+                        box6.innerHTML += `<div> ${worldCup.matchno28[key]}<div/>`
+                }
+            }
+            break;
     }
 }
 

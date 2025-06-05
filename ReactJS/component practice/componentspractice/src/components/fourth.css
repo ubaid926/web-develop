@@ -1,0 +1,90 @@
+.fourthmain {
+    display: flex;
+
+    margin-top: 100px;
+}
+
+/* .fourthsec1 li { */
+    /* list-style-image: url("../assets/images/Group\ 25\ \(1\).png ") ; */
+    /* list-style: none; */
+    /* border-left: 2px solid black; */
+    
+/* } */
+/* .fourthsec1 li img{
+    width: 5px;
+} */
+
+/* .fourthsec1 ul::before { */
+    /* background-image: url('../assets/images/Group\ 25\ \(1\).png'); */
+    /* content: url('../assets/images/Group\ 25\ \(1\).png'); */
+    /* font-size: 1px; */
+    /* width: 5px;
+    height: 5px; */
+    /* margin-left: 0px; */
+    /* vertical-align: middle; */
+/* } */
+/* 
+.fourthsec1 ul {
+    padding-left: 0px; */
+
+/* } */
+
+.fourthsec2>img {
+    width: 95%;
+}
+
+.fourthsec1 {
+    width: 50%;
+}
+
+/* chatgpt */
+/* body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+} */
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background: #222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.content h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 14px;
+    color: #ccc;
+}

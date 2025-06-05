@@ -1,0 +1,40 @@
+.thirdsecbtn1{
+    border: none;
+    background-color: inherit;
+    /* margin-right: 0px; */
+    font-size: 20px;
+    /* width: fit-content; */
+}
+.thirdsecbtn2{
+    background-color: black;
+    color: white;
+    width: 150px;
+    /* height: 35px; */
+    padding: 10px;
+    margin-top:70px;
+}
+.thirdsec{
+    /* background-color: aqua; */
+    padding:0px 10px;
+    width: 50%;
+}
+.thirdbtns{
+    margin-top: 75px;
+}
+.thirdbtns>div{
+    margin-top: 35px;
+    border-bottom: 2px solid rgb(230, 226, 226);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thirdhead{
+    font-size: 50px;
+    margin-top: 0px;
+}
+.thirdp{
+    line-height: 33px;
+    font-size: 20px;
+    margin-top: 30px;
+}
