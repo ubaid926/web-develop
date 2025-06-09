@@ -4,6 +4,8 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import AppForm from './pages/form.jsx'
+import UpdateForm from './pages/update.jsx'
+import AddDisplay from './pages/addDisplay.jsx'
 
 
 const router=createBrowserRouter(
@@ -12,6 +14,8 @@ const router=createBrowserRouter(
     <Route path='/' element={<App />} >
     </Route>
     <Route path='/form' element={<AppForm />} />
+    <Route path='/update' element={<UpdateForm />} />
+    <Route path='/addDisplay' element={< AddDisplay/>} />
     </>
   )
 )

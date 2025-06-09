@@ -7,7 +7,7 @@ import UploadApp from '../components/upload';
 import AppLocation from '../components/location';
 import FormInput from '../components/forminput';
 import AppButton from '../components/button';
-import FormValues from '../config/context';
+import { FormValues } from '../config/context';
 
 
 function AppForm() {
@@ -41,7 +41,6 @@ function AppForm() {
           fontSize: "22px", color: '#002f34', height: '100px'
         }}
           className='uppercase font-bold flex justify-center items-end'>Post your add</h1>
-
         <FormAnt style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
           <div className='mainForm'>
             <Form.Select onChange={(e) => { addCategory(e) }}

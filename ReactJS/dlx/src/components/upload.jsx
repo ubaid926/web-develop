@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
-import FormValues from '../config/context';
+import {FormValues} from '../config/context';
 import { useContext, useEffect } from 'react';
 import { InputGroup } from 'react-bootstrap';
 const UploadApp = () => {

@@ -7,7 +7,7 @@ import { BiMessageRounded } from "react-icons/bi";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import AppLocation from './location';
 
 function AppDropdown() {
@@ -36,7 +36,7 @@ function AppDropdown() {
     return (
         <>
             <div className='flex gap-5 items-center justify-between' >
-             <AppLocation/>
+                <AppLocation />
                 <AppSearch />
                 <div className='flex gap-3'>
                     <BiMessageRounded style={{ fontSize: "25px" }} />
@@ -44,19 +44,20 @@ function AppDropdown() {
                 </div>
                 <button className='loginbtn' onClick={showModal}>Login</button>
                 <div className='divmodal'>
-                <CustomButton JSX={{ backgroundColor: "red" }} className='bg-red-200' title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-                    <button className='border'>Login with Google</button>
-                    <button className='border'>Login with Facebook</button>
-                    OR
-                    <button className='border'>Login with Phone</button>
-                    <button className='border'>Login with Email</button>
-                </CustomButton>
+                    <CustomButton JSX={{ backgroundColor: "red" }} className='bg-red-200' title="Basic Modal"
+                     open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                        <button className='border'>Login with Google</button>
+                        <button className='border'>Login with Facebook</button>
+                        OR
+                        <button className='border'>Login with Phone</button>
+                        <button className='border'>Login with Email</button>
+                    </CustomButton>
                 </div>
                 <Link to="/form">
-                <button className='flex items-center gap-1 sellbtn'>
-                <IoMdAdd />
-                    SELL
-                </button>
+                    <button className='flex items-center gap-1 sellbtn'>
+                        <IoMdAdd />
+                        SELL
+                    </button>
                 </Link>
                 {/* <RouterProvider router={routera} /> */}
             </div>

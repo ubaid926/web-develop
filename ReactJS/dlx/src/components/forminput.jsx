@@ -1,7 +1,7 @@
 import { useState, useContext,useId } from 'react';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import FormValues from '../config/context';
+import {FormValues} from '../config/context';
 function FormInput({ title, border, placeholder, func }) {
   const { contextInit, setcontextInit } = useContext(FormValues)
    const addId = useId()
