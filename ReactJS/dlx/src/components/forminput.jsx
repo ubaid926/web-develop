@@ -2,7 +2,7 @@ import { useState, useContext,useId } from 'react';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import {FormValues} from '../config/context';
-function FormInput({ title, border, placeholder, func }) {
+function FormInput({ title, border, placeholder, func ,dValue }) {
   const { contextInit, setcontextInit } = useContext(FormValues)
    const addId = useId()
   const addPrice = (e) => {
@@ -50,7 +50,8 @@ function FormInput({ title, border, placeholder, func }) {
     <InputGroup style={border && { borderBottom: 'solid 2px #a3b4b6' }}
       className=" flex p-6  ">
       <div style={{ width: '30%' }}>
-        <InputGroup.Text className='inputtext font-bold' id="inputGroup-sizing-sm">{title}</InputGroup.Text>
+        <InputGroup.Text className='inputtext font-bold'
+         id="inputGroup-sizing-sm">{title}</InputGroup.Text>
       </div>
       <Form.Control className='formcontrol'
         type={func == 'mobilenum' ? 'number' : func == 'price' ? "number" : "text"
@@ -72,7 +73,10 @@ function FormInput({ title, border, placeholder, func }) {
           }
 
         }
-        } placeholder={placeholder} style={{ width: '70%', height: '42px', border: 'solid 1px #002f34', borderRadius: '4px', padding: '5px' }}
+        }
+        defaultValue={dValue} 
+        placeholder={placeholder} 
+        style={{ width: '70%', height: '42px', border: 'solid 1px #002f34', borderRadius: '4px', padding: '5px' }}
         aria-label="Small"
         aria-describedby="inputGroup-sizing-sm"
       />

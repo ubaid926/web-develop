@@ -44,7 +44,9 @@ function AppForm() {
         <FormAnt style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
           <div className='mainForm'>
             <Form.Select onChange={(e) => { addCategory(e) }}
-              aria-label="Default select example" className='formcontrol font-bold capitalize w-full p-6' style={{ height: '80px', borderBottom: 'solid 2px #a3b4b6' }}>
+              aria-label="Default select example"
+              className='formcontrol font-bold capitalize w-full p-6'
+              style={{ height: '80px', borderBottom: 'solid 2px #a3b4b6' }}>
               <option className='font-bold'>category</option>
               <option value="cars">Cars</option>
               <option value="mobiles">Mobiles</option>
@@ -54,29 +56,42 @@ function AppForm() {
             <FormInput title="Make" border="true" func='make' placeholder='Enter Make' />
             <FormInput title="Ad title" func='title' placeholder='Title' />
             <InputGroup className=" flex p-6 ">
-              <InputGroup.Text style={{ width: '30%' }} className='inputtext  font-bold'>Description</InputGroup.Text>
-              <Form.Control onMouseLeave={(e) => {
-                if (e.target.value.length == 0) {
-                  e.target.style.outlineColor = 'red'
-                }
-              }
-              }
-                className='formcontrol' onChange={(e) => addDetail(e)} style={{ width: '70%', border: 'solid 1px #002f34', borderRadius: '4px', padding: '5px' }} as="textarea" aria-label="With textarea" placeholder="Describe the item you're selling" />
+              <InputGroup.Text style={{ width: '30%' }}
+                className='inputtext  font-bold'>Description</InputGroup.Text>
+              <Form.Control
+              //  onMouseLeave={(e) => {
+              //   if (e.target.value.length == 0) {
+              //     e.target.style.outlineColor = 'red'
+              //   }
+              // }
+              // }
+              
+                className='formcontrol' onChange={(e) => addDetail(e)}
+                style={{ width: '70%', border: 'solid 1px #002f34',
+                   borderRadius: '4px', padding: '5px' }} as="textarea" aria-label="With textarea"
+                placeholder="Describe the item you're selling" />
             </InputGroup>
+            
             <FormInput title="Adress" func='adress' placeholder="Adress" />
           </div>
           <div className='mainForm' >
-            <FormInput title="Price" func='price' placeholder="Enter Price" />
+            <FormInput title="Price" func='price'
+              placeholder="Enter Price" />
           </div>
           <div className='mainForm' >
             <div style={{ borderBottom: 'solid 2px #a3b4b6' }}>
               <FormInput title="Name" func='name' placeholder='Name' />
-              <FormInput title="Mobile Phone Number" func='mobilenum' placeholder="Enter phone number" />
+              <FormInput title="Mobile Phone Number"
+                func='mobilenum'
+                placeholder="Enter phone number" />
               <div className='p-6 flex justify-between'>
-                <InputGroup.Text className='font-bold' style={{ width: '40%' }} > Show my phone number in ads</InputGroup.Text>
-                <Switch style={{ backgroundColor: '#002f34' }}
+                <InputGroup.Text className='font-bold'
+                  style={{ width: '40%' }} >
+                    Show my phone number in ads</InputGroup.Text>
+                <Switch
+                  style={{ backgroundColor: '#002f34' }}
                   onChange={(e) => {
-                    e && delete contextInit.number
+                    !e && delete contextInit.number
                     // console.log(contextInit)
                   }} />
               </div>

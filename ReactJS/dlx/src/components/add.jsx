@@ -172,7 +172,7 @@ function AppAdd() {
                     <Link to="/update" >
                         <button onClick={() => {
                             let idFilter = recAdd.filter((z) => z == v)
-                            setEditObject(idFilter)
+                            setEditObject(idFilter[0])
                             // console.log(idFilter)
                         }} style={{ position: 'absolute', right: '0', top: '25px', border: 'none' }}>
                             <BiSolidEditAlt style={{

@@ -10,8 +10,8 @@
 // }
 
 
-let para = 'i am ubaid raza'
-let result = ''
+// let para = 'i am ubaid raza'
+// let result = ''
 
 // for (i = 0; i < para.length; i++) {
 //     if (i == 0) {
@@ -25,33 +25,22 @@ let result = ''
 //     }
 // }
 // console.log(result)
-
+// let para = 'i am ubaid raza'
+// let result = ''
 // let split = para.split(" ")
+// let result2 = new Array(split.length);
+// let fname = ""
 // for (i = 0; i < split.length; i++) {
 //     for (k = 0; k < split[i].length; k++) {
-//         if (k == 0 && i != 0) {
-//             result2[i] += " " + split[i][k].toUpperCase()
+//         if (k == 0) {
+//             fname += split[i][k].toUpperCase()
 //         }
-//         else if (i == 0 && k==0) {
-//             result2[i] += split[i][k].toUpperCase()
-//         }
-//         else { result2[i] += split[i][k] }
+//         else { fname += split[i][k] }
 //     }
+//     result2[i] = fname
+//     fname = ""
 // }
-// console.log(result2)
-let split = para.split(" ")
-let result2 = new Array(split.length);
-console.log(split)
-for (i = 0; i < split.length; i++) {
-    for (k = 0; k < split[i].length; k++) {
-        if (k==0) {
-            result2[i] += split[i][k].toUpperCase()
-        }
-        else { result2[i] += split[i][k] }
-    }
-}
-console.log(result2)
-
+// console.log(result2.join('\n'));
 
 // let id=0
 // let body = document.body
