@@ -1,4 +1,15 @@
-import { createContext, useContext } from "react";
-const FormValues=createContext({})
-const EditValues=createContext({})
-export  {FormValues,  EditValues}
+import { createContext, useContext ,useState} from "react";
+
+export const FormValues=createContext({})
+export const EditValues=createContext({})
+
+export const EditValuesProvider = ({ children }) => {
+  const [editObject, setEditObject] = useState({});
+
+  return (
+    <EditValues.Provider value={{ editObject, setEditObject }}>
+      {children}
+    </EditValues.Provider>
+  );
+};
+

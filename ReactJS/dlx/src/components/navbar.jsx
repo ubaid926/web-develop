@@ -7,7 +7,7 @@ import { BsBuildings } from "react-icons/bs";
 import AppSearch from './search';
 import Appfooter from './footer';
 import { useContext } from 'react';
-import {FormValues} from '../config/context';
+import { FormValues } from '../config/context';
 import AppAdd from './add';
 const { Header, Content, Footer } = Layout;
 const items = Array.from({ length: 3 }).map((_, index) => ({
@@ -18,7 +18,7 @@ const AppLayout = () => {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
-  const {contextInit,setcontextInit}=useContext(FormValues)
+  const { contextInit, setcontextInit } = useContext(FormValues)
   // console.log(contextInit)
   return (
     <Layout >
@@ -64,8 +64,8 @@ const AppLayout = () => {
           }}
         >
           <AppDropdown />
-          <div className='flex flex-wrap gap-4 justify-center' style={{marginTop:"10px" , width:'100%'}}>
-          <AppAdd/>
+          <div className='flex flex-wrap gap-4 justify-center' style={{ marginTop: "10px", width: '100%' }}>
+            <AppAdd />
           </div>
         </div>
       </Content>

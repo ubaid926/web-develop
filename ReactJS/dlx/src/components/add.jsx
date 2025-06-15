@@ -12,9 +12,10 @@ import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
 import { ModalTitle } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import {EditValues} from '../config/context';
+import { EditValues } from '../config/context';
 
 function AppAdd() {
+    const { editObject, setEditObject } = useContext(EditValues)
     const style = {
         borderRadius: '7px',
         position: 'absolute',
@@ -149,7 +150,7 @@ function AppAdd() {
         )
         // addUpdateObj.make = e.target.value
     }
-    const [editValues, setEditValues] = useState({})
+    
     return (
         <>
             {recAdd.map((v, i) => (
@@ -170,8 +171,8 @@ function AppAdd() {
                     </button >
                     <Link to="/update" >
                         <button onClick={() => {
-                           let idFilter= recAdd.filter((z)=>z==v)
-                            setEditValues(idFilter)
+                            let idFilter = recAdd.filter((z) => z == v)
+                            setEditObject(idFilter)
                             // console.log(idFilter)
                         }} style={{ position: 'absolute', right: '0', top: '25px', border: 'none' }}>
                             <BiSolidEditAlt style={{

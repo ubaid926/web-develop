@@ -11,6 +11,8 @@ import { FormValues, EditValues } from '../config/context';
 
 
 function UpdateForm() {
+    const { editObject, setEditObject } = useContext(EditValues)
+// const [editOject, setEditObject] = useState({})
     // const onFinish = values => {
     //   console.log('Success:', values);
     // };
@@ -60,35 +62,11 @@ function UpdateForm() {
     // {urlState2 &&
     //     addUpdateImage()
     // }
-    // <label htmlFor="Textfield">Click me to upload image</label>
-    // <TextField
-    //     style={{ width: '100%' }}
-    //     className='Textfield'
-    //     // id="outlined-required"
-    //     label="Make"
-    //     defaultValue={modalTitle.make}
-    //     onChange={(e) => addUpdatedMake(e)}
-    // />
-    // {/* <p>{v.make}</p> */}
-    // <TextField
-    //     style={{ width: '100%' }}
-    //     id="outlined-required"
-    //     label="Adress"
-    //     defaultValue={modalTitle.adress}
-    //     onChange={(e) => addUpdatedAdress(e)}
-    // />
-    // <TextField
-    //     style={{ width: '100%' }}
-    //     type='number'
-    //     id="outlined-required"
-    //     label="Price"
-    //     defaultValue={modalTitle.price}
-    //     onChange={(e) => addUpdatedPrice(e)}
-    // />
+
     const update = () => {
-        console.log("aaaa")
+        console.log(editObject)
     }
-    
+
     const [contextInit, setcontextInit] = useState({})
 
     const addCategory = (e) => {
@@ -103,12 +81,13 @@ function UpdateForm() {
             ...prevInput,
             description: e.target.value
         }))
-    const [ editValues, setEditValues ] = useState({})
-    console.log(editValues)
+
+    
+    console.log(editObject)
 
     return (
         <>
-            <FormValues.Provider value={{ editValues, setEditValues }}>
+            {/* <EditValues.Provider value={{ editOject, setEditObject }}> */}
                 <h1 style={{
                     fontSize: "22px", color: '#002f34', height: '100px'
                 }}
@@ -123,7 +102,8 @@ function UpdateForm() {
                             <option value="flats">Flats</option>
                         </Form.Select>
                         <UploadApp />
-                        <FormInput title="Make" border="true" func='make' placeholder='Enter Make' />
+                        <FormInput title="Make" border="true" func='make' placeholder='Enter Make'
+                         />
                         <FormInput title="Ad title" func='title' placeholder='Title' />
                         <InputGroup className=" flex p-6 ">
                             <InputGroup.Text style={{ width: '30%' }} className='inputtext  font-bold'>Description</InputGroup.Text>
@@ -160,7 +140,7 @@ function UpdateForm() {
                         </div>
                     </div>
                 </FormAnt>
-            </FormValues.Provider>
+            {/* </EditValues.Provider> */}
         </>
     );
 };

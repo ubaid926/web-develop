@@ -1,22 +1,23 @@
 import Button from 'react-bootstrap/Button';
-import {FormValues} from '../config/context';
+import { FormValues, EditValues } from '../config/context';
 import context from 'react-bootstrap/esm/AccordionContext';
 import { useContext, useId, useState } from 'react';
 import { Link } from "react-router-dom";
 function AppButton({ getValue, update, title }) {
+    const { contextInit, setcontextInit } = useContext(FormValues)
+    const { editObject, setEditObject } = useContext(EditValues)
     let btncolor = '#002f34'
     // {console.log(get)} 
     // const get=()=>{console.log(getValue.value)}
-    const { contextInit, setcontextInit } = useContext(FormValues)
     const [rec, setRec] = useState()
-
+ console.log(editObject)
     // console.log(contextInit)
     return (
         <>
             <Link to="/">
                 <Button
                     onClick={
-                        update ? update :
+                        update ? () => console.log(editObject) :
                             () => {
 
                                 if (Object.keys(contextInit).length == 0) return
