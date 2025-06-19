@@ -32,7 +32,7 @@ function AppForm() {
       ...prevInput,
       description: e.target.value
     }))
-  // console.log(contextInit)
+  // console.log()
 
   return (
     <>

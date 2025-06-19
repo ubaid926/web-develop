@@ -12,6 +12,7 @@ import { FormValues, EditValues } from '../config/context';
 
 function UpdateForm() {
     const { editObject, setEditObject } = useContext(EditValues)
+     const { contextInit, setcontextInit } = useContext(FormValues)
     // const [editOject, setEditObject] = useState({})
     // const onFinish = values => {
     //   console.log('Success:', values);
@@ -67,23 +68,24 @@ function UpdateForm() {
         console.log(editObject)
     }
 
-    const [contextInit, setcontextInit] = useState({})
+    // const [contextInit, setcontextInit] = useState({})
 
-    const addCategory = (e) => {
-        setcontextInit(prevInput => ({
+    const updateCategory = (e) => {
+        setEditObject(prevInput => ({
             ...prevInput,
             category: e.target.value
         }))
     }
 
-    const addDetail = (e) =>
-        setcontextInit(prevInput => ({
+    const updateDetail = (e) =>
+        setEditObject(prevInput => ({
             ...prevInput,
-            description: e.target.value
+         description: e.target.value
         }))
 
 
-    { console.log(editObject.make) }
+    { console.log(editObject,"editObject") }
+    { console.log(contextInit,"contextInit") }
 
     return (
         <>
@@ -96,7 +98,7 @@ function UpdateForm() {
                 Post your add</h1>
             <FormAnt style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
                 <div className='mainForm'>
-                    <Form.Select onChange={(e) => { addCategory(e) }}
+                    <Form.Select onChange={(e) => { updateCategory(e) }}
                         aria-label="Default select example"
                         className='formcontrol font-bold capitalize w-full p-6'
                         defaultValue={editObject.category}
@@ -108,13 +110,15 @@ function UpdateForm() {
                         <option  value="mobiles">Mobiles</option>
                         <option value="flats">Flats</option>
                     </Form.Select>
-                    <UploadApp />
+                    <UploadApp dValue={editObject.image_url} />
                     <FormInput title="Make"
                         dValue={editObject.make}
                         border="true" func='make'
+                        updateFunc="updateMake"
                         placeholder='Enter Make'
                     />
                     <FormInput title="Ad title" func='title'
+                     updateFunc="updateTitle"
                         placeholder='Title'
                         dValue={editObject.title} />
                     <InputGroup className=" flex p-6 ">
@@ -130,26 +134,30 @@ function UpdateForm() {
                             // }
                             // }
                             className='formcontrol'
-                            onChange={(e) => addDetail(e)}
+                            onChange={(e) => updateDetail(e)}
                             defaultValue={editObject.description}
                             style={{ width: '70%', border: 'solid 1px #002f34', borderRadius: '4px', padding: '5px' }} as="textarea" aria-label="With textarea" placeholder="Describe the item you're selling" />
                     </InputGroup>
                     <FormInput title="Adress"
                         func='adress'
+                         updateFunc="updateAdress"
                         dValue={editObject.adress}
                         placeholder="Adress" />
                 </div>
                 <div className='mainForm' >
                     <FormInput dValue={editObject.price}
                         title="Price" func='price'
+                         updateFunc="updatePrice"
                         placeholder="Enter Price" />
                 </div>
                 <div className='mainForm' >
                     <div style={{ borderBottom: 'solid 2px #a3b4b6' }}>
                         <FormInput title="Name" func='name'
+                         updateFunc="updateName"
                             dValue={editObject.name} placeholder='Name' />
                         <FormInput title="Mobile Phone Number"
-                            func='mobilenum' dValue={editObject.number}
+                            func='mobilenum'  updateFunc="updateNum"
+                             dValue={editObject.number}
                             placeholder="Enter phone number" />
                         <div className='p-6 flex justify-between'>
                             <InputGroup.Text className='font-bold'

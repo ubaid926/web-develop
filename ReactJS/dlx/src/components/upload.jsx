@@ -4,7 +4,7 @@ import { message, Upload } from 'antd';
 import { FormValues } from '../config/context';
 import { useContext, useEffect } from 'react';
 import { InputGroup } from 'react-bootstrap';
-const UploadApp = () => {
+const UploadApp = ({dvalue}) => {
   const { contextInit, setcontextInit } = useContext(FormValues)
   const [urlState, setUrlState] = useState(null)
   const addImage = () => {
@@ -37,7 +37,10 @@ const UploadApp = () => {
           Support for a single or bulk upload. Strictly prohibited from uploading company data or other
           banned files.
         </p> */}
-        <input type='file'
+        <input
+        //  type={dvalue?"text":'file'}
+        // {/* // {dvalue && value={dvalue}} */}
+        type='file'
           className='uploadinput'
           style={{
             border: '2px dotted grey', width: '100%',

@@ -150,7 +150,7 @@ function AppAdd() {
         )
         // addUpdateObj.make = e.target.value
     }
-    
+
     return (
         <>
             {recAdd.map((v, i) => (

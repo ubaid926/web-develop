@@ -10,7 +10,7 @@ function AppButton({ getValue, update, title }) {
     // {console.log(get)} 
     // const get=()=>{console.log(getValue.value)}
     const [rec, setRec] = useState()
- console.log(editObject)
+//  console.log(editObject)
     // console.log(contextInit)
     return (
         <>
