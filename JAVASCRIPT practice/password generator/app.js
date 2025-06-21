@@ -64,4 +64,8 @@ function eye2() {
     inputPasJs.setAttribute("type", "text")
 }
 
-
+function copy(){
+   navigator.clipboard.writeText(inputPasJs.value)
+   inputPasJs.select()
+  console.log(window.navigator)
+}
