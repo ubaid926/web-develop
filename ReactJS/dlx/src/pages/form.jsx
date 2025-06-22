@@ -11,14 +11,15 @@ import { FormValues } from '../config/context';
 
 
 function AppForm() {
+     const { contextInit, setcontextInit } = useContext(FormValues)
   // const onFinish = values => {
   //   console.log('Success:', values);
   // };
   // const onFinishFailed = errorInfo => {
   //   console.log('Failed:', errorInfo);
   // };
-  // const {contextInit,setcontextInit}=useContext(FormValues)
-  const [contextInit, setcontextInit] = useState({})
+
+ 
 
   const addCategory = (e) => {
     setcontextInit(prevInput => ({
@@ -36,7 +37,7 @@ function AppForm() {
 
   return (
     <>
-      <FormValues.Provider value={{ contextInit, setcontextInit }}>
+      {/* <FormValues.Provider value={{ contextInit, setcontextInit }}> */}
         <h1 style={{
           fontSize: "22px", color: '#002f34', height: '100px'
         }}
@@ -103,7 +104,7 @@ function AppForm() {
             </div>
           </div>
         </FormAnt>
-      </FormValues.Provider>
+      {/* </FormValues.Provider> */}
     </>
   );
 };

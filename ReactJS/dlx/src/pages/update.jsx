@@ -12,7 +12,7 @@ import { FormValues, EditValues } from '../config/context';
 
 function UpdateForm() {
     const { editObject, setEditObject } = useContext(EditValues)
-     const { contextInit, setcontextInit } = useContext(FormValues)
+    const { contextInit, setcontextInit } = useContext(FormValues)
     // const [editOject, setEditObject] = useState({})
     // const onFinish = values => {
     //   console.log('Success:', values);
@@ -64,8 +64,22 @@ function UpdateForm() {
     //     addUpdateImage()
     // }
 
+    let result = []
+    const recArr = JSON.parse(localStorage.getItem("adds"));
     const update = () => {
         console.log(editObject)
+        for (let i = 0; i < recArr.length; i++) {
+            if (editObject.id == recArr[i].id) {
+                // console.log("id found")
+                result.push(editObject)
+            } else {
+                result.push(recArr[i])
+            }
+        }
+        let recArrString = JSON.stringify(result)
+        localStorage.setItem("adds", recArrString)
+        //   localStorage.removeItem(result)
+        // console.log(result, "result")
     }
 
     // const [contextInit, setcontextInit] = useState({})
@@ -80,16 +94,15 @@ function UpdateForm() {
     const updateDetail = (e) =>
         setEditObject(prevInput => ({
             ...prevInput,
-         description: e.target.value
+            description: e.target.value
         }))
 
 
-    { console.log(editObject,"editObject") }
-    { console.log(contextInit,"contextInit") }
+    // { console.log(editObject, "editObject") }
+    // { console.log(contextInit,"contextInit") }
 
     return (
         <>
-         
             <h1
                 style={{
                     fontSize: "22px", color: '#002f34', height: '100px'
@@ -104,21 +117,22 @@ function UpdateForm() {
                         defaultValue={editObject.category}
                         style={{ height: '80px', borderBottom: 'solid 2px #a3b4b6' }}>
                         <option className='font-bold'>category</option>
-                        <option 
-                        // {editObject.category=="cars" && defaultChecked}
-                        value="cars">Cars</option>
-                        <option  value="mobiles">Mobiles</option>
+                        <option
+                            // {editObject.category=="cars" && defaultChecked}
+                            value="cars">Cars</option>
+                        <option value="mobiles">Mobiles</option>
                         <option value="flats">Flats</option>
                     </Form.Select>
-                    <UploadApp dValue={editObject.image_url} />
-                    <FormInput title="Make"
+                    <UploadApp dValue='updateUrl' />
+                    <FormInput
+                        title="make"
                         dValue={editObject.make}
-                        border="true" func='make'
+                        border="true"
                         updateFunc="updateMake"
                         placeholder='Enter Make'
                     />
-                    <FormInput title="Ad title" func='title'
-                     updateFunc="updateTitle"
+                    <FormInput title="Ad title"
+                        updateFunc="updateTitle"
                         placeholder='Title'
                         dValue={editObject.title} />
                     <InputGroup className=" flex p-6 ">
@@ -139,35 +153,35 @@ function UpdateForm() {
                             style={{ width: '70%', border: 'solid 1px #002f34', borderRadius: '4px', padding: '5px' }} as="textarea" aria-label="With textarea" placeholder="Describe the item you're selling" />
                     </InputGroup>
                     <FormInput title="Adress"
-                        func='adress'
-                         updateFunc="updateAdress"
+
+                        updateFunc="updateAdress"
                         dValue={editObject.adress}
                         placeholder="Adress" />
                 </div>
                 <div className='mainForm' >
                     <FormInput dValue={editObject.price}
-                        title="Price" func='price'
-                         updateFunc="updatePrice"
+                        title="Price"
+                        updateFunc="updatePrice"
                         placeholder="Enter Price" />
                 </div>
                 <div className='mainForm' >
                     <div style={{ borderBottom: 'solid 2px #a3b4b6' }}>
-                        <FormInput title="Name" func='name'
-                         updateFunc="updateName"
+                        <FormInput title="Name"
+                            updateFunc="updateName"
                             dValue={editObject.name} placeholder='Name' />
                         <FormInput title="Mobile Phone Number"
-                            func='mobilenum'  updateFunc="updateNum"
-                             dValue={editObject.number}
+                            updateFunc="updateNum"
+                            dValue={editObject.number}
                             placeholder="Enter phone number" />
                         <div className='p-6 flex justify-between'>
                             <InputGroup.Text className='font-bold'
                                 style={{ width: '40%' }} >
                                 Show my phone number in ads</InputGroup.Text>
                             <Switch style={{ backgroundColor: '#002f34' }}
-                            defaultValue={editObject.number?true:false}
+                                defaultValue={editObject.number ? true : false}
                                 onChange={(e) => {
-                                    e && delete contextInit.number
-                                    // console.log(contextInit)
+                                    !e && delete editObject.number
+                                    console.log(e)
                                 }} />
                         </div>
                     </div>
@@ -178,7 +192,7 @@ function UpdateForm() {
                     </div>
                 </div>
             </FormAnt>
-          
+
         </>
     );
 };

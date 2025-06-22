@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
-import { FormValues } from '../config/context';
+import { FormValues,EditValues } from '../config/context';
 import { useContext, useEffect } from 'react';
 import { InputGroup } from 'react-bootstrap';
-const UploadApp = ({dvalue}) => {
+const UploadApp = ({dValue}) => {
+     const { editObject, setEditObject } = useContext(EditValues)
   const { contextInit, setcontextInit } = useContext(FormValues)
   const [urlState, setUrlState] = useState(null)
   const addImage = () => {
     setcontextInit(prevInput => ({
+      ...prevInput,
+      image_url: urlState
+    })
+    )
+    setUrlState(null)
+    // console.log(url)
+  }
+   const updateImage = () => {
+    setEditObject(prevInput => ({
       ...prevInput,
       image_url: urlState
     })
@@ -67,13 +77,13 @@ const UploadApp = ({dvalue}) => {
             }
           }
         />
-        {urlState && addImage()}
+        {urlState && !dValue ? addImage():
+        urlState && dValue ? updateImage() : ""}
         {/* {urlState &&
           <img src={urlState} style={{ width: "100px", height: '100px' }} />
         } */}
       </div>
       {/* {imageUrl ? <img src={imageUrl} alt="avatar" style={{ width: '100%' }} /> : uploadButton} */}
-
     </div>
   )
 };

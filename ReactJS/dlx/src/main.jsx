@@ -6,7 +6,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import AppForm from './pages/form.jsx'
 import UpdateForm from './pages/update.jsx'
 import AddDisplay from './pages/addDisplay.jsx'
-import { EditValuesProvider } from './config/context.jsx'
+import { EditValuesProvider, FormValuesProvider } from './config/context.jsx'
 
 
 
@@ -27,9 +27,11 @@ const router = createBrowserRouter(
 )
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <EditValuesProvider>
-      <RouterProvider router={router} />
-    </EditValuesProvider>
+    <FormValuesProvider>
+      <EditValuesProvider>
+        <RouterProvider router={router} />
+      </EditValuesProvider>
+    </FormValuesProvider>
     {/* <App /> */}
   </StrictMode>,
 )

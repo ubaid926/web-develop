@@ -18,7 +18,7 @@ function App() {
       {/* <RouterProvider/> */}
       {/* <AppRouter > */}
       {/* <EditValues.Provider value={{ editObject, setEditObject }}> */}
-        <FormValues.Provider value={{ contextInit, setcontextInit }}>
+        {/* <FormValues.Provider value={{ contextInit, setcontextInit }}> */}
 
           <div className=''>
             <AppLayout />
@@ -31,7 +31,7 @@ function App() {
           {/* <Link to="/form">
         route
         </Link > */}
-        </FormValues.Provider>
+        {/* </FormValues.Provider> */}
       {/* </EditValues.Provider> */}
     </>
   )

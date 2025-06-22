@@ -10,16 +10,16 @@ function AppButton({ getValue, update, title }) {
     // {console.log(get)} 
     // const get=()=>{console.log(getValue.value)}
     const [rec, setRec] = useState()
-//  console.log(editObject)
+
+    //  console.log(editObject)
     // console.log(contextInit)
     return (
         <>
             <Link to="/">
                 <Button
                     onClick={
-                        update ? () => console.log(editObject) :
+                        update ? () => update() :
                             () => {
-
                                 if (Object.keys(contextInit).length == 0) return
                                 if (localStorage.getItem("adds")) {
                                     const recArr = JSON.parse(localStorage.getItem("adds"));

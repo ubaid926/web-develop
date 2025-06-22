@@ -15,13 +15,13 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
     }))
   }
   const updateMake = (e) => {
-    setcontextInit(prevInput => ({
+    setEditObject(prevInput => ({
       ...prevInput,
       make: e.target.value
     }))
   }
   const updatePrice = (e) => {
-    setcontextInit(prevInput => ({
+    setEditObject(prevInput => ({
       ...prevInput,
       price: e.target.value
     }))
@@ -35,9 +35,10 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
       ...prevInput,
       id: addId
     }))
+
   }
   const updateTitle = (e) => {
-    setcontextInit(prevInput => ({
+    setEditObject(prevInput => ({
       ...prevInput,
       title: e.target.value
     }))
@@ -56,7 +57,7 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
     }))
   }
   const updateName = (e) => {
-    setcontextInit(prevInput => ({
+    setEditObject(prevInput => ({
       ...prevInput,
       name: e.target.value
     }))
@@ -68,7 +69,7 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
     }))
   }
   const updateNum = (e) => {
-    setcontextInit(prevInput => ({
+    setEditObject(prevInput => ({
       ...prevInput,
       number: e.target.value
     }))
@@ -80,7 +81,7 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
     }))
   }
   const updateAdress = (e) => {
-    setcontextInit(prevInput => ({
+    setEditObject(prevInput => ({
       ...prevInput,
       adress: e.target.value
     }))
@@ -131,7 +132,6 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
               case "make":
                 addMake(e)
                 break;
-
             }
           }
           else {

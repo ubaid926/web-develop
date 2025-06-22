@@ -13,3 +13,13 @@ export const EditValuesProvider = ({ children }) => {
   );
 };
 
+export const FormValuesProvider = ({ children }) => {
+   const [contextInit, setcontextInit] = useState({})
+
+  return (
+    <FormValues.Provider value={{ contextInit, setcontextInit }}>
+      {children}
+    </FormValues.Provider>
+  );
+};
+
