@@ -1,76 +1,27 @@
 import Form from 'react-bootstrap/Form';
+import { useContext } from 'react';
 import { Form as FormAnt } from 'antd';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { Switch } from 'antd';
-import React, { useContext, useState } from 'react';
 import UploadApp from '../components/upload';
-import AppLocation from '../components/location';
 import FormInput from '../components/forminput';
 import AppButton from '../components/button';
 import { FormValues, EditValues } from '../config/context';
+import AppTextArea from '../components/textarea';
 
 
 function UpdateForm() {
     const { editObject, setEditObject } = useContext(EditValues)
     const { contextInit, setcontextInit } = useContext(FormValues)
-    // const [editOject, setEditObject] = useState({})
-    // const onFinish = values => {
-    //   console.log('Success:', values);
-    // };
-    // const onFinishFailed = errorInfo => {
-    //   console.log('Failed:', errorInfo);
-    // };
-    // const {contextInit,setcontextInit}=useContext(FormValues)
-    //  <Modal
-    //  key={i}
-    // open={open}
-    // onClose={handleClose}
-    // aria-labelledby="modal-modal-title"
-    // aria-describedby="modal-modal-description">
-    // <Box sx={style} className='flex flex-col gap-4'>
-    //     <h1>Edit your details</h1>
-    //     <TextField
-    //         style={{ width: '100%' }}
-    //         type='file'
-    //         id="outlined-required"
-    //         title='afjsdlkjafsjk'
-    // itemID='Textfield'
-    // onClick={(e) => e.target.type = "file"}
-    // label="Title"
-    // defaultValue={modalTitle.image_url}
-    // onChange={
-    //     async (e) => {
-    //         const file = e.target.files[0];
-    //         if (!file) return
-    //         const data = new FormData()
-    //         data.append("file", file)
-    //         data.append("upload_preset", "olx_ad_image")
-    //         data.append("cloud_name", "dcjsi7kem")
-    //         const res = await fetch("https://api.cloudinary.com/v1_1/dcjsi7kem/image/upload",
-    //             {
-    //                 method: "POST",
-    //                 body: data
-    //             })
-    //         const uploadImageUrl = await res.json()
-    // console.log(uploadImageUrl.url);
-    // const imgUrl = uploadImageUrl.url
-    // setUrlState2(imgUrl)
-    // ;
-    // urlVar = imgUrl
-    //  console.log(urlVar)
-    // }}
-    // />
-    // {urlState2 &&
-    //     addUpdateImage()
-    // }
-
+   
+ 
     let result = []
     const recArr = JSON.parse(localStorage.getItem("adds"));
     const update = () => {
-        console.log(editObject)
+        // console.log(editObject)
         for (let i = 0; i < recArr.length; i++) {
             if (editObject.id == recArr[i].id) {
-                // console.log("id found")
+             
                 result.push(editObject)
             } else {
                 result.push(recArr[i])
@@ -78,11 +29,7 @@ function UpdateForm() {
         }
         let recArrString = JSON.stringify(result)
         localStorage.setItem("adds", recArrString)
-        //   localStorage.removeItem(result)
-        // console.log(result, "result")
     }
-
-    // const [contextInit, setcontextInit] = useState({})
 
     const updateCategory = (e) => {
         setEditObject(prevInput => ({
@@ -91,15 +38,7 @@ function UpdateForm() {
         }))
     }
 
-    const updateDetail = (e) =>
-        setEditObject(prevInput => ({
-            ...prevInput,
-            description: e.target.value
-        }))
-
-
-    // { console.log(editObject, "editObject") }
-    // { console.log(contextInit,"contextInit") }
+ 
 
     return (
         <>
@@ -135,23 +74,8 @@ function UpdateForm() {
                         updateFunc="updateTitle"
                         placeholder='Title'
                         dValue={editObject.title} />
-                    <InputGroup className=" flex p-6 ">
-                        <InputGroup.Text
-                            style={{ width: '30%' }}
-                            className='inputtext  font-bold'>
-                            Description</InputGroup.Text>
-                        <Form.Control
-                            // onMouseLeave={(e) => {
-                            //     if (e.target.value.length == 0) {
-                            //         e.target.style.outlineColor = 'red'
-                            //     }
-                            // }
-                            // }
-                            className='formcontrol'
-                            onChange={(e) => updateDetail(e)}
-                            defaultValue={editObject.description}
-                            style={{ width: '70%', border: 'solid 1px #002f34', borderRadius: '4px', padding: '5px' }} as="textarea" aria-label="With textarea" placeholder="Describe the item you're selling" />
-                    </InputGroup>
+                        <AppTextArea func="update"/>
+                
                     <FormInput title="Adress"
 
                         updateFunc="updateAdress"
@@ -181,12 +105,10 @@ function UpdateForm() {
                                 defaultValue={editObject.number ? true : false}
                                 onChange={(e) => {
                                     !e && delete editObject.number
-                                    console.log(e)
+                                  
                                 }} />
                         </div>
                     </div>
-                    {/* </FormAnt.Item> */}
-                    {/* </FormAnt> */}
                     <div className='p-6 flex justify-end'>
                         <AppButton className='p-6' title="Update" update={update} />
                     </div>

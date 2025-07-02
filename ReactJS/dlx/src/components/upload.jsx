@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
-import { FormValues,EditValues } from '../config/context';
+import { FormValues, EditValues } from '../config/context';
 import { useContext, useEffect } from 'react';
 import { InputGroup } from 'react-bootstrap';
-const UploadApp = ({dValue}) => {
-     const { editObject, setEditObject } = useContext(EditValues)
+const UploadApp = ({ dValue }) => {
+  const { editObject, setEditObject } = useContext(EditValues)
   const { contextInit, setcontextInit } = useContext(FormValues)
   const [urlState, setUrlState] = useState(null)
   const addImage = () => {
@@ -17,7 +17,7 @@ const UploadApp = ({dValue}) => {
     setUrlState(null)
     // console.log(url)
   }
-   const updateImage = () => {
+  const updateImage = () => {
     setEditObject(prevInput => ({
       ...prevInput,
       image_url: urlState
@@ -36,9 +36,9 @@ const UploadApp = ({dValue}) => {
       style={{
         borderBottom: 'solid 2px #a3b4b6',
       }}>
+      {/* <InboxOutlined style={{ fontSize: '40px' }} /> */}
       <InputGroup.Text className='font-bold'
         style={{ width: '30%' }} > Upload Images</InputGroup.Text>
-      {/* <InboxOutlined style={{ fontSize: '40px' }} /> */}
       <div className='flex flex-col '
         style={{ width: "70%" }}>
         <p className="ant-upload-text font-bold text-center">
@@ -48,9 +48,20 @@ const UploadApp = ({dValue}) => {
           banned files.
         </p> */}
         <input
-        //  type={dvalue?"text":'file'}
-        // {/* // {dvalue && value={dvalue}} */}
-        type='file'
+          //  type={dvalue?"text":'file'}
+          // {/* // {dvalue && value={dvalue}} */}
+          onFocus={(e) => {
+            e.target.style.borderColor = '#23e5db'
+            e.target.previousSibling.style.color= '#23e5db'
+            e.target.parentElement.previousSibling.style.color='#23e5db'
+          }}
+          onBlur={(e) => {
+            if (e.target.value.trim() == "") { e.target.style.borderColor = 'red' 
+                   e.target.previousSibling.style.color= 'red'
+                    e.target.parentElement.previousSibling.style.color='red'
+            }
+          }}
+          type='file'
           className='uploadinput'
           style={{
             border: '2px dotted grey', width: '100%',
@@ -77,8 +88,8 @@ const UploadApp = ({dValue}) => {
             }
           }
         />
-        {urlState && !dValue ? addImage():
-        urlState && dValue ? updateImage() : ""}
+        {urlState && !dValue ? addImage() :
+          urlState && dValue ? updateImage() : ""}
         {/* {urlState &&
           <img src={urlState} style={{ width: "100px", height: '100px' }} />
         } */}

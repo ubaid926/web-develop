@@ -38,6 +38,7 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
 
   }
   const updateTitle = (e) => {
+
     setEditObject(prevInput => ({
       ...prevInput,
       title: e.target.value
@@ -45,10 +46,15 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
   }
 
   const addTitle = (e) => {
+    // if(e.target.value.trim()==''){
+    //     console.log("fill")
+    // }
+    // else{
     setcontextInit(prevInput => ({
       ...prevInput,
       title: e.target.value
     }))
+    // }
   }
   const addName = (e) => {
     setcontextInit(prevInput => ({
@@ -96,23 +102,23 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
           id="inputGroup-sizing-sm">{title}</InputGroup.Text>
       </div>
       <Form.Control className='formcontrol'
+        required
+
         type={func == 'mobilenum' ? 'number' : func == 'price' ? "number" : "text"
         }
+        onFocus={(e) => {
+          e.target.style.borderColor = '#23e5db'
+          e.target.previousSibling.style.color = '#23e5db'
+
+        }}
+        onBlur={(e) => {
+          if (e.target.value.trim() == "") {
+            e.target.style.borderColor = 'red'
+            e.target.previousSibling.style.color = 'red'
+          }
+        }}
         onChange={(e) => {
           if (func) {
-            // if (func === 'price') {
-            //   addPrice(e);
-            // } else if (func === 'title') {
-            //   addTitle(e);
-            // } else if (func === 'name') {
-            //   addName(e);
-            // } else if (func === 'mobilenum') {
-            //   addNum(e);
-            // } else if (func === 'adress') {
-            //   addAdress(e);
-            // } else if (func === 'make') {
-            //   addMake(e);
-            // }
             switch (func) {
               case "price":
                 addPrice(e)
@@ -157,8 +163,6 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
 
             }
           }
-
-
         }
         }
         defaultValue={dValue}
@@ -167,6 +171,9 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
         aria-label="Small"
         aria-describedby="inputGroup-sizing-sm"
       />
+      {/* <Form.Control.Feedback type="invalid">
+        {errors.email}
+      </Form.Control.Feedback> */}
     </InputGroup>
   )
 }
