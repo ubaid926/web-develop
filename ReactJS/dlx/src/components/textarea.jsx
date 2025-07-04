@@ -2,12 +2,12 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
 import { useContext } from 'react';
 import {
-  FormValues, EditValues
+    FormValues, EditValues
 } from '../config/context';
 
-export default function AppTextArea({func}) {
-     const { contextInit, setcontextInit } = useContext(FormValues)
-      const { editObject, setEditObject } = useContext(EditValues)
+export default function AppTextArea({ func }) {
+    const { contextInit, setcontextInit } = useContext(FormValues)
+    const { editObject, setEditObject } = useContext(EditValues)
     const updateDetail = (e) =>
         setEditObject(prevInput => ({
             ...prevInput,
@@ -19,7 +19,7 @@ export default function AppTextArea({func}) {
             ...prevInput,
             description: e.target.value
         }))
-    return(
+    return (
         <>
             <InputGroup className=" flex p-6 ">
                 <InputGroup.Text style={{ width: '30%' }}
@@ -28,14 +28,18 @@ export default function AppTextArea({func}) {
                     if (e.target.value.trim() == "") {
                         e.target.style.borderColor = 'red'
                         e.target.previousSibling.style.color = 'red'
+                    } else {
+                        e.target.style.borderColor = 'black'
+                        e.target.previousSibling.style.color = 'black'
+
                     }
                 }}
-                
+
                     onFocus={(e) => {
                         e.target.style.borderColor = ' #23e5db'
                         e.target.previousSibling.style.color = '#23e5db'
                     }}
-                    className='formcontrol' onChange={(e) => func=='add' ?  addDetail(e) : updateDetail(e)}
+                    className='formcontrol' onChange={(e) => func == 'add' ? addDetail(e) : updateDetail(e)}
                     style={{
                         width: '70%', border: 'solid 1px #002f34',
                         borderRadius: '4px', padding: '5px'

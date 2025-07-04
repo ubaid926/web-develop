@@ -14,7 +14,6 @@ function UpdateForm() {
     const { editObject, setEditObject } = useContext(EditValues)
     const { contextInit, setcontextInit } = useContext(FormValues)
    
- 
     let result = []
     const recArr = JSON.parse(localStorage.getItem("adds"));
     const update = () => {

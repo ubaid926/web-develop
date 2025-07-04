@@ -115,6 +115,13 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
           if (e.target.value.trim() == "") {
             e.target.style.borderColor = 'red'
             e.target.previousSibling.style.color = 'red'
+              e.target.nextElementSibling.style.display = 'block'
+          } else {
+            e.target.style.borderColor = 'black'
+            e.target.previousSibling.style.color = 'black'
+          //  if(  e.target.nextElementSibling.style.display == 'block'){
+              e.target.nextElementSibling.style.display = 'none'
+          //  }
           }
         }}
         onChange={(e) => {
@@ -171,9 +178,9 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
         aria-label="Small"
         aria-describedby="inputGroup-sizing-sm"
       />
-      {/* <Form.Control.Feedback type="invalid">
-        {errors.email}
-      </Form.Control.Feedback> */}
+
+      <p style={{ color: 'red' , display:'none' }}>this field is required</p>
+
     </InputGroup>
   )
 }
