@@ -24,27 +24,32 @@ export default function AppTextArea({ func }) {
             <InputGroup className=" flex p-6 ">
                 <InputGroup.Text style={{ width: '30%' }}
                     className='inputtext  font-bold'>Description</InputGroup.Text>
-                <Form.Control onBlur={(e) => {
-                    if (e.target.value.trim() == "") {
-                        e.target.style.borderColor = 'red'
-                        e.target.previousSibling.style.color = 'red'
-                    } else {
-                        e.target.style.borderColor = 'black'
-                        e.target.previousSibling.style.color = 'black'
+                <div className='flex flex-col' style={{ width: '70%' }}>
+                    <Form.Control onBlur={(e) => {
+                        if (e.target.value.trim() == "") {
+                            e.target.style.borderColor = 'red'
+                            e.target.parentElement.previousSibling.style.color = 'red'
+                            e.target.nextElementSibling.style.display = 'block'
 
-                    }
-                }}
-
-                    onFocus={(e) => {
-                        e.target.style.borderColor = ' #23e5db'
-                        e.target.previousSibling.style.color = '#23e5db'
+                        } else {
+                            e.target.style.borderColor = 'black'
+                            e.target.parentElement.previousSibling.style.color = 'black'
+                            e.target.nextElementSibling.style.display = 'none'
+                        }
                     }}
-                    className='formcontrol' onChange={(e) => func == 'add' ? addDetail(e) : updateDetail(e)}
-                    style={{
-                        width: '70%', border: 'solid 1px #002f34',
-                        borderRadius: '4px', padding: '5px'
-                    }} as="textarea" aria-label="With textarea"
-                    placeholder="Describe the item you're selling" />
+
+                        onFocus={(e) => {
+                            e.target.style.borderColor = ' #23e5db'
+                            e.target.parentElement.previousSibling.style.color = '#23e5db'
+                        }}
+                        className='formcontrol' onChange={(e) => func == 'add' ? addDetail(e) : updateDetail(e)}
+                        style={{
+                            border: 'solid 1px #002f34',
+                            borderRadius: '4px', padding: '5px'
+                        }} as="textarea" aria-label="With textarea"
+                        placeholder="Describe the item you're selling" />
+                    <p style={{ color: 'red', display: 'none' }}>this field is required</p>
+                </div>
             </InputGroup>
         </>
 

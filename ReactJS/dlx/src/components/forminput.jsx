@@ -95,92 +95,93 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
   // console.log(editObject)
 
   return (
+
     <InputGroup style={border && { borderBottom: 'solid 2px #a3b4b6' }}
       className=" flex p-6  ">
       <div style={{ width: '30%' }}>
         <InputGroup.Text className='inputtext font-bold'
           id="inputGroup-sizing-sm">{title}</InputGroup.Text>
       </div>
-      <Form.Control className='formcontrol'
-        required
+      <div className='flex flex-col' style={{ width: '70%' }}>
+        <Form.Control className='formcontrol'
+          required
+          type={func == 'mobilenum' ? 'number' : func == 'price' ? "number" : "text"
+          }
+          onFocus={(e) => {
+            e.target.style.borderColor = '#23e5db'
+            e.target.parentElement.previousSibling.style.color = '#23e5db'
 
-        type={func == 'mobilenum' ? 'number' : func == 'price' ? "number" : "text"
-        }
-        onFocus={(e) => {
-          e.target.style.borderColor = '#23e5db'
-          e.target.previousSibling.style.color = '#23e5db'
-
-        }}
-        onBlur={(e) => {
-          if (e.target.value.trim() == "") {
-            e.target.style.borderColor = 'red'
-            e.target.previousSibling.style.color = 'red'
+          }}
+          onBlur={(e) => {
+            if (e.target.value.trim() == "") {
+              e.target.style.borderColor = 'red'
+              e.target.parentElement.previousSibling.style.color = 'red'
               e.target.nextElementSibling.style.display = 'block'
-          } else {
-            e.target.style.borderColor = 'black'
-            e.target.previousSibling.style.color = 'black'
-          //  if(  e.target.nextElementSibling.style.display == 'block'){
+            } else {
+              e.target.style.borderColor = 'black'
+              e.target.parentElement.previousSibling.style.color = 'black'
+              //  if(  e.target.nextElementSibling.style.display == 'block'){
               e.target.nextElementSibling.style.display = 'none'
-          //  }
-          }
-        }}
-        onChange={(e) => {
-          if (func) {
-            switch (func) {
-              case "price":
-                addPrice(e)
-                break;
-              case "title":
-                addTitle(e)
-                break;
-              case "name":
-                addName(e)
-                break;
-              case "mobilenum":
-                addNum(e)
-                break;
-              case "adress":
-                addAdress(e)
-                break;
-              case "make":
-                addMake(e)
-                break;
+              //  }
+            }
+          }}
+          onChange={(e) => {
+            if (func) {
+              switch (func) {
+                case "price":
+                  addPrice(e)
+                  break;
+                case "title":
+                  addTitle(e)
+                  break;
+                case "name":
+                  addName(e)
+                  break;
+                case "mobilenum":
+                  addNum(e)
+                  break;
+                case "adress":
+                  addAdress(e)
+                  break;
+                case "make":
+                  addMake(e)
+                  break;
+              }
+            }
+            else {
+              switch (updateFunc) {
+                case "updatePrice":
+                  updatePrice(e)
+                  break;
+                case "updateTitle":
+                  updateTitle(e)
+                  break;
+                case "updateName":
+                  updateName(e)
+                  break;
+                case "updateNum":
+                  updateNum(e)
+                  break;
+                case "updateAdress":
+                  updateAdress(e)
+                  break;
+                case "updateMake":
+                  updateMake(e)
+                  break;
+
+              }
             }
           }
-          else {
-            switch (updateFunc) {
-              case "updatePrice":
-                updatePrice(e)
-                break;
-              case "updateTitle":
-                updateTitle(e)
-                break;
-              case "updateName":
-                updateName(e)
-                break;
-              case "updateNum":
-                updateNum(e)
-                break;
-              case "updateAdress":
-                updateAdress(e)
-                break;
-              case "updateMake":
-                updateMake(e)
-                break;
-
-            }
           }
-        }
-        }
-        defaultValue={dValue}
-        placeholder={placeholder}
-        style={{ width: '70%', height: '42px', border: 'solid 1px #002f34', borderRadius: '4px', padding: '5px' }}
-        aria-label="Small"
-        aria-describedby="inputGroup-sizing-sm"
-      />
+          defaultValue={dValue}
+          placeholder={placeholder}
+          style={{ height: '42px', border: 'solid 1px #002f34', borderRadius: '4px', padding: '5px' }}
+          aria-label="Small"
+          aria-describedby="inputGroup-sizing-sm"
 
-      <p style={{ color: 'red' , display:'none' }}>this field is required</p>
-
+        />
+        <p style={{ color: 'red', display: 'none' }}>this field is required</p>
+      </div>
     </InputGroup>
   )
 }
