@@ -71,8 +71,9 @@ const UploadApp = ({ dValue }) => {
           type='file'
           className='uploadinput'
           style={{
-            border: '2px dotted grey', width: '100%',
-            backgroundColor: '#fafafa', height: '100px'
+            border: '2px dotted #e8ecec', width: '100%',
+            backgroundColor: '#fafafa', height: '100px',
+            display:'flex', justifyContent:'center'
           }}
           onChange={
             async (e) => {

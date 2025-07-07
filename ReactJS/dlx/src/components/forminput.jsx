@@ -93,13 +93,15 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
     }))
   }
   // console.log(editObject)
-
+  const [inputColor, setInputColor] = useState(true)
+  const [inputTextColor, setInputTextColor] = useState(true)
   return (
 
     <InputGroup style={border && { borderBottom: 'solid 2px #a3b4b6' }}
       className=" flex p-6  ">
       <div style={{ width: '30%' }}>
         <InputGroup.Text className='inputtext font-bold'
+          style={{ color: !inputColor ? "red" : !inputTextColor ? "#23e5db" :"" }}
           id="inputGroup-sizing-sm">{title}</InputGroup.Text>
       </div>
       <div className='flex flex-col' style={{ width: '70%' }}>
@@ -109,20 +111,16 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
           }
           onFocus={(e) => {
             e.target.style.borderColor = '#23e5db'
-            e.target.parentElement.previousSibling.style.color = '#23e5db'
-
+            setInputTextColor(false)
           }}
           onBlur={(e) => {
             if (e.target.value.trim() == "") {
+              setInputColor(false)
               e.target.style.borderColor = 'red'
-              e.target.parentElement.previousSibling.style.color = 'red'
-              e.target.nextElementSibling.style.display = 'block'
             } else {
+              !inputColor && setInputColor(true)
+              setInputTextColor(true)
               e.target.style.borderColor = 'black'
-              e.target.parentElement.previousSibling.style.color = 'black'
-              //  if(  e.target.nextElementSibling.style.display == 'block'){
-              e.target.nextElementSibling.style.display = 'none'
-              //  }
             }
           }}
           onChange={(e) => {
@@ -175,12 +173,14 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
           }
           defaultValue={dValue}
           placeholder={placeholder}
-          style={{ height: '42px', border: 'solid 1px #002f34', borderRadius: '4px', padding: '5px' }}
+          style={{
+            height: '42px', border: inputColor ? 'solid 1px #e8ecec' : 'solid 1px red',
+            borderRadius: '4px', padding: '5px'
+          }}
           aria-label="Small"
           aria-describedby="inputGroup-sizing-sm"
-
         />
-        <p style={{ color: 'red', display: 'none' }}>this field is required</p>
+        <p style={{ color: 'red', display: inputColor ? 'none' : 'block' }}>this field is required</p>
       </div>
     </InputGroup>
   )
