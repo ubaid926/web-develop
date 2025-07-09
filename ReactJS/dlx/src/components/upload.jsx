@@ -54,18 +54,15 @@ const UploadApp = ({ dValue }) => {
           onFocus={(e) => {
               const isRed = window.getComputedStyle(e.target).borderColor === 'rgb(255, 0, 0)';
             if (!isRed) {
-              e.target.style.borderColor = '#23e5db'
               setInputTextColor(false)
             }
           }}
           onBlur={(e) => {
           if (e.target.value.trim() == "") {
               setInputColor(false)
-              e.target.style.borderColor = 'red'
             } else {
               !inputColor && setInputColor(true)
               setInputTextColor(true)
-              e.target.style.borderColor = '#e8ecec'
             }
           }}
           type='file'
