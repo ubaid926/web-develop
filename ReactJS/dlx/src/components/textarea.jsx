@@ -1,6 +1,6 @@
 import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
-import { useContext,useState } from 'react';
+import { useContext, useState } from 'react';
 import {
     FormValues, EditValues
 } from '../config/context';
@@ -24,9 +24,9 @@ export default function AppTextArea({ func }) {
     return (
         <>
             <InputGroup className=" flex p-6 ">
-                <InputGroup.Text style={{ width: '30%',color: !inputColor ? "red" : !inputTextColor ? "#23e5db" :"" }}
+                <InputGroup.Text style={{ width: '30%', color: !inputColor ? "red" : !inputTextColor ? "#23e5db" : "" }}
                     className='inputtext  font-bold'>Description</InputGroup.Text>
-                <div className='flex flex-col' style={{ width: '70%'}}>
+                <div className='flex flex-col' style={{ width: '70%' }}>
                     <Form.Control onBlur={(e) => {
                         if (e.target.value.trim() == "") {
                             setInputColor(false)
@@ -34,13 +34,16 @@ export default function AppTextArea({ func }) {
                         } else {
                             !inputColor && setInputColor(true)
                             setInputTextColor(true)
-                            e.target.style.borderColor = 'black'
+                            e.target.style.borderColor = '#e8ecec'
                         }
                     }}
 
                         onFocus={(e) => {
-                            e.target.style.borderColor = '#23e5db'
-                            setInputTextColor(false)
+                            const isRed = window.getComputedStyle(e.target).borderColor === 'rgb(255, 0, 0)';
+                            if (!isRed) {
+                                e.target.style.borderColor = '#23e5db'
+                                setInputTextColor(false)
+                            }
                         }}
                         className='formcontrol' onChange={(e) => func == 'add' ? addDetail(e) : updateDetail(e)}
                         style={{

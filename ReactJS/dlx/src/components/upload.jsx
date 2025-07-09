@@ -30,7 +30,8 @@ const UploadApp = ({ dValue }) => {
   // useEffect(() => {
   //   console.log(urlState);
   // }, [urlState]);
-
+ const [inputColor, setInputColor] = useState(true)
+  const [inputTextColor, setInputTextColor] = useState(true)
   return (
     <div className='flex p-6'
       style={{
@@ -38,9 +39,9 @@ const UploadApp = ({ dValue }) => {
       }}>
       {/* <InboxOutlined style={{ fontSize: '40px' }} /> */}
       <InputGroup.Text className='font-bold'
-        style={{ width: '30%' }} > Upload Images</InputGroup.Text>
+        style={{ width: '30%',color: !inputColor ? "red" : !inputTextColor ? "#23e5db" : "" }} > Upload Images</InputGroup.Text>
       <div className='flex flex-col '
-        style={{ width: "70%" }}>
+        style={{ width: "70%" ,color: !inputColor ? "red" : !inputTextColor ? "#23e5db" : "" }}>
         <p className="ant-upload-text font-bold text-center">
           Click this area to upload</p>
         {/* <p className="ant-upload-hint">
@@ -51,27 +52,26 @@ const UploadApp = ({ dValue }) => {
           //  type={dvalue?"text":'file'}
           // {/* // {dvalue && value={dvalue}} */}
           onFocus={(e) => {
-            e.target.style.borderColor = '#23e5db'
-            e.target.previousSibling.style.color = '#23e5db'
-            e.target.parentElement.previousSibling.style.color = '#23e5db'
+              const isRed = window.getComputedStyle(e.target).borderColor === 'rgb(255, 0, 0)';
+            if (!isRed) {
+              e.target.style.borderColor = '#23e5db'
+              setInputTextColor(false)
+            }
           }}
           onBlur={(e) => {
-            if (e.target.value.trim() == "") {
+          if (e.target.value.trim() == "") {
+              setInputColor(false)
               e.target.style.borderColor = 'red'
-              e.target.previousSibling.style.color = 'red'
-              e.target.parentElement.previousSibling.style.color = 'red'
-              e.target.nextElementSibling.style.display = 'block'
             } else {
-              e.target.style.borderColor = 'black'
-              e.target.previousSibling.style.color = 'black'
-              e.target.parentElement.previousSibling.style.color = 'black'
-              e.target.nextElementSibling.style.display = 'none'
+              !inputColor && setInputColor(true)
+              setInputTextColor(true)
+              e.target.style.borderColor = '#e8ecec'
             }
           }}
           type='file'
           className='uploadinput'
           style={{
-            border: '2px dotted #e8ecec', width: '100%',
+             border: inputColor ? 'solid 1px #e8ecec' : 'solid 1px red', width: '100%',
             backgroundColor: '#fafafa', height: '100px',
             display:'flex', justifyContent:'center'
           }}
@@ -98,7 +98,7 @@ const UploadApp = ({ dValue }) => {
         />
         {urlState && !dValue ? addImage() :
           urlState && dValue ? updateImage() : ""}
-        <p style={{ color: 'red', display: 'none' }}>this field is required</p>
+        <p style={{ color: 'red', display: inputColor ? 'none' : 'block' }}>this field is required</p>
         {/* {urlState &&
           <img src={urlState} style={{ width: "100px", height: '100px' }} />
         } */}

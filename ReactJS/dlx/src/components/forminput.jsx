@@ -101,7 +101,7 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
       className=" flex p-6  ">
       <div style={{ width: '30%' }}>
         <InputGroup.Text className='inputtext font-bold'
-          style={{ color: !inputColor ? "red" : !inputTextColor ? "#23e5db" :"" }}
+          style={{ color: !inputColor ? "red" : !inputTextColor ? "#23e5db" : "" }}
           id="inputGroup-sizing-sm">{title}</InputGroup.Text>
       </div>
       <div className='flex flex-col' style={{ width: '70%' }}>
@@ -110,8 +110,11 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
           type={func == 'mobilenum' ? 'number' : func == 'price' ? "number" : "text"
           }
           onFocus={(e) => {
-            e.target.style.borderColor = '#23e5db'
-            setInputTextColor(false)
+            const isRed = window.getComputedStyle(e.target).borderColor === 'rgb(255, 0, 0)';
+            if (!isRed) {
+              e.target.style.borderColor = '#23e5db'
+              setInputTextColor(false)
+            }
           }}
           onBlur={(e) => {
             if (e.target.value.trim() == "") {
@@ -120,7 +123,7 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
             } else {
               !inputColor && setInputColor(true)
               setInputTextColor(true)
-              e.target.style.borderColor = 'black'
+              e.target.style.borderColor = '#e8ecec'
             }
           }}
           onChange={(e) => {
