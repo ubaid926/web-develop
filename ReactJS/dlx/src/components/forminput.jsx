@@ -109,21 +109,23 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
           required
           type={func == 'mobilenum' ? 'number' : func == 'price' ? "number" : "text"
           }
+          style={{
+            height: '42px', border: !inputColor ? 'solid 1px red' : !inputTextColor ? 'solid 1px #23e5db': 
+            'solid 1px #e8ecec',
+            borderRadius: '4px', padding: '5px'
+          }}
           onFocus={(e) => {
             const isRed = window.getComputedStyle(e.target).borderColor === 'rgb(255, 0, 0)';
             if (!isRed) {
-              e.target.style.borderColor = '#23e5db'
               setInputTextColor(false)
             }
           }}
           onBlur={(e) => {
             if (e.target.value.trim() == "") {
               setInputColor(false)
-              e.target.style.borderColor = 'red'
             } else {
               !inputColor && setInputColor(true)
-              setInputTextColor(true)
-              e.target.style.borderColor = '#e8ecec'
+              setInputTextColor(true) 
             }
           }}
           onChange={(e) => {
@@ -176,10 +178,7 @@ function FormInput({ title, border, placeholder, func, dValue, updateFunc }) {
           }
           defaultValue={dValue}
           placeholder={placeholder}
-          style={{
-            height: '42px', border: inputColor ? 'solid 1px #e8ecec' : 'solid 1px red',
-            borderRadius: '4px', padding: '5px'
-          }}
+          
           aria-label="Small"
           aria-describedby="inputGroup-sizing-sm"
         />

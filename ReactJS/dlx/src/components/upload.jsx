@@ -68,7 +68,8 @@ const UploadApp = ({ dValue }) => {
           type='file'
           className='uploadinput'
           style={{
-             border: inputColor ? 'solid 1px #e8ecec' : 'solid 1px red', width: '100%',
+             border:!inputColor ? 'solid 1px red' : !inputTextColor ? 'solid 1px #23e5db': 
+            'solid 1px #e8ecec', width: '100%',
             backgroundColor: '#fafafa', height: '100px',
             display:'flex', justifyContent:'center'
           }}
